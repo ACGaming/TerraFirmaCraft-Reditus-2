@@ -1,0 +1,149 @@
+{
+	"images": {
+		"title": {
+			"image": "tfc:textures/logo.png",
+			"posX": -209,
+			"posY": 40,
+			"width": 418,
+			"height": 71,
+			"alignment": "top_center"
+		}
+	},
+
+	"buttons": {
+		"singleplayer": {
+			"text": "menu.singleplayer",
+			"posX": -100,
+			"posY": 44,
+			"width": 200,
+			"height": 20,
+			"texture": "tfc:textures/button_large.png",
+			"normalTextColor": 13487565,
+			"hoverTextColor": 16777215,
+			"action": {
+				"type": "openGui",
+				"gui": "singleplayer"
+			},
+			"hoverSound": "tfc:item.jug.blow",
+			"pressSound": "tfc:anvil.metalimpact"
+		},
+
+		"multiplayer": {
+			"text": "menu.multiplayer",
+			"posX": -100,
+			"posY": 68,
+			"width": 200,
+			"height": 20,
+			"texture": "tfc:textures/button_large.png",
+			"normalTextColor": 13487565,
+			"hoverTextColor": 16777215,
+			"action": {
+				"type": "openGui",
+				"gui": "multiplayer"
+			},
+			"hoverSound": "tfc:item.jug.blow",
+			"pressSound": "tfc:anvil.metalimpact"
+		},
+
+		"mods": {
+			"text": "Mods",
+			"posX": -100,
+			"posY": 92,
+			"width": 200,
+			"height": 20,
+			"texture": "tfc:textures/button_large.png",
+			"normalTextColor": 13487565,
+			"hoverTextColor": 16777215,
+			"action": {
+				"type": "openGui",
+				"gui": "mods"
+			},
+			"hoverSound": "tfc:item.jug.blow",
+			"pressSound": "tfc:anvil.metalimpact"
+		},
+
+		"options": {
+			"text": "menu.options",
+			"posX": -100,
+			"posY": 127,
+			"width": 98,
+			"height": 20,
+			"texture": "tfc:textures/button_small.png",
+			"normalTextColor": 13487565,
+			"hoverTextColor": 16777215,
+			"action": {
+				"type": "openGui",
+				"gui": "options"
+			},
+			"hoverSound": "tfc:item.jug.blow",
+			"pressSound": "tfc:anvil.metalimpact"
+		},
+
+		"quit": {
+			"text": "menu.quit",
+			"posX": 2,
+			"posY": 127,
+			"width": 98,
+			"height": 20,
+			"texture": "tfc:textures/button_small.png",
+			"normalTextColor": 13487565,
+			"hoverTextColor": 16777215,
+			"action": {
+				"type": "quit"
+			},
+			"hoverSound": "tfc:item.jug.blow",
+			"pressSound": "tfc:item.ceramicbreak"
+		},
+
+		"bug": {
+			"text": "",
+			"posX": 38,
+			"posY": 160,
+			"width": 25,
+			"height": 25,
+			"imageWidth": 150,
+			"imageHeight": 150,
+			"texture": "tfc:textures/bug.png",
+			"action": {
+				"type": "openLink",
+				"link": "https://www.curseforge.com/minecraft/modpacks/terrafirmacraft-reditus-2/issues"
+			},
+			"hoverSound": "tfc:item.jug.blow",
+			"pressSound": "tfc:animal.frog"
+		},
+		
+				"server": {
+			"text": "",
+			"posX": -64,
+			"posY": 160,
+			"width": 25,
+			"height": 25,
+			"imageWidth": 150,
+			"imageHeight": 150,
+			"texture": "tfc:textures/server.png",
+			"action": {
+				"type": "openLink",
+				"link": "https://bisecthosting.com/ACGaming"
+			},
+			"hoverSound": "tfc:item.jug.blow",
+			"pressSound": "tfc:animal.frog"
+		}
+	},
+
+	"texts": {
+		"modpack_name": {
+			"text": "TerraFirmaCraft Reditus 2",
+			"posX": 2,
+			"posY": -65,
+			"color": 13487565,
+			"alignment": "bottom_left"
+		}
+	},
+
+	"other": {
+		"background": {
+			"image": "tfc:textures/background.png",
+			"mode": "fill"
+		}
+	}
+}

@@ -1,0 +1,64 @@
+{
+	"rules": [{
+		"match": {
+			"biomes": {
+				"ids": [
+					"tfc:beach"
+				]
+			},
+			"blocks": {
+				"blocks": [
+					"tfc:sand/andesite:*",
+					"tfc:sand/arkose:*",
+					"tfc:sand/basalt:*",
+					"tfc:sand/blaimorite:*",
+					"tfc:sand/blueschist:*",
+					"tfc:sand/boninite:*",
+					"tfc:sand/carbonatite:*",
+					"tfc:sand/cataclasite:*",
+					"tfc:sand/chalk:*",
+					"tfc:sand/chert:*",
+					"tfc:sand/claystone:*",
+					"tfc:sand/conglomerate:*",
+					"tfc:sand/dacite:*",
+					"tfc:sand/diorite:*",
+					"tfc:sand/dolomite:*",
+					"tfc:sand/foidolite:*",
+					"tfc:sand/gabbro:*",
+					"tfc:sand/gneiss:*",
+					"tfc:sand/granite:*",
+					"tfc:sand/greenschist:*",
+					"tfc:sand/jaspillite:*",
+					"tfc:sand/limestone:*",
+					"tfc:sand/marble:*",
+					"tfc:sand/mylonite:*",
+					"tfc:sand/phyllite:*",
+					"tfc:sand/quartzite:*",
+					"tfc:sand/rhyolite:*",
+					"tfc:sand/rocksalt:*",
+					"tfc:sand/schist:*",
+					"tfc:sand/shale:*",
+					"tfc:sand/slate:*",
+					"tfc:sand/travertine:*",
+					"tfc:sand/wackestone:*"
+				]
+			}
+		},
+		"replaceStrategy": "ADD",
+		"drops": [{
+				"selector": {
+					"weight": {
+						"value": 15
+					}
+				}
+			},
+			{
+				"item": {
+					"items": [
+						"contenttweaker:seashell"
+					]
+				}
+			}
+		]
+	}]
+}
