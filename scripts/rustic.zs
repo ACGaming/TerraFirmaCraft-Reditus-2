@@ -4,6 +4,7 @@
 // Mod required : Rustic
 // Scripts required : -
 
+import mods.rustic.Condenser;
 import mods.rustic.CrushingTub;
 import mods.terrafirmacraft.ItemRegistry;
 
@@ -17,18 +18,85 @@ recipes.remove(<rustic:chain_gold>);
 recipes.remove(<rustic:chain_silver>);
 
 // ADD
-recipes.addShaped(<rustic:chain>*12, [[null, <tfctech:metal/wrought_iron_wire>, <ore:hammer>.transformDamage(1)],[null, <tfctech:metal/wrought_iron_wire>, null], [null, <tfctech:metal/wrought_iron_wire>, null]]);
-recipes.addShaped(<rustic:chain_gold>*12, [[null, <tfctech:metal/gold_wire>, <ore:hammer>.transformDamage(1)],[null, <tfctech:metal/gold_wire>, null], [null, <tfctech:metal/gold_wire>, null]]);
-recipes.addShaped(<rustic:chain_silver>*12, [[null, <tfctech:metal/silver_wire>, <ore:hammer>.transformDamage(1)],[null, <tfctech:metal/silver_wire>, null], [null, <tfctech:metal/silver_wire>, null]]);
+recipes.addShaped(<rustic:chain>*12, [[null, <tfctech:metal/wrought_iron_wire>, <ore:hammer>.transformDamage()],[null, <tfctech:metal/wrought_iron_wire>, null], [null, <tfctech:metal/wrought_iron_wire>, null]]);
+recipes.addShaped(<rustic:chain_gold>*12, [[null, <tfctech:metal/gold_wire>, <ore:hammer>.transformDamage()],[null, <tfctech:metal/gold_wire>, null], [null, <tfctech:metal/gold_wire>, null]]);
+recipes.addShaped(<rustic:chain_silver>*12, [[null, <tfctech:metal/silver_wire>, <ore:hammer>.transformDamage()],[null, <tfctech:metal/silver_wire>, null], [null, <tfctech:metal/silver_wire>, null]]);
 
-recipes.addShapeless(<rustic:aloe_vera>, [<tfc:plants/water_canna>, <ore:knife>.transformDamage(1)]);
-recipes.addShapeless(<rustic:blood_orchid>, [<tfc:plants/snapdragon_red>, <ore:knife>.transformDamage(1)]);
-recipes.addShapeless(<rustic:chamomile>, [<tfc:plants/houstonia>, <ore:knife>.transformDamage(1)]);
-recipes.addShapeless(<rustic:cohosh>, [<tfc:plants/meads_milkweed>, <ore:knife>.transformDamage(1)]);
-recipes.addShapeless(<rustic:horsetail>, [<tfc:plants/field_horsetail>, <ore:knife>.transformDamage(1)]);
-recipes.addShapeless(<rustic:wind_thistle>, [<tfc:plants/morning_glory>, <ore:knife>.transformDamage(1)]);
+recipes.addShapeless(<rustic:aloe_vera>, [<tfc:plants/water_canna>, <ore:knife>.transformDamage()]);
+recipes.addShapeless(<rustic:blood_orchid>, [<tfc:plants/snapdragon_red>, <ore:knife>.transformDamage()]);
+recipes.addShapeless(<rustic:chamomile>, [<tfc:plants/houstonia>, <ore:knife>.transformDamage()]);
+recipes.addShapeless(<rustic:cohosh>, [<tfc:plants/meads_milkweed>, <ore:knife>.transformDamage()]);
+recipes.addShapeless(<rustic:horsetail>, [<tfc:plants/field_horsetail>, <ore:knife>.transformDamage()]);
+recipes.addShapeless(<rustic:wind_thistle>, [<tfc:plants/morning_glory>, <ore:knife>.transformDamage()]);
+
+// CONDENSER
+// Condenser.removeRecipe(IItemStack output);
+// Condenser.addRecipe(output, itemstack[] inputs, modifier, bottle, fluid, time);
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:instant_health", Duration: 1, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:instant_health", Duration: 1, Amplifier: 1}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:regeneration", Duration: 900, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:regeneration", Duration: 1800, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:regeneration", Duration: 450, Amplifier: 1}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:wither", Duration: 900, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:wither", Duration: 1800, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:wither", Duration: 450, Amplifier: 1}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:night_vision", Duration: 3600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:night_vision", Duration: 3600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:speed", Duration: 3600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:speed", Duration: 9600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:speed", Duration: 1800, Amplifier: 1}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:fire_resistance", Duration: 3600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:fire_resistance", Duration: 9600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:health_boost", Duration: 3600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:health_boost", Duration: 9600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:health_boost", Duration: 1800, Amplifier: 1}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:haste", Duration: 3600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:haste", Duration: 9600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:haste", Duration: 9600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:strength", Duration: 3600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:strength", Duration: 9600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:strength", Duration: 1800, Amplifier: 1}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:ironskin", Duration: 3600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:ironskin", Duration: 9600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:ironskin", Duration: 1800, Amplifier: 1}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:feather", Duration: 3600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:feather", Duration: 9600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 3600, Amplifier: 0}]}));
+Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 9600, Amplifier: 0}]}));
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:instant_health", Duration: 1, Amplifier: 0}]}), [<tfc:food/beef>, <rustic:chamomile>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:instant_health", Duration: 1, Amplifier: 1}]}), [<tfc:food/beef>, <rustic:chamomile>], <rustic:marsh_mallow>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:regeneration", Duration: 900, Amplifier: 0}]}), [<rustic:honeycomb>, <rustic:cohosh>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:regeneration", Duration: 1800, Amplifier: 0}]}), [<rustic:honeycomb>, <rustic:cohosh>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:regeneration", Duration: 450, Amplifier: 1}]}), [<rustic:honeycomb>, <rustic:cohosh>], <rustic:marsh_mallow>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:wither", Duration: 900, Amplifier: 0}]}), [<minecraft:soul_sand>, <rustic:deathstalk_mushroom>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:wither", Duration: 1800, Amplifier: 0}]}), [<minecraft:soul_sand>, <rustic:deathstalk_mushroom>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:wither", Duration: 450, Amplifier: 1}]}), [<minecraft:soul_sand>, <rustic:deathstalk_mushroom>], <rustic:marsh_mallow>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:night_vision", Duration: 3600, Amplifier: 0}]}), [<minecraft:spider_eye>, <rustic:mooncap_mushroom>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:night_vision", Duration: 3600, Amplifier: 0}]}), [<minecraft:spider_eye>, <rustic:mooncap_mushroom>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:speed", Duration: 3600, Amplifier: 0}]}), [<minecraft:sugar>, <rustic:wind_thistle>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:speed", Duration: 9600, Amplifier: 0}]}), [<minecraft:sugar>, <rustic:wind_thistle>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:speed", Duration: 1800, Amplifier: 1}]}), [<minecraft:sugar>, <rustic:wind_thistle>], <rustic:marsh_mallow>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:fire_resistance", Duration: 3600, Amplifier: 0}]}), [<ore:gemCoal>, <ore:ingotBrick>, <rustic:aloe_vera>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:fire_resistance", Duration: 9600, Amplifier: 0}]}), [<ore:gemCoal>, <ore:ingotBrick>, <rustic:aloe_vera>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:health_boost", Duration: 3600, Amplifier: 0}]}), [<ore:dustRedstone>, <minecraft:rotten_flesh>, <rustic:blood_orchid>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:health_boost", Duration: 9600, Amplifier: 0}]}), [<ore:dustRedstone>, <minecraft:rotten_flesh>, <rustic:blood_orchid>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:health_boost", Duration: 1800, Amplifier: 1}]}), [<ore:dustRedstone>, <minecraft:rotten_flesh>, <rustic:blood_orchid>], <rustic:marsh_mallow>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:haste", Duration: 3600, Amplifier: 0}]}), [<ore:dustRedstone>, <ore:nuggetIron>, <rustic:core_root>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:haste", Duration: 9600, Amplifier: 0}]}), [<ore:dustRedstone>, <ore:nuggetIron>, <rustic:core_root>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:haste", Duration: 9600, Amplifier: 0}]}), [<ore:dustRedstone>, <ore:nuggetIron>, <rustic:core_root>], <rustic:marsh_mallow>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:strength", Duration: 3600, Amplifier: 0}]}), [<ore:gunpowder>, <ore:bone>, <rustic:ginseng>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:strength", Duration: 9600, Amplifier: 0}]}), [<ore:gunpowder>, <ore:bone>, <rustic:ginseng>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:strength", Duration: 1800, Amplifier: 1}]}), [<ore:gunpowder>, <ore:bone>, <rustic:ginseng>], <rustic:marsh_mallow>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:ironskin", Duration: 3600, Amplifier: 0}]}), [<ore:clay>, <ore:leather>, <rustic:ironberries>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:ironskin", Duration: 9600, Amplifier: 0}]}), [<ore:clay>, <ore:leather>, <rustic:ironberries>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:ironskin", Duration: 1800, Amplifier: 1}]}), [<ore:clay>, <ore:leather>, <rustic:ironberries>], <rustic:marsh_mallow>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:feather", Duration: 3600, Amplifier: 0}]}), [<ore:paper>, <ore:feather>, <rustic:cloudsbluff>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:feather", Duration: 9600, Amplifier: 0}]}), [<ore:paper>, <ore:feather>, <rustic:cloudsbluff>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 3600, Amplifier: 0}]}), [<ore:netherrack>, <minecraft:blaze_powder>, <tfc:food/garlic>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 9600, Amplifier: 0}]}), [<ore:netherrack>, <minecraft:blaze_powder>, <tfc:food/garlic>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
 
 // CRUSHING TUB
+CrushingTub.removeRecipe(<liquid:water>, <minecraft:reeds>);
 CrushingTub.addRecipe(<liquid:applejuice> * 250, null, <tfc:food/green_apple>);
 CrushingTub.addRecipe(<liquid:applejuice> * 250, null, <tfc:food/red_apple>);
 CrushingTub.addRecipe(<liquid:oliveoil> * 250, null, <tfc:food/olive>);
@@ -104,7 +172,6 @@ CrushingTub.addRecipe(<liquid:wildberryjuice> * 250, null, <tfc:food/raspberry>)
 CrushingTub.addRecipe(<liquid:wildberryjuice> * 250, null, <tfc:food/snow_berry>);
 CrushingTub.addRecipe(<liquid:wildberryjuice> * 250, null, <tfc:food/strawberry>);
 CrushingTub.addRecipe(<liquid:wildberryjuice> * 250, null, <tfc:food/wintergreen_berry>);
-CrushingTub.removeRecipe(<liquid:water>, <minecraft:reeds>);
 
 // FOOD REGISTRY
 ItemRegistry.registerFood(<rustic:apple_juice>, 2, 20, 1.25, 5.25, 0, 0.3, 1.5, 0, 0);

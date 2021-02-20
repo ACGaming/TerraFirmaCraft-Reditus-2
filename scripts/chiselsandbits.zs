@@ -8,9 +8,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.block.IBlock;
 import crafttweaker.block.IBlockDefinition;
 
-val bucket = <tfc:wooden_bucket>;
-val waterbucket = bucket.onlyWithTag({Fluid: {FluidName: "fresh_water", Amount: 1000}});
-
 // REMOVE
 recipes.remove(<chiselsandbits:bitsaw_diamond>);
 recipes.remove(<chiselsandbits:chisel_diamond>);
@@ -26,9 +23,9 @@ recipes.addShaped("chiselsandbits_chisel_gold", <chiselsandbits:chisel_gold>, [[
 recipes.addShaped("chiselsandbits_chisel_iron", <chiselsandbits:chisel_iron>, [[<tfc:metal/ingot/wrought_iron>, <ore:rodWroughtIron>]]);
 recipes.addShaped("chiselsandbits_chisel_stone", <chiselsandbits:chisel_stone>, [[<ore:cobblestone>, <ore:stickWood>]]);
 recipes.addShaped("chiselsandbits_tape_measure", <chiselsandbits:tape_measure>, [[null, null, <ore:string>], [<tfc:metal/ingot/wrought_iron>, <ore:string>, <ore:dyeYellow>], [<tfc:metal/ingot/wrought_iron>, <tfc:metal/ingot/wrought_iron>, null]]);
-recipes.addShapeless("chiselsandbits_mirrorprint", <chiselsandbits:mirrorprint>, [waterbucket.transformReplace(<tfc:wooden_bucket>), <minecraft:paper>, <ore:dyeYellow>]);
-recipes.addShapeless("chiselsandbits_negativeprint", <chiselsandbits:negativeprint>, [waterbucket.transformReplace(<tfc:wooden_bucket>), <minecraft:paper>, <ore:dyeRed>]);
-recipes.addShapeless("chiselsandbits_positiveprint", <chiselsandbits:positiveprint>, [waterbucket.transformReplace(<tfc:wooden_bucket>), <minecraft:paper>, <ore:dyeBlue>]);
+recipes.addShapeless("chiselsandbits_mirrorprint", <chiselsandbits:mirrorprint>, [<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>), <minecraft:paper>, <ore:dyeYellow>]);
+recipes.addShapeless("chiselsandbits_negativeprint", <chiselsandbits:negativeprint>, [<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>), <minecraft:paper>, <ore:dyeRed>]);
+recipes.addShapeless("chiselsandbits_positiveprint", <chiselsandbits:positiveprint>, [<tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>), <minecraft:paper>, <ore:dyeBlue>]);
 
 // HARDNESS
 val cbrock = <chiselsandbits:chiseled_rock>.asBlock();

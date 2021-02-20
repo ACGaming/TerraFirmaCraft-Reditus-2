@@ -81,12 +81,6 @@ JEI.removeAndHide(<minecraft:wooden_shovel>);
 JEI.removeAndHide(<minecraft:wooden_sword>);
 
 // REMOVE
-recipes.remove(<tfc:food/barley_bread_sandwich>);
-recipes.remove(<tfc:food/cornbread_sandwich>);
-recipes.remove(<tfc:food/oat_bread_sandwich>);
-recipes.remove(<tfc:food/rice_bread_sandwich>);
-recipes.remove(<tfc:food/rye_bread_sandwich>);
-recipes.remove(<tfc:food/wheat_bread_sandwich>);
 recipes.removeByRecipeName("chisel:uncraft_blockbronze");
 recipes.removeByRecipeName("chisel:uncraft_blockcobalt");
 recipes.removeByRecipeName("chisel:uncraft_blockinvar");

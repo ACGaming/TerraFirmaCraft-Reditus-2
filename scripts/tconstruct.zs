@@ -85,7 +85,6 @@ recipes.addShaped(<tconstruct:smeltery_controller>, [[<ore:blockSeared>, <ore:bl
 recipes.addShaped(<tconstruct:throwball:1>, [[<minecraft:flint>, <ore:dustSulfur>, <minecraft:flint>], [<ore:dustSulfur>, <minecraft:flint>, <ore:dustSulfur>], [<minecraft:flint>, <ore:dustSulfur>, <minecraft:flint>]]);
 recipes.addShaped(<tconstruct:tinker_tank_controller>, [[<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>], [<ore:blockSeared>, <minecraft:bucket>, <ore:blockSeared>], [<ore:blockSeared>, <tfc:crucible>, <ore:blockSeared>]]);
 recipes.addShapeless(<tconstruct:materials:18>, [<ore:plantMoss>, <ore:plantMoss>, <ore:plantMoss>]);
-recipes.addShapeless(<tconstruct:nuggets:5> * 9, [<tconstruct:ingots:5>]);
 
 recipes.addShapeless(<tconstruct:axe_head>.withTag({Material: "tfc_aluminium"}), [<tfc:metal/axe_head/aluminium>]);
 recipes.addShapeless(<tconstruct:axe_head>.withTag({Material: "tfc_bismuth_bronze"}), [<tfc:metal/axe_head/bismuth_bronze>]);

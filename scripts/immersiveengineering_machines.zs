@@ -527,6 +527,7 @@ Crusher.removeRecipesForInput(<tfc:ore/sulfur>);
 
 Crusher.addRecipe(<minecraft:glowstone> * 1, <tfc:ore/selenite>, 512);
 Crusher.addRecipe(<minecraft:glowstone_dust> * 10, <minecraft:glowstone>, 512);
+Crusher.addRecipe(<minecraft:redstone> * 8, <tfc:ore/cinnabar>, 8000);
 Crusher.addRecipe(<tfc:food/barley_flour> * 2, <tfc:food/barley_grain>, 4000, <tfc:food/barley_flour> * 1, 0.1);
 Crusher.addRecipe(<tfc:food/barley_grain> * 1, <tfc:food/barley>, 4000, <tfc:food/barley_grain> * 1, 0.15);
 Crusher.addRecipe(<tfc:food/cornmeal_flour> * 2, <tfc:food/maize_grain>, 4000, <tfc:food/cornmeal_flour> * 1, 0.1);
