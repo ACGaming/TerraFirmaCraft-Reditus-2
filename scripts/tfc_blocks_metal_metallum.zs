@@ -39,8 +39,7 @@ val blocks = [
     <contenttweaker:blocktungsten>,
     <contenttweaker:blocktungsten_steel>,
     <contenttweaker:blockzirconium>,
-    <contenttweaker:blockzircaloy>,
-    <contenttweaker:blocktough>
+    <contenttweaker:blockzircaloy>
 ] as IItemStack[];
 
 val doubleIngots = [
@@ -72,8 +71,7 @@ val doubleIngots = [
     <tfc:metal/double_ingot/tungsten>,
     <tfc:metal/double_ingot/tungsten_steel>,
     <tfc:metal/double_ingot/zirconium>,
-    <tfc:metal/double_ingot/zircaloy>,
-    <tfc:metal/double_ingot/tough>
+    <tfc:metal/double_ingot/zircaloy>
 ] as IItemStack[];
 
 val oreDicts = [
@@ -105,8 +103,7 @@ val oreDicts = [
     <ore:blocktungsten>,
     <ore:blocktungsten_steel>,
     <ore:blockzirconium>,
-    <ore:blockzircaloy>,
-    <ore:blocktough>
+    <ore:blockzircaloy>
 ] as IOreDictEntry[];
 
 val metals = [
@@ -138,8 +135,7 @@ val metals = [
     "tungsten",
     "tungsten_steel",
     "zirconium",
-    "zircaloy",
-    "tough"
+    "zircaloy"
 ] as string[];
 
 for i, block in blocks {

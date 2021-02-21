@@ -29,7 +29,6 @@ var wolframite5 = VanillaFactory.createItem("wolframite5");
 wolframite5.register();
 
 //Add 25 units crushed ore
-
 var bauxite25 = VanillaFactory.createItem("bauxite25");
 bauxite25.register();
 

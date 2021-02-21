@@ -32,8 +32,7 @@ val blocks = [
     <contenttweaker:blocksheetmetalplatinum>,
     <contenttweaker:blocksheetmetalblack_steel>,
     <contenttweaker:blocksheetmetalblue_steel>,
-    <contenttweaker:blocksheetmetalred_steel>,
-    <contenttweaker:blocksheetmetalunknown>
+    <contenttweaker:blocksheetmetalred_steel>
 ] as IItemStack[];
 
 val sheets = [
@@ -56,8 +55,7 @@ val sheets = [
     <tfc:metal/sheet/platinum>,
     <tfc:metal/sheet/black_steel>,
     <tfc:metal/sheet/blue_steel>,
-    <tfc:metal/sheet/red_steel>,
-    <minecraft:beacon>
+    <tfc:metal/sheet/red_steel>
 ] as IItemStack[];
 
 val oreDicts = [
@@ -80,8 +78,7 @@ val oreDicts = [
     <ore:blockSheetmetalPlatinum>,
     <ore:blockSheetmetalBlackSteel>,
     <ore:blockSheetmetalBlueSteel>,
-    <ore:blockSheetmetalRedSteel>,
-    <ore:blockSheetmetalUnknown>
+    <ore:blockSheetmetalRedSteel>
 ] as IOreDictEntry[];
 
 val metals = [
@@ -104,8 +101,7 @@ val metals = [
     "platinum",
     "black_steel",
     "blue_steel",
-    "red_steel",
-    "unknown"
+    "red_steel"
 ] as string[];
 
 for i, block in blocks {
@@ -118,4 +114,4 @@ for i, block in blocks {
     ]);
 }
 
-<ore:blockSheetmetalAnyBronze>.add(<contenttweaker:blocksheetmetalbismuth_bronze>, <contenttweaker:blocksheetmetalblack_bronze>,<contenttweaker:blocksheetmetalbronze>);
+<ore:blockSheetmetalAnyBronze>.add(<contenttweaker:blocksheetmetalbismuth_bronze>, <contenttweaker:blocksheetmetalblack_bronze>, <contenttweaker:blocksheetmetalbronze>);

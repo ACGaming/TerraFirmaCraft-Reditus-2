@@ -38,8 +38,7 @@ val metals = [
     "tungsten",
     "tungsten_steel",
     "zirconium",
-    "zircaloy",
-    "tough"
+    "zircaloy"
 ] as string[];
 
 

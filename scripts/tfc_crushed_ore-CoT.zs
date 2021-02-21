@@ -10,7 +10,6 @@ import mods.contenttweaker.IItemRightClick;
 import mods.contenttweaker.Commands;
 
 //Add 5 units crushed ore
-
 var native_copper5 = VanillaFactory.createItem("native_copper5");
 native_copper5.register();
 
