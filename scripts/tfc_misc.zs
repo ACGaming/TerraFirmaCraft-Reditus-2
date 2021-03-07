@@ -25,6 +25,7 @@ val oreNuggetIron = <ore:nuggetIron>;
 val oreSeed = <ore:seed>;
 val oreWireAluminium = <ore:wireAluminium>;
 val oreWireAluminum = <ore:wireAluminum>;
+val oreFertilizer = <ore:fertilizer>;
 
 // REMOVE ALL FURNACE RECIPES
 furnace.removeAll();
@@ -33,6 +34,7 @@ furnace.removeAll();
 JEI.removeAndHide(<gardenstuff:material:3>);
 JEI.removeAndHide(<gardenstuff:material:4>);
 JEI.removeAndHide(<gardenstuff:metal_block>);
+JEI.removeAndHide(<minecraft:brewing_stand>);
 JEI.removeAndHide(<minecraft:diamond>);
 JEI.removeAndHide(<minecraft:diamond_axe>);
 JEI.removeAndHide(<minecraft:diamond_boots>);
@@ -81,6 +83,8 @@ JEI.removeAndHide(<minecraft:wooden_shovel>);
 JEI.removeAndHide(<minecraft:wooden_sword>);
 
 // REMOVE
+recipes.remove(<tfc:crop/product/jute_disc>);
+recipes.remove(<tfc:crop/product/olive_jute_disc>);
 recipes.removeByRecipeName("chisel:uncraft_blockbronze");
 recipes.removeByRecipeName("chisel:uncraft_blockcobalt");
 recipes.removeByRecipeName("chisel:uncraft_blockinvar");
@@ -112,9 +116,7 @@ recipes.removeByRecipeName("immersiveengineering:metal_storage/steel_ingot_uncra
 recipes.removeByRecipeName("immersiveengineering:metal_storage/uranium_ingot");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/uranium_ingot_uncraft");
 recipes.removeByRecipeName("immersiveengineering_metal_storage/iron_ingot_uncraft_modified");
-recipes.removeByRecipeName("tcomplement:steelworks/steel_ingot_from_block");
-recipes.removeByRecipeName("tcomplement:steelworks/steel_ingot_from_nugget");
-recipes.removeByRecipeName("tcomplement:steelworks/steel_nugget");
+recipes.removeByRecipeName("minecraft_stick_modified");
 recipes.removeByRecipeName("tconstruct:common/metals/alubrass/alubrass_ingot");
 recipes.removeByRecipeName("tconstruct:common/metals/ardite/ardite_ingot");
 recipes.removeByRecipeName("tconstruct:common/metals/ardite/ardite_nugget");
@@ -129,6 +131,7 @@ recipes.removeByRecipeName("tconstruct:common/metals/pigiron/pigiron_nugget");
 
 // ADD
 recipes.addShaped(<tfc:bloomery>, [[<ore:sheetDoubleAluminiumBrass>, <ore:sheetDoubleAluminiumBrass>, <ore:sheetDoubleAluminiumBrass>],[<ore:sheetDoubleAluminiumBrass>, null, <ore:sheetDoubleAluminiumBrass>], [<ore:sheetDoubleAluminiumBrass>, <ore:sheetDoubleAluminiumBrass>, <ore:sheetDoubleAluminiumBrass>]]);
+recipes.addShapeless(<minecraft:stick> * 2, [<ore:lumber>, <ore:saw>.transformDamage()]);
 
 // ORE DICTIONARY
 dustFertilizer.add(<alchemistry:fertilizer>);
@@ -140,6 +143,7 @@ oreBlockIron.add(<contenttweaker:blockwrought_iron>);
 oreBlockIron.remove(<minecraft:iron_block>);
 oreCatCookedMeat.add(<tfc:food/cooked_egg>);
 oreCatMeat.add(<minecraft:egg>);
+oreFertilizer.add(<tfc:powder/fertilizer>);
 oreGemDiamond.remove(<minecraft:diamond>);
 oreGemEmerald.remove(<minecraft:emerald>);
 oreIngotGold.remove(<minecraft:gold_ingot>);
@@ -242,17 +246,25 @@ Quern.addRecipe("wood_chips_quern", <ore:lumber>, <contenttweaker:wood_chips> * 
 
 // BARREL
 // Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int hours)
+Barrel.addRecipe("aged_beer_vinegar", null, <liquid:aged_beer> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_cider_vinegar", null, <liquid:aged_cider> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_corn_whiskey_vinegar", null, <liquid:aged_corn_whiskey> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_rum_vinegar", null, <liquid:aged_rum> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_rye_whiskey_vinegar", null, <liquid:aged_rye_whiskey> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_sake_vinegar", null, <liquid:aged_sake> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_vodka_vinegar", null, <liquid:aged_vodka> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_whiskey_vinegar", null, <liquid:aged_whiskey> * 250, null, <liquid:vinegar> * 250, 8);
 Barrel.addRecipe("wood_pulp_barrel", <contenttweaker:wood_chips>, <liquid:fresh_water> * 250, <contenttweaker:wood_pulp>, null, 2);
 
 // DRYING RACK
 // Rack.addRecipe(String registryName, IIngredient input, ItemStack output, int hours, float chance);
 
 // ITEM HEAT
-ItemRegistry.registerItemHeat(<dynamictreestfc:seed/chestnut>, 0.85, 480, false);
+//ItemRegistry.registerItemHeat(<dynamictreestfc:seed/chestnut>, 0.85, 480, false);
 ItemRegistry.registerItemHeat(<contenttweaker:roasted_chestnut>, 0.31, 480, true);
 
 // HEATING
-Heating.addRecipe("chestnut_heating", <dynamictreestfc:seed/chestnut>, <contenttweaker:roasted_chestnut>, 190, 480);
+//Heating.addRecipe("chestnut_heating", <dynamictreestfc:seed/chestnut>, <contenttweaker:roasted_chestnut>, 190, 480);
 
 // FOOD REGISTRY
 // ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);

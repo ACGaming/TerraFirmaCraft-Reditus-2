@@ -800,7 +800,7 @@ Squeezer.addRecipe(null, <liquid:applejuice> * 250, <tfc:food/red_apple>, 1024);
 Squeezer.addRecipe(null, <liquid:grapejuice> * 250, <rustic:grapes>, 1024);
 Squeezer.addRecipe(null, <liquid:plantoil> * 80, <ore:listAllseeds>, 512);
 Squeezer.addRecipe(null, <liquid:wildberryjuice> * 250, <rustic:wildberries>, 1024);
-Squeezer.addRecipe(<ore:paper>, <liquid:fresh_water> * 250, <contenttweaker:wood_pulp>, 1024);
+Squeezer.addRecipe(<minecraft:paper>, <liquid:fresh_water> * 250, <contenttweaker:wood_pulp>, 1024);
 
 // MIXER
 Mixer.addRecipe(<liquid:beer> * 1000, <liquid:fresh_water> * 1000, [<ore:grainBarley> * 4], 1024);

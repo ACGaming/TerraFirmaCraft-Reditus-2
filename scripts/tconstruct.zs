@@ -78,6 +78,12 @@ val gasolineT = definitionGasoline.temperature;
 definitionGasoline.temperature = 945;
 Fuel.registerFuel(<liquid:gasoline>, 90);
 
+// SMELTERY FUEL (DIESEL)
+val definitionDiesel = <liquid:diesel>.definition;
+val dieselT = definitionDiesel.temperature;
+definitionDiesel.temperature = 2000;
+Fuel.registerFuel(<liquid:diesel>, 100);
+
 // ADD
 recipes.addShaped(<conarm:travel_sack>, [[<ore:string>, <ore:leather>, <ore:string>], [<ore:rawHide>, <ore:chest>, <ore:rawHide>], [<ore:leather>, <ore:leather>, <ore:leather>]]);
 recipes.addShaped(<tconstruct:seared_furnace_controller>, [[<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>], [<tfc:bellows>, <tfc:bloomery>, <tfc:bellows>], [<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>]]);
@@ -108,29 +114,6 @@ recipes.addShapeless(<tconstruct:axe_head>.withTag({Material: "tfc_beryllium_cop
 recipes.addShapeless(<tconstruct:axe_head>.withTag({Material: "tfc_boron"}), [<tfc:metal/axe_head/boron>]);
 recipes.addShapeless(<tconstruct:axe_head>.withTag({Material: "tfc_nickel_silver"}), [<tfc:metal/axe_head/nickel_silver>]);
 recipes.addShapeless(<tconstruct:axe_head>.withTag({Material: "tfc_zircaloy"}), [<tfc:metal/axe_head/zircaloy>]);
-
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_aluminium"}), [<tfc:metal/chisel_head/aluminium>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_bismuth_bronze"}), [<tfc:metal/chisel_head/bismuth_bronze>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_black_bronze"}), [<tfc:metal/chisel_head/black_bronze>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_black_steel"}), [<tfc:metal/chisel_head/black_steel>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_blue_steel"}), [<tfc:metal/chisel_head/blue_steel>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "bronze"}), [<tfc:metal/chisel_head/bronze>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "cobalt"}), [<tfc:metal/chisel_head/cobalt>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "copper"}), [<tfc:metal/chisel_head/copper>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_invar"}), [<tfc:metal/chisel_head/invar>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "manyullyn"}), [<tfc:metal/chisel_head/manyullyn>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_mithril"}), [<tfc:metal/chisel_head/mithril>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_osmium"}), [<tfc:metal/chisel_head/osmium>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_red_steel"}), [<tfc:metal/chisel_head/red_steel>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "steel"}), [<tfc:metal/chisel_head/steel>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_titanium"}), [<tfc:metal/chisel_head/titanium>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_tungsten"}), [<tfc:metal/chisel_head/tungsten>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_tungsten_steel"}), [<tfc:metal/chisel_head/tungsten_steel>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_wrought_iron"}), [<tfc:metal/chisel_head/wrought_iron>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_beryllium_copper"}), [<tfc:metal/chisel_head/beryllium_copper>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_boron"}), [<tfc:metal/chisel_head/boron>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_nickel_silver"}), [<tfc:metal/chisel_head/nickel_silver>]);
-recipes.addShapeless(<tcomplement:chisel_head>.withTag({Material: "tfc_zircaloy"}), [<tfc:metal/chisel_head/zircaloy>]);
 
 recipes.addShapeless(<tconstruct:hammer_head>.withTag({Material: "tfc_aluminium"}), [<tfc:metal/hammer_head/aluminium>]);
 recipes.addShapeless(<tconstruct:hammer_head>.withTag({Material: "tfc_bismuth_bronze"}), [<tfc:metal/hammer_head/bismuth_bronze>]);
@@ -329,8 +312,8 @@ Alloy.addRecipe(<liquid:sterling_silver> * 10, [<liquid:silver> * 7, <liquid:cop
 Alloy.addRecipe(<liquid:tungsten_steel> * 5, [<liquid:tungsten> * 1, <liquid:steel> * 4]);
 
 // ADD CASTING
-Casting.addTableRecipe(<minecraft:golden_apple:0>, <ore:apple>, <liquid:gold>, 1296, true, 2000);
-Casting.addTableRecipe(<minecraft:golden_carrot>, <ore:carrot>, <liquid:gold>, 1296, true, 2000);
+Casting.addTableRecipe(<minecraft:golden_apple:0>, <ore:apple>, <liquid:gold>, 800, true, 2000);
+Casting.addTableRecipe(<minecraft:golden_carrot>, <ore:carrot>, <liquid:gold>, 800, true, 2000);
 
 Casting.addTableRecipe(<tfc:metal/axe_head/aluminium>, <tfc:ceramics/fired/mold/axe_head>, <liquid:aluminium>, 100, false, 40);
 Casting.addTableRecipe(<tfc:metal/axe_head/bismuth_bronze>, <tfc:ceramics/fired/mold/axe_head>, <liquid:bismuth_bronze>, 100, false, 40);

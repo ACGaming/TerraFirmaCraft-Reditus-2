@@ -150,13 +150,13 @@
       "heartbeatTimeFactor": 100.0,
       "heartbeatVolume": 1.0,
       "lowhealth": {
-        "disabled": false,
+        "disabled": true,
         "opacity": 1.0,
         "scale": 1.0,
         "animationSpeed": 0
       },
       "blur": {
-        "disabled": false,
+        "disabled": true,
         "opacity": 1.0
       }
     }

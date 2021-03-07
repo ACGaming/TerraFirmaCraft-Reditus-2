@@ -1,0 +1,302 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 2,
+                "max": 6
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "tfc:gem/diamond:2",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 7
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/ingot/wrought_iron",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/ingot/gold",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 7
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:gem/emerald:2",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:crop/seeds/beet",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:saddle",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:halter",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/sword/steel",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/boots/steel",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/chestplate/steel",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/greaves/steel",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/helmet/steel",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/pick/steel",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/shovel/steel",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/sword/wrought_iron",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/boots/wrought_iron",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/chestplate/wrought_iron",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/greaves/wrought_iron",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/helmet/wrought_iron",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/pick/wrought_iron",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "tfc:metal/shovel/wrought_iron",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "treasure": true,
+                            "levels": {
+                                "min": 20,
+                                "max": 39
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

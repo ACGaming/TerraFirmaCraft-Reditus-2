@@ -198,7 +198,7 @@ ChoppingBlock.add(<tfc:wood/log/white_cedar:0>, <tfc:wood/lumber/white_cedar> * 
 ChoppingBlock.add(<tfc:wood/log/willow:0>, <tfc:wood/lumber/willow> * 12, 4, false);
 
 // PRESS
-recipes.addShaped("horsepower_press", <horsepower:press>, [[<minecraft:lead>, <ore:stickWood>, <minecraft:lead>], [<ore:plankWood>, <ore:hopper>, <ore:plankWood>], [<ore:plankWood>, <tfc:wooden_bucket>.noReturn(), <ore:plankWood>]]);
+recipes.addShaped("horsepower_press", <horsepower:press>, [[<minecraft:lead>, <ore:stickWood>, <minecraft:lead>], [<ore:plankWood>, <minecraft:hopper>, <ore:plankWood>], [<ore:plankWood>, <tfc:wooden_bucket>.noReturn(), <ore:plankWood>]]);
 
 Press.add(<contenttweaker:wood_pulp> * 3, <minecraft:paper>);
 Press.add(<minecraft:string> * 8, <tfc:animal/product/silk_cloth>);
