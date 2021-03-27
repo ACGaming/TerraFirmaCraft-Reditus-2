@@ -42,6 +42,7 @@ recipes.remove(<immersiveengineering:material:20>);
 recipes.remove(<immersiveengineering:material:21>);
 recipes.remove(<immersiveengineering:material:22>);
 recipes.remove(<immersiveengineering:material:23>);
+recipes.remove(<immersiveengineering:material>);
 recipes.remove(<immersiveengineering:metal:29>);
 recipes.remove(<immersiveengineering:metal_decoration0:3>);
 recipes.remove(<immersiveengineering:metal_decoration0:7>);
@@ -67,6 +68,7 @@ recipes.remove(<immersiveengineering:storage:8>);
 recipes.remove(<immersiveengineering:tool:1>);
 recipes.remove(<immersiveengineering:tool>);
 recipes.remove(<immersiveengineering:toolupgrade:4>);
+recipes.remove(<immersiveengineering:treated_wood:*>);
 recipes.remove(<immersiveengineering:wooden_device0:2>);
 
 // ADD
@@ -102,7 +104,6 @@ recipes.addShaped("immersive_wooden_post",<immersiveengineering:wooden_device1:3
 recipes.addShaped("immersive_workbench", <immersiveengineering:wooden_device0:2>, [[null, null, null],[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>], [<ore:workbench>, null, <ore:fenceTreatedWood>]]);
 recipes.addShaped("immersiveengineering_bayonet", <immersiveengineering:toolupgrade:4>, [[<tfc:metal/sword/black_steel>, <ore:ingotSteel>], [<ore:ingotSteel>, <ore:plankTreatedWood>]]);
 recipes.addShaped("immersiveengineering_jerrycan", <immersiveengineering:jerrycan>, [[null, <ore:sheetSteel>, <ore:sheetSteel>], [<ore:sheetSteel>, <tfc:wooden_bucket>, <tfc:wooden_bucket>], [<ore:sheetSteel>, <tfc:wooden_bucket>, <tfc:wooden_bucket>]]);
-recipes.addShaped(<tfc:metal/ingot/steel>, [[<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>],[<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>], [<ore:nuggetSteel>, <ore:nuggetSteel>, <ore:nuggetSteel>]]);
 recipes.addShapeless("immersive_conveyor_dropper", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:dropper"}), [<immersiveengineering:tool>, <ore:trapdoormetal>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})]);
 recipes.addShapeless("immersive_conveyor_uncontrolled", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:uncontrolled"}), [<immersiveengineering:tool>, <ore:dustRedstone>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})]);
 recipes.addShapeless("immersive_reinforced_upgrade", <immersiveengineering:stone_decoration:2>, [<immersiveengineering:stone_decoration:1>,<tfc:metal/double_sheet/steel>,<immersiveengineering:tool>]);
@@ -110,8 +111,7 @@ recipes.addShapeless(<immersiveengineering:material:20>, [<ore:plateCopper>, <or
 recipes.addShapeless(<immersiveengineering:material:21>, [<ore:plateElectrum>, <ore:shears>.transformDamage()]);
 recipes.addShapeless(<immersiveengineering:material:22>, [<ore:plateAluminum>, <ore:shears>.transformDamage()]);
 recipes.addShapeless(<immersiveengineering:material:23>, [<ore:plateSteel>, <ore:shears>.transformDamage()]);
-recipes.addShapeless(<immersiveengineering:material> * 2, [<ore:saw>.transformDamage(), <ore:plankTreatedWood>]);
-recipes.addShapeless(<tfc:metal/ingot/steel> * 9, [<ore:blockSteel>]);
+recipes.addShapeless(<immersiveengineering:material> * 8, [<ore:saw>.transformDamage(), <ore:plankTreatedWood>]);
 recipes.addShapeless(<tfc:metal/sheet/aluminium>, [<immersiveengineering:sheetmetal:1>]);
 recipes.addShapeless(<tfc:metal/sheet/constantan>, [<immersiveengineering:sheetmetal:6>]);
 recipes.addShapeless(<tfc:metal/sheet/copper>, [<immersiveengineering:sheetmetal>]);
@@ -153,4 +153,4 @@ Anvil.addRecipe("ie_faraday_leggings", <ore:sheetDoubleAluminium>, <immersiveeng
 
 // BARREL
 Barrel.addRecipe("treated_wood_planks", <ore:plankWood>, <liquid:creosote> * 125, <immersiveengineering:treated_wood>, null, 16);
-Barrel.addRecipe("treated_wood_stick", <ore:stickWood>, <liquid:creosote> * 65, <immersiveengineering:material>, null, 16);
+Barrel.addRecipe("treated_wood_stick", <ore:stickWood>, <liquid:creosote> * 20, <immersiveengineering:material>, null, 16);

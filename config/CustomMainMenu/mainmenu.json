@@ -111,8 +111,8 @@
 			"hoverSound": "tfc:item.jug.blow",
 			"pressSound": "tfc:animal.frog"
 		},
-		
-				"server": {
+
+		"server": {
 			"text": "",
 			"posX": -64,
 			"posY": 160,
@@ -127,16 +127,23 @@
 			},
 			"hoverSound": "tfc:item.jug.blow",
 			"pressSound": "tfc:animal.frog"
-		}
-	},
+		},
 
-	"texts": {
-		"modpack_name": {
-			"text": "TerraFirmaCraft Reditus 2",
-			"posX": 2,
-			"posY": -65,
-			"color": 13487565,
-			"alignment": "bottom_left"
+		"menu_music": {
+			"text": "Music by Albertvvl",
+			"posX": -319,
+			"posY": 236,
+			"width": 98,
+			"height": 20,
+			"texture": "tfc:textures/button_small.png",
+			"normalTextColor": 13487565,
+			"hoverTextColor": 16777215,
+			"action": {
+				"type": "openLink",
+				"link": "https://www.youtube.com/watch?v=SuXLBmegxBA"
+			},
+			"hoverSound": "tfc:item.jug.blow",
+			"pressSound": "tfc:animal.frog"
 		}
 	},
 

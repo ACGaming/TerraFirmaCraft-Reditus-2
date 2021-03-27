@@ -803,8 +803,11 @@ Squeezer.addRecipe(null, <liquid:wildberryjuice> * 250, <rustic:wildberries>, 10
 Squeezer.addRecipe(<minecraft:paper>, <liquid:fresh_water> * 250, <contenttweaker:wood_pulp>, 1024);
 
 // MIXER
+Mixer.removeRecipe(<liquid:concrete>);
+
 Mixer.addRecipe(<liquid:beer> * 1000, <liquid:fresh_water> * 1000, [<ore:grainBarley> * 4], 1024);
 Mixer.addRecipe(<liquid:cider> * 1000, <liquid:fresh_water> * 1000, [<ore:apple> * 4], 1024);
+Mixer.addRecipe(<liquid:concrete> * 500, <liquid:fresh_water> * 500, [<ore:sand>, <ore:sand>, <ore:clay>, <ore:gravel>], 3200);
 Mixer.addRecipe(<liquid:corn_whiskey> * 1000, <liquid:fresh_water> * 1000, [<ore:maize> * 4], 1024);
 Mixer.addRecipe(<liquid:limewater> * 1000, <liquid:fresh_water> * 1000, [<ore:dustFlux> * 2], 512);
 Mixer.addRecipe(<liquid:rum> * 1000, <liquid:fresh_water> * 1000, [<tfc:food/sugarcane> * 4], 1024);
@@ -835,6 +838,8 @@ Refinery.addRecipe(<liquid:brine> * 2, <liquid:vinegar>, <liquid:salt_water>, 51
 Refinery.addRecipe(<liquid:milk_curdled>, <liquid:vinegar>, <liquid:milk>, 512);
 
 // BOTTLING MACHINE
+BottlingMachine.removeRecipe(<minecraft:sponge:1>);
+
 BottlingMachine.addRecipe(<minecraft:leather> * 1, <tfc:hide/scraped/small>, <liquid:tannin> * 300);
 BottlingMachine.addRecipe(<minecraft:leather> * 2, <tfc:hide/scraped/medium>, <liquid:tannin> * 400);
 BottlingMachine.addRecipe(<minecraft:leather> * 3, <tfc:hide/scraped/large>, <liquid:tannin> * 500);
@@ -845,6 +850,7 @@ BottlingMachine.addRecipe(<tfc:hide/prepared/small>, <tfc:hide/scraped/small>, <
 BottlingMachine.addRecipe(<tfc:hide/soaked/large>, <tfc:hide/raw/large>, <liquid:limewater> * 500);
 BottlingMachine.addRecipe(<tfc:hide/soaked/medium>, <tfc:hide/raw/medium>, <liquid:limewater> * 400);
 BottlingMachine.addRecipe(<tfc:hide/soaked/small>, <tfc:hide/raw/small>, <liquid:limewater> * 300);
+BottlingMachine.addRecipe(<minecraft:sponge:1>, <minecraft:sponge>, <liquid:fresh_water> * 1000);
 
 // ALLOY SMELTER
 AlloySmelter.removeRecipe(<tconstruct:ingots:5>);

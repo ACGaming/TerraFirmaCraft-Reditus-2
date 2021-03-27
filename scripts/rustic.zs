@@ -18,9 +18,9 @@ recipes.remove(<rustic:chain_gold>);
 recipes.remove(<rustic:chain_silver>);
 
 // ADD
-recipes.addShaped(<rustic:chain>*12, [[null, <tfctech:metal/wrought_iron_wire>, <ore:hammer>.transformDamage()],[null, <tfctech:metal/wrought_iron_wire>, null], [null, <tfctech:metal/wrought_iron_wire>, null]]);
-recipes.addShaped(<rustic:chain_gold>*12, [[null, <tfctech:metal/gold_wire>, <ore:hammer>.transformDamage()],[null, <tfctech:metal/gold_wire>, null], [null, <tfctech:metal/gold_wire>, null]]);
-recipes.addShaped(<rustic:chain_silver>*12, [[null, <tfctech:metal/silver_wire>, <ore:hammer>.transformDamage()],[null, <tfctech:metal/silver_wire>, null], [null, <tfctech:metal/silver_wire>, null]]);
+recipes.addShaped(<rustic:chain> * 12, [[null, <tfctech:metal/wrought_iron_wire>, <ore:hammer>.transformDamage()],[null, <tfctech:metal/wrought_iron_wire>, null], [null, <tfctech:metal/wrought_iron_wire>, null]]);
+recipes.addShaped(<rustic:chain_gold> * 12, [[null, <tfctech:metal/gold_wire>, <ore:hammer>.transformDamage()],[null, <tfctech:metal/gold_wire>, null], [null, <tfctech:metal/gold_wire>, null]]);
+recipes.addShaped(<rustic:chain_silver> * 12, [[null, <tfctech:metal/silver_wire>, <ore:hammer>.transformDamage()],[null, <tfctech:metal/silver_wire>, null], [null, <tfctech:metal/silver_wire>, null]]);
 
 recipes.addShapeless(<rustic:aloe_vera>, [<tfc:plants/water_canna>, <ore:knife>.transformDamage()]);
 recipes.addShapeless(<rustic:blood_orchid>, [<tfc:plants/snapdragon_red>, <ore:knife>.transformDamage()]);
@@ -182,17 +182,17 @@ CrushingTub.addRecipe(<liquid:wildberryjuice> * 250, null, <tfc:food/wintergreen
 
 // FOOD REGISTRY
 ItemRegistry.registerFood(<rustic:apple_juice>, 2, 20, 1.25, 5.25, 0, 0.3, 1.5, 0, 0);
-ItemRegistry.registerFood(<rustic:chili_pepper>, 2, 5, 0.5, 1.4, 0, 1.5, 0.3, 0, 0);
+//ItemRegistry.registerFood(<rustic:chili_pepper>, 2, 5, 0.5, 1.4, 0, 1.5, 0.3, 0, 0);
 ItemRegistry.registerFood(<rustic:core_root>, 2, 5, 0.5, 1.4 , 0, 1.5, 0.3, 0, 0);
 ItemRegistry.registerFood(<rustic:ginseng>, 2, 5, 0.5, 1.4 , 0, 1.5, 0.3, 0, 0);
 ItemRegistry.registerFood(<rustic:grape_juice>, 2, 20, 1.25, 5.25, 0, 0.3, 1.5, 0, 0);
-ItemRegistry.registerFood(<rustic:grapes>, 3, 10, 0.5, 1.72, 0, 0, 1.5, 0, 0);
-ItemRegistry.registerFood(<rustic:ironberries>, 2, 5, 0.5, 1.75, 0, 0, 1, 0, 0);
+//ItemRegistry.registerFood(<rustic:grapes>, 3, 10, 0.5, 1.72, 0, 0, 1.5, 0, 0);
+//ItemRegistry.registerFood(<rustic:ironberries>, 2, 5, 0.5, 1.75, 0, 0, 1, 0, 0);
 ItemRegistry.registerFood(<rustic:ironberry_juice>, 2, 20, 1.25, 5.25, 0, 0.3, 1.5, 0, 0);
 ItemRegistry.registerFood(<rustic:marsh_mallow>, 2, 5, 0.5, 1.4 , 0, 1.5, 0.3, 0, 0);
-ItemRegistry.registerFood(<rustic:olives>, 3, 10, 0.5, 1.72, 0, 0, 1.5, 0, 0);
+//ItemRegistry.registerFood(<rustic:olives>, 3, 10, 0.5, 1.72, 0, 0, 1.5, 0, 0);
 ItemRegistry.registerFood(<rustic:tomato>, 2, 5, 0.5, 1.4, 0, 1.5, 0.3, 0, 0);
-ItemRegistry.registerFood(<rustic:wildberries>, 2, 5, 0.5, 1.75, 0, 0, 1, 0, 0);
+//ItemRegistry.registerFood(<rustic:wildberries>, 2, 5, 0.5, 1.75, 0, 0, 1, 0, 0);
 ItemRegistry.registerFood(<rustic:wildberry_juice>, 2, 20, 1.25, 5.25, 0, 0.3, 1.5, 0, 0);
 
 // ORE DICTIONARY

@@ -31,6 +31,7 @@ JEI.removeAndHide(<tconstruct:edible:31>);
 JEI.removeAndHide(<tconstruct:edible:32>);
 JEI.removeAndHide(<tconstruct:edible:33>);
 JEI.removeAndHide(<tconstruct:edible:34>);
+JEI.removeAndHide(<tconstruct:soil>);
 
 // REMOVE
 recipes.remove(<conarm:travel_sack>);
@@ -613,6 +614,9 @@ Casting.addTableRecipe(<tfc:metal/sword_blade/beryllium_copper>, <tfc:ceramics/f
 Casting.addTableRecipe(<tfc:metal/sword_blade/boron>, <tfc:ceramics/fired/mold/sword_blade>, <liquid:boron>, 200, false, 80);
 Casting.addTableRecipe(<tfc:metal/sword_blade/nickel_silver>, <tfc:ceramics/fired/mold/sword_blade>, <liquid:nickel_silver>, 200, false, 80);
 Casting.addTableRecipe(<tfc:metal/sword_blade/zircaloy>, <tfc:ceramics/fired/mold/sword_blade>, <liquid:zircaloy>, 200, false, 80);
+
+// ADD MELTING
+Melting.addRecipe(<liquid:stone> * 50, <tfc_tinker:grout_brick>);
 
 // ADD HEATING
 ItemRegistry.registerItemHeat(<tconstruct:materials:9>, 0.31, 480, true);
