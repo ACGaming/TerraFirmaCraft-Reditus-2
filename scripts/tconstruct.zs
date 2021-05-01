@@ -629,3 +629,6 @@ ItemRegistry.registerItemHeat(<tconstruct:soil:5>, 0.85, 480, false);
 Heating.addRecipe("slime_crystal_1", <tconstruct:soil:1>, <tconstruct:materials:9>, 190, 480);
 Heating.addRecipe("slime_crystal_2", <tconstruct:soil:2>, <tconstruct:materials:10>, 190, 480);
 Heating.addRecipe("slime_crystal_3", <tconstruct:soil:5>, <tconstruct:materials:11>, 190, 480);
+
+// TOOLTIPS
+<tconstruct:piggybackpack>.addTooltip("Don't you dare use it while wearing a Wearable Backpack!");

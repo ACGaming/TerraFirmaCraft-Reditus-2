@@ -236,6 +236,7 @@ BlastFurnace.addFuel(<tfc:ore/lignite>, 500);
 
 BlastFurnace.addRecipe(<immersiveengineering:material:19>, <immersiveengineering:material:18>, 598);
 BlastFurnace.addRecipe(<immersiveengineering:storage:8>, <minecraft:iron_block>, 4186, <immersiveengineering:material:7> * 8);
+BlastFurnace.addRecipe(<mcwroofs:rec_tile>, <mcwroofs:tile_clay>, 600, null);
 BlastFurnace.addRecipe(<minecraft:brick>, <minecraft:clay_ball>, 600, null);
 BlastFurnace.addRecipe(<minecraft:end_stone>, <ore:stone>, 6400, <immersiveengineering:material:7>);
 BlastFurnace.addRecipe(<minecraft:glass>, <ore:blockSand>, 1200, <immersiveengineering:material:7>);
