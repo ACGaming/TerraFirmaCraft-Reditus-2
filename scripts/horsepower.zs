@@ -73,6 +73,7 @@ ItemRegistry.registerItemSize(<horsepower:press>,"LARGE", "HEAVY");
 recipes.addShaped("horsepower_grindstone", <horsepower:grindstone>, [[<minecraft:lead>, <ore:stickWood>, <minecraft:lead>], [<ore:stone>, <ore:stone>, <ore:stone>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
 
 Grindstone.add(<ca:coffee_beans:*>, <ca:coffee_ground> * 2, 8);
+Grindstone.add(<ca:coffee_cherries_dried:*>, <ca:coffee_beans_green> * 2, 8);
 Grindstone.add(<contenttweaker:seashell>, <tfctech:powder/lime> * 2, 8);
 Grindstone.add(<firmalife:cinnamon>, <firmalife:ground_cinnamon> * 4, 8);
 Grindstone.add(<immersiveengineering:material:6>, <immersiveengineering:material:17>, 8);

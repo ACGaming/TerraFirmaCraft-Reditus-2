@@ -302,15 +302,18 @@ recipes.addShapeless(<tconstruct:sword_blade>.withTag({Material: "tfc_zircaloy"}
 
 // ADD ALLOY
 Alloy.addRecipe(<liquid:bismuth_bronze> * 5, [<liquid:brass> * 4, <liquid:bismuth> * 1]);
+Alloy.addRecipe(<liquid:bismuth_bronze> * 8, [<liquid:zinc> * 2, <liquid:copper> * 5, <liquid:bismuth> * 1]);
 Alloy.addRecipe(<liquid:black_bronze> * 5, [<liquid:electrum> * 2, <liquid:copper> * 3]);
+Alloy.addRecipe(<liquid:black_bronze> * 7, [<liquid:copper> * 5, <liquid:silver> * 1, <liquid:gold> * 1]);
 Alloy.addRecipe(<liquid:black_steel> * 2, [<liquid:pig_iron> * 1, <liquid:steel> * 1]);
 Alloy.addRecipe(<liquid:black_steel> * 2, [<liquid:pigiron> * 1, <liquid:steel> * 1]);
-Alloy.addRecipe(<liquid:blue_steel> * 9, [<liquid:black_steel> * 5, <liquid:bismuth_bronze> * 1, <liquid:sterling_silver> * 1, <liquid:steel> * 2]);
 Alloy.addRecipe(<liquid:mithril> * 10, [<liquid:copper> * 9, <liquid:antimony> * 1]);
-Alloy.addRecipe(<liquid:red_steel> * 9, [<liquid:black_steel> * 5, <liquid:rose_gold> * 1, <liquid:brass> * 1, <liquid:steel> * 2]);
-Alloy.addRecipe(<liquid:rose_gold> * 5, [<liquid:gold> * 4, <liquid:copper> * 1]);
-Alloy.addRecipe(<liquid:sterling_silver> * 10, [<liquid:silver> * 7, <liquid:copper> * 3]);
-Alloy.addRecipe(<liquid:tungsten_steel> * 5, [<liquid:tungsten> * 1, <liquid:steel> * 4]);
+Alloy.addRecipe(<liquid:rose_gold> * 9, [<liquid:copper> * 2, <liquid:gold> * 7]);
+Alloy.addRecipe(<liquid:sterling_silver> * 8, [<liquid:copper> * 2, <liquid:silver> * 6]);
+Alloy.addRecipe(<liquid:tungsten_steel> * 9, [<liquid:tungsten> * 1, <liquid:steel> * 8]);
+Alloy.addRecipe(<liquid:weak_blue_steel> * 9, [<liquid:black_steel> * 5, <liquid:steel> * 2, <liquid:bismuth_bronze> * 1, <liquid:sterling_silver> * 1]);
+Alloy.addRecipe(<liquid:weak_red_steel> * 9, [<liquid:black_steel> * 5, <liquid:steel> * 2, <liquid:brass> * 1, <liquid:rose_gold> * 1]);
+Alloy.addRecipe(<liquid:weak_steel> * 9, [<liquid:steel> * 5, <liquid:nickel> * 2, <liquid:black_bronze> * 2]);
 
 // ADD CASTING
 Casting.addTableRecipe(<minecraft:golden_apple:0>, <ore:apple>, <liquid:gold>, 800, true, 2000);
