@@ -1,0 +1,67 @@
+{
+	"rules": [{
+		"match": {
+			"blocks": {
+				"blocks": [
+					"tfc:dirt/andesite:*",
+					"tfc:dirt/arkose:*",
+					"tfc:dirt/basalt:*",
+					"tfc:dirt/blaimorite:*",
+					"tfc:dirt/blueschist:*",
+					"tfc:dirt/boninite:*",
+					"tfc:dirt/carbonatite:*",
+					"tfc:dirt/cataclasite:*",
+					"tfc:dirt/chalk:*",
+					"tfc:dirt/chert:*",
+					"tfc:dirt/claystone:*",
+					"tfc:dirt/conglomerate:*",
+					"tfc:dirt/dacite:*",
+					"tfc:dirt/diorite:*",
+					"tfc:dirt/dolomite:*",
+					"tfc:dirt/foidolite:*",
+					"tfc:dirt/gabbro:*",
+					"tfc:dirt/gneiss:*",
+					"tfc:dirt/granite:*",
+					"tfc:dirt/greenschist:*",
+					"tfc:dirt/jaspillite:*",
+					"tfc:dirt/limestone:*",
+					"tfc:dirt/marble:*",
+					"tfc:dirt/mylonite:*",
+					"tfc:dirt/phyllite:*",
+					"tfc:dirt/quartzite:*",
+					"tfc:dirt/rhyolite:*",
+					"tfc:dirt/rocksalt:*",
+					"tfc:dirt/schist:*",
+					"tfc:dirt/shale:*",
+					"tfc:dirt/slate:*",
+					"tfc:dirt/travertine:*",
+					"tfc:dirt/wackestone:*"
+				]
+			},
+			"harvester": {
+				"type": "PLAYER",
+				"heldItemMainHand": {
+					"items": [
+						"waterstrainer:garden_trowel:*"
+					]
+				}
+			}
+		},
+		"replaceStrategy": "ADD",
+		"drops": [{
+				"selector": {
+					"weight": {
+						"value": 30
+					}
+				}
+			},
+			{
+				"item": {
+					"items": [
+						"waterstrainer:worm"
+					]
+				}
+			}
+		]
+	}]
+}

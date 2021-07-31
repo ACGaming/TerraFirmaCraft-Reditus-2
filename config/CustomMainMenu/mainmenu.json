@@ -112,6 +112,23 @@
 			"pressSound": "tfc:animal.frog"
 		},
 
+		"discord": {
+			"text": "",
+			"posX": -13,
+			"posY": 160,
+			"width": 25,
+			"height": 25,
+			"imageWidth": 150,
+			"imageHeight": 150,
+			"texture": "tfc:textures/discord.png",
+			"action": {
+				"type": "openLink",
+				"link": "http://discord.gg/9yGJaFnqTx"
+			},
+			"hoverSound": "tfc:item.jug.blow",
+			"pressSound": "tfc:animal.frog"
+		},
+
 		"server": {
 			"text": "",
 			"posX": -64,

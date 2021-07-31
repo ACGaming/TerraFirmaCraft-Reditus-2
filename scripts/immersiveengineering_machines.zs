@@ -229,7 +229,9 @@ CokeOven.addRecipe(<immersiveengineering:material:6> * 1, 500, <tfc:peat>, 1200)
 CokeOven.addRecipe(<minecraft:coal:1>, 100, <ore:logWoodTannin>, 1200);
 
 // BLAST FURNACE
+BlastFurnace.removeRecipe(<immersiveengineering:metal:8>);
 BlastFurnace.removeRecipe(<immersiveengineering:storage:8>);
+BlastFurnace.removeRecipe(<tfc:metal/ingot/steel>);
 
 BlastFurnace.addFuel(<tfc:ore/bituminous_coal>, 600);
 BlastFurnace.addFuel(<tfc:ore/lignite>, 500);
@@ -239,7 +241,7 @@ BlastFurnace.addRecipe(<immersiveengineering:storage:8>, <minecraft:iron_block>,
 BlastFurnace.addRecipe(<mcwroofs:rec_tile>, <mcwroofs:tile_clay>, 600, null);
 BlastFurnace.addRecipe(<minecraft:brick>, <minecraft:clay_ball>, 600, null);
 BlastFurnace.addRecipe(<minecraft:end_stone>, <ore:stone>, 6400, <immersiveengineering:material:7>);
-BlastFurnace.addRecipe(<minecraft:glass>, <ore:blockSand>, 1200, <immersiveengineering:material:7>);
+BlastFurnace.addRecipe(<minecraft:glass>, <ore:sand>, 1200, <immersiveengineering:material:7>);
 BlastFurnace.addRecipe(<minecraft:hardened_clay>, <minecraft:clay>, 600, null);
 BlastFurnace.addRecipe(<minecraft:netherbrick>, <minecraft:brick>, 600, null);
 BlastFurnace.addRecipe(<minecraft:netherrack>, <ore:cobblestone>, 6400, <immersiveengineering:material:7>);
@@ -304,7 +306,6 @@ BlastFurnace.addRecipe(<tfc:metal/ingot/red_steel>, <tfc:metal/dust/red_steel>, 
 BlastFurnace.addRecipe(<tfc:metal/ingot/red_steel>, <tfc:metal/ingot/high_carbon_red_steel>, 1198, <immersiveengineering:material:7>);
 BlastFurnace.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/dust/steel>, 598);
 BlastFurnace.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/high_carbon_steel>, 598, <immersiveengineering:material:7>);
-BlastFurnace.addRecipe(<tfc:metal/ingot/steel>, <tfc:metal/ingot/wrought_iron>, 1200, <immersiveengineering:material:7>);
 BlastFurnace.addRecipe(<tfc:metal/ingot/titanium>, <tfc:metal/dust/titanium>, 1198, <immersiveengineering:material:7>);
 BlastFurnace.addRecipe(<tfc:metal/ingot/tungsten>, <tfc:metal/dust/tungsten>, 1198, <immersiveengineering:material:7>);
 BlastFurnace.addRecipe(<tfc:metal/ingot/tungsten>, <tfc:ore/small/wolframite> * 10, 28800, <immersiveengineering:material:7> * 3);
@@ -313,6 +314,7 @@ BlastFurnace.addRecipe(<tfc:metal/ingot/tungsten>, <tfc:ore/wolframite:2> * 3, 2
 BlastFurnace.addRecipe(<tfc:metal/ingot/tungsten>, <tfc:ore/wolframite> * 4, 28800, <immersiveengineering:material:7> * 3);
 
 // ARC FURNACE
+ArcFurnace.removeRecipe(<immersiveengineering:metal:8>);
 ArcFurnace.removeRecipe(<minecraft:gold_ingot>);
 ArcFurnace.removeRecipe(<minecraft:iron_ingot>);
 ArcFurnace.removeRecipe(<tconstruct:ingots:5>);
@@ -333,7 +335,7 @@ ArcFurnace.addRecipe(<minecraft:concrete:12>, <minecraft:concrete_powder:12>, nu
 ArcFurnace.addRecipe(<minecraft:concrete:13>, <minecraft:concrete_powder:13>, null, 200, 512);
 ArcFurnace.addRecipe(<minecraft:concrete:14>, <minecraft:concrete_powder:14>, null, 200, 512);
 ArcFurnace.addRecipe(<minecraft:concrete:15>, <minecraft:concrete_powder:15>, null, 200, 512);
-ArcFurnace.addRecipe(<minecraft:glass> * 2, <ore:blockSand>, <immersiveengineering:material:7>, 1100, 100);
+ArcFurnace.addRecipe(<minecraft:glass> * 2, <ore:sand>, <immersiveengineering:material:7>, 1100, 100);
 ArcFurnace.addRecipe(<minecraft:glass>, <tfc:sand/andesite>, null, 200, 512);
 ArcFurnace.addRecipe(<minecraft:glass>, <tfc:sand/basalt>, null, 200, 512);
 ArcFurnace.addRecipe(<minecraft:glass>, <tfc:sand/chalk>, null, 200, 512);
@@ -350,14 +352,6 @@ ArcFurnace.addRecipe(<minecraft:glass>, <tfc:sand/rocksalt>, null, 200, 512);
 ArcFurnace.addRecipe(<minecraft:glass>, <tfc:sand/schist>, null, 200, 512);
 ArcFurnace.addRecipe(<minecraft:glass>, <tfc:sand/shale>, null, 200, 512);
 ArcFurnace.addRecipe(<minecraft:glass>, <tfc:sand/slate>, null, 200, 512);
-ArcFurnace.addRecipe(<tfc:bloom/unrefined>, <ore:oreLimoniteNormal>, <immersiveengineering:material:7> * 3, 512, 300, [<ore:oreLimoniteNormal>, <ore:oreLimoniteNormal>], "Ores");
-ArcFurnace.addRecipe(<tfc:bloom/unrefined>, <ore:oreLimonitePoor>, <immersiveengineering:material:7> * 6, 512, 400, [<ore:oreLimonitePoor>, <ore:oreLimonitePoor>, <ore:oreLimonitePoor>], "Ores");
-ArcFurnace.addRecipe(<tfc:bloom/unrefined>, <ore:oreLimoniteRich>, <immersiveengineering:material:7> * 2, 512, 200, [<ore:oreLimoniteRich>], "Ores");
-ArcFurnace.addRecipe(<tfc:bloom/unrefined>, <ore:oreLimoniteSmall>, <immersiveengineering:material:7> * 8, 512, 400, [<ore:oreLimoniteSmall>, <ore:oreLimoniteSmall>, <ore:oreLimoniteSmall>, <ore:oreLimoniteSmall>], "Ores");
-ArcFurnace.addRecipe(<tfc:bloom/unrefined>, <ore:oreMagnetiteNormal>, <immersiveengineering:material:7> * 3, 512, 300, [<ore:oreMagnetiteNormal>, <ore:oreMagnetiteNormal>], "Ores");
-ArcFurnace.addRecipe(<tfc:bloom/unrefined>, <ore:oreMagnetitePoor>, <immersiveengineering:material:7> * 6, 512, 400, [<ore:oreMagnetitePoor>, <ore:oreMagnetitePoor>, <ore:oreMagnetitePoor>], "Ores");
-ArcFurnace.addRecipe(<tfc:bloom/unrefined>, <ore:oreMagnetiteRich>, <immersiveengineering:material:7> * 2, 512, 200, [<ore:oreMagnetiteRich>], "Ores");
-ArcFurnace.addRecipe(<tfc:bloom/unrefined>, <ore:oreMagnetiteSmall>, <immersiveengineering:material:7> * 8, 512, 400, [<ore:oreMagnetiteSmall>, <ore:oreMagnetiteSmall>, <ore:oreMagnetiteSmall>, <ore:oreMagnetiteSmall>], "Ores");
 ArcFurnace.addRecipe(<tfc:bloom/unrefined>, <ore:oreWroughtIronNormal>, <immersiveengineering:material:7> * 3, 512, 300, [<ore:oreWroughtIronNormal>, <ore:oreWroughtIronNormal>], "Ores");
 ArcFurnace.addRecipe(<tfc:bloom/unrefined>, <ore:oreWroughtIronPoor>, <immersiveengineering:material:7> * 6, 512, 400, [<ore:oreWroughtIronPoor>, <ore:oreWroughtIronPoor>, <ore:oreWroughtIronPoor>], "Ores");
 ArcFurnace.addRecipe(<tfc:bloom/unrefined>, <ore:oreWroughtIronRich>, <immersiveengineering:material:7> * 2, 512, 200, [<ore:oreWroughtIronRich>], "Ores");
@@ -449,7 +443,6 @@ ArcFurnace.addRecipe(<tfc:metal/ingot/platinum>, <ore:orePlatinumSmall>, <immers
 ArcFurnace.addRecipe(<tfc:metal/ingot/rose_gold> * 4, <ore:ingotCopper>, <immersiveengineering:material:7> * 1, 512, 200, [<ore:dustFlux>, <ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>], "Alloying");
 ArcFurnace.addRecipe(<tfc:metal/ingot/rose_gold> * 9, <tfc:metal/dust/gold> * 7, null, 200, 512, [<tfc:metal/dust/copper> * 2], "Alloying");
 ArcFurnace.addRecipe(<tfc:metal/ingot/rose_gold> * 9, <tfc:metal/ingot/gold> * 7, null, 200, 512, [<tfc:metal/ingot/copper> * 2], "Alloying");
-ArcFurnace.addRecipe(<tfc:metal/ingot/steel>, <ore:Iron>, <immersiveengineering:material:7> * 1, 512, 400, [<ore:dustCoke> * 4, <ore:dustFlux> * 2], "Ores");
 ArcFurnace.addRecipe(<tfc:metal/ingot/steel>, <ore:dustIron>, <immersiveengineering:material:7> * 1, 512, 400, [<ore:dustCoke> * 4, <ore:dustFlux> * 2], "Ores");
 ArcFurnace.addRecipe(<tfc:metal/ingot/steel>, <ore:dustPigIron>, <immersiveengineering:material:7> * 1, 512, 400, [<ore:dustCoke> * 4, <ore:dustFlux> * 2], "Ores");
 ArcFurnace.addRecipe(<tfc:metal/ingot/steel>, <ore:dustSteel>, <immersiveengineering:material:7> * 1, 512, 200);
@@ -784,6 +777,49 @@ Fermenter.removeByInput(<minecraft:potato>);
 Fermenter.removeByInput(<minecraft:reeds>);
 Fermenter.removeFluidRecipe(<liquid:ethanol>);
 
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:barley_flatbread>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:barley_flatbread_dough>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:barley_slice>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:corn_flatbread>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:corn_flatbread_dough>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:corn_slice>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_banana>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_blackberry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_blueberry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_bunch_berry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_cherry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_cloud_berry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_cranberry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_elderberry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_gooseberry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_green_apple>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_lemon>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_olive>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_orange>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_peach>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_plum>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_raspberry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_red_apple>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_snow_berry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_strawberry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:dried_wintergreen_berry>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:melon>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:oat_flatbread>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:oat_flatbread_dough>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:oat_slice>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:pineapple_chunks>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:pumpkin_chunks>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:rice_flatbread>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:rice_flatbread_dough>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:rice_slice>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:rye_flatbread>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:rye_flatbread_dough>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:rye_slice>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:tofu>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:tomato_sauce>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:wheat_flatbread>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:wheat_flatbread_dough>, 80);
+Fermenter.addRecipe(null, <liquid:ethanol> * 40, <firmalife:wheat_slice>, 80);
 Fermenter.addRecipe(null, <liquid:ethanol> * 40, <immersiveengineering:material:4>, 80);
 Fermenter.addRecipe(null, <liquid:ethanol> * 40, <ore:listAllberry>, 512);
 Fermenter.addRecipe(null, <liquid:ethanol> * 80, <ore:listAllfruit>, 512);
@@ -793,15 +829,17 @@ Fermenter.addRecipe(null, <liquid:ethanol> * 80, <ore:sugarcane>, 512);
 // SQUEEZER
 Squeezer.removeFluidRecipe(<liquid:plantoil>);
 
+Squeezer.addRecipe(<minecraft:paper>, <liquid:fresh_water> * 250, <contenttweaker:wood_pulp>, 1024);
 Squeezer.addRecipe(<rustic:beeswax> * 2, <liquid:honey> * 500, <rustic:honeycomb>, 2048);
 Squeezer.addRecipe(<tfc:hide/scraped/large>, <liquid:limewater> * 50, <tfc:hide/soaked/large>, 512);
 Squeezer.addRecipe(<tfc:hide/scraped/medium>, <liquid:limewater> * 40, <tfc:hide/soaked/medium>, 512);
 Squeezer.addRecipe(<tfc:hide/scraped/small>, <liquid:limewater> * 30, <tfc:hide/soaked/small>, 512);
 Squeezer.addRecipe(null, <liquid:applejuice> * 250, <tfc:food/red_apple>, 1024);
 Squeezer.addRecipe(null, <liquid:grapejuice> * 250, <rustic:grapes>, 1024);
+Squeezer.addRecipe(null, <liquid:plantoil> * 40, <firmalife:crop/seeds/melon>, 80);
+Squeezer.addRecipe(null, <liquid:plantoil> * 40, <firmalife:crop/seeds/pumpkin>, 80);
 Squeezer.addRecipe(null, <liquid:plantoil> * 80, <ore:listAllseeds>, 512);
 Squeezer.addRecipe(null, <liquid:wildberryjuice> * 250, <rustic:wildberries>, 1024);
-Squeezer.addRecipe(<minecraft:paper>, <liquid:fresh_water> * 250, <contenttweaker:wood_pulp>, 1024);
 
 // MIXER
 Mixer.removeRecipe(<liquid:concrete>);

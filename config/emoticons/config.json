@@ -1,5 +1,6 @@
 {
     "general": {
+        "buttons": {},
         "disable_sound_events": false
     },
     "animations": {

@@ -85,37 +85,69 @@ JEI.removeAndHide(<minecraft:wooden_sword>);
 // REMOVE
 recipes.remove(<tfc:crop/product/jute_disc>);
 recipes.remove(<tfc:crop/product/olive_jute_disc>);
+recipes.removeByRecipeName("chisel:charcoal_uncraft");
+recipes.removeByRecipeName("chisel:uncraft_blockaluminum");
 recipes.removeByRecipeName("chisel:uncraft_blockbronze");
 recipes.removeByRecipeName("chisel:uncraft_blockcobalt");
+recipes.removeByRecipeName("chisel:uncraft_blockcopper");
+recipes.removeByRecipeName("chisel:uncraft_blockelectrum");
+recipes.removeByRecipeName("chisel:uncraft_blockfuelcoke");
+recipes.removeByRecipeName("chisel:uncraft_blockgold");
 recipes.removeByRecipeName("chisel:uncraft_blockinvar");
+recipes.removeByRecipeName("chisel:uncraft_blockiron");
+recipes.removeByRecipeName("chisel:uncraft_blocklead");
+recipes.removeByRecipeName("chisel:uncraft_blocknickel");
 recipes.removeByRecipeName("chisel:uncraft_blockplatinum");
+recipes.removeByRecipeName("chisel:uncraft_blocksilver");
 recipes.removeByRecipeName("chisel:uncraft_blocksteel");
 recipes.removeByRecipeName("chisel:uncraft_blocktin");
-recipes.removeByRecipeName("chisel:uncraft_blockgold");
-recipes.removeByRecipeName("chisel:uncraft_blockiron");
+recipes.removeByRecipeName("chisel:uncraft_blockuranium");
 recipes.removeByRecipeName("ct_shapeless-75177047");
+recipes.removeByRecipeName("immersive_energy:metal/thorium_block_uncraft");
 recipes.removeByRecipeName("immersive_energy:metal/thorium_ingot_uncraft");
+recipes.removeByRecipeName("immersive_energy:metal/tungsten_block_uncraft");
 recipes.removeByRecipeName("immersive_energy:metal/tungsten_ingot_uncraft");
+recipes.removeByRecipeName("immersive_energy:sheetmetal/thorium_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersive_energy:sheetmetal/tungsten_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersiveengineering:metal_storage/aluminum_block_uncraft");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/aluminum_ingot");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/aluminum_ingot_uncraft");
+recipes.removeByRecipeName("immersiveengineering:metal_storage/constantan_block_uncraft");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/constantan_ingot");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/constantan_ingot_uncraft");
+recipes.removeByRecipeName("immersiveengineering:metal_storage/copper_block_uncraft");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/copper_ingot");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/copper_ingot_uncraft");
+recipes.removeByRecipeName("immersiveengineering:metal_storage/electrum_block_uncraft");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/electrum_ingot");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/electrum_ingot_uncraft");
+recipes.removeByRecipeName("immersiveengineering:metal_storage/iron_ingot_uncraft");
+recipes.removeByRecipeName("immersiveengineering:metal_storage/lead_block_uncraft");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/lead_ingot");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/lead_ingot_uncraft");
+recipes.removeByRecipeName("immersiveengineering:metal_storage/nickel_block_uncraft");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/nickel_ingot");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/nickel_ingot_uncraft");
+recipes.removeByRecipeName("immersiveengineering:metal_storage/silver_block_uncraft");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/silver_ingot");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/silver_ingot_uncraft");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/steel_block_uncraft");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/steel_ingot");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/steel_ingot_uncraft");
+recipes.removeByRecipeName("immersiveengineering:metal_storage/uranium_block_uncraft");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/uranium_ingot");
 recipes.removeByRecipeName("immersiveengineering:metal_storage/uranium_ingot_uncraft");
-recipes.removeByRecipeName("immersiveengineering:metal_storage/iron_ingot_uncraft");
+recipes.removeByRecipeName("immersiveengineering:sheetmetal/aluminum_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersiveengineering:sheetmetal/constantan_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersiveengineering:sheetmetal/copper_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersiveengineering:sheetmetal/electrum_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersiveengineering:sheetmetal/gold_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersiveengineering:sheetmetal/iron_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersiveengineering:sheetmetal/lead_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersiveengineering:sheetmetal/nickel_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersiveengineering:sheetmetal/silver_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersiveengineering:sheetmetal/steel_sheetmetal_uncraft");
+recipes.removeByRecipeName("immersiveengineering:sheetmetal/uranium_sheetmetal_uncraft");
 recipes.removeByRecipeName("minecraft:stick");
 recipes.removeByRecipeName("tconstruct:common/metals/alubrass/alubrass_ingot");
 recipes.removeByRecipeName("tconstruct:common/metals/ardite/ardite_ingot");
@@ -128,6 +160,7 @@ recipes.removeByRecipeName("tconstruct:common/metals/manyullyn/manyullyn_ingot")
 recipes.removeByRecipeName("tconstruct:common/metals/manyullyn/manyullyn_nugget");
 recipes.removeByRecipeName("tconstruct:common/metals/pigiron/pigiron_ingot");
 recipes.removeByRecipeName("tconstruct:common/metals/pigiron/pigiron_nugget");
+recipes.removeByRecipeName("tfc:vanilla/flint_and_steel");
 
 // ADD
 // Bloomery
@@ -188,11 +221,11 @@ recipes.addShapeless("tfc_gem_cutting49", <tfc:gem/topaz> * 2, [<ore:chisel>.tra
 recipes.addShapeless("tfc_gem_cutting50", <tfc:gem/topaz:1> * 2, [<ore:chisel>.transformDamage(), <ore:gemTopaz>, <ore:hammer>.reuse()]);
 recipes.addShapeless("tfc_gem_cutting51", <tfc:gem/topaz:2> * 2, [<ore:chisel>.transformDamage(), <ore:gemFlawlessTopaz>, <ore:hammer>.reuse()]);
 recipes.addShapeless("tfc_gem_cutting52", <tfc:gem/topaz:3> * 2, [<ore:chisel>.transformDamage(), <ore:gemExquisiteTopaz>, <ore:hammer>.reuse()]);
+// Flint and Steel
+recipes.addShaped(<minecraft:flint_and_steel>, [[<ore:ingotSteel>, null], [null, <minecraft:flint>]]);
 
 // ORE DICTIONARY
-dustFertilizer.add(<alchemistry:fertilizer>);
 dustFertilizer.add(<composter:compost>);
-dyeBrown.add(<alchemistry:fertilizer>);
 dyeBrown.add(<composter:compost>);
 oreBlockGold.remove(<minecraft:gold_block>);
 oreBlockIron.add(<contenttweaker:blockwrought_iron>);
@@ -302,14 +335,14 @@ Quern.addRecipe("wood_chips_quern", <ore:lumber>, <contenttweaker:wood_chips> * 
 
 // BARREL
 // Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int hours)
-Barrel.addRecipe("aged_beer_vinegar", null, <liquid:aged_beer> * 250, null, <liquid:vinegar> * 250, 8);
-Barrel.addRecipe("aged_cider_vinegar", null, <liquid:aged_cider> * 250, null, <liquid:vinegar> * 250, 8);
-Barrel.addRecipe("aged_corn_whiskey_vinegar", null, <liquid:aged_corn_whiskey> * 250, null, <liquid:vinegar> * 250, 8);
-Barrel.addRecipe("aged_rum_vinegar", null, <liquid:aged_rum> * 250, null, <liquid:vinegar> * 250, 8);
-Barrel.addRecipe("aged_rye_whiskey_vinegar", null, <liquid:aged_rye_whiskey> * 250, null, <liquid:vinegar> * 250, 8);
-Barrel.addRecipe("aged_sake_vinegar", null, <liquid:aged_sake> * 250, null, <liquid:vinegar> * 250, 8);
-Barrel.addRecipe("aged_vodka_vinegar", null, <liquid:aged_vodka> * 250, null, <liquid:vinegar> * 250, 8);
-Barrel.addRecipe("aged_whiskey_vinegar", null, <liquid:aged_whiskey> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_beer_vinegar", <ore:categoryFruit>, <liquid:aged_beer> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_cider_vinegar", <ore:categoryFruit>, <liquid:aged_cider> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_corn_whiskey_vinegar", <ore:categoryFruit>, <liquid:aged_corn_whiskey> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_rum_vinegar", <ore:categoryFruit>, <liquid:aged_rum> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_rye_whiskey_vinegar", <ore:categoryFruit>, <liquid:aged_rye_whiskey> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_sake_vinegar", <ore:categoryFruit>, <liquid:aged_sake> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_vodka_vinegar", <ore:categoryFruit>, <liquid:aged_vodka> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("aged_whiskey_vinegar", <ore:categoryFruit>, <liquid:aged_whiskey> * 250, null, <liquid:vinegar> * 250, 8);
 Barrel.addRecipe("wood_pulp_barrel", <contenttweaker:wood_chips>, <liquid:fresh_water> * 250, <contenttweaker:wood_pulp>, null, 2);
 
 // DRYING RACK

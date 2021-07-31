@@ -24,7 +24,7 @@ ItemRegistry.registerItemMetal(<contenttweaker:tetrahedrite5>, "COPPER", 5, true
 //Add Metal value to 25 units crushed ore
 ItemRegistry.registerItemMetal(<contenttweaker:native_copper25>, "COPPER", 25, true);
 ItemRegistry.registerItemMetal(<contenttweaker:native_gold25>, "GOLD", 25, true);
-ItemRegistry.registerItemMetal(<contenttweaker:native_platinum25>, "PLATINUM", 2, true);
+ItemRegistry.registerItemMetal(<contenttweaker:native_platinum25>, "PLATINUM", 25, true);
 ItemRegistry.registerItemMetal(<contenttweaker:hematite25>, "WROUGHT_IRON", 25, false);
 ItemRegistry.registerItemMetal(<contenttweaker:native_silver25>, "SILVER", 25, true);
 ItemRegistry.registerItemMetal(<contenttweaker:cassiterite25>, "TIN", 25, true);
@@ -40,7 +40,7 @@ ItemRegistry.registerItemMetal(<contenttweaker:tetrahedrite25>, "COPPER", 25, tr
 //Add Metal value to 50 units crushed ore
 ItemRegistry.registerItemMetal(<contenttweaker:native_copper50>, "COPPER", 50, true);
 ItemRegistry.registerItemMetal(<contenttweaker:native_gold50>, "GOLD", 50, true);
-ItemRegistry.registerItemMetal(<contenttweaker:native_platinum50>, "PLATINUM", 2, true);
+ItemRegistry.registerItemMetal(<contenttweaker:native_platinum50>, "PLATINUM", 50, true);
 ItemRegistry.registerItemMetal(<contenttweaker:hematite50>, "WROUGHT_IRON", 50, false);
 ItemRegistry.registerItemMetal(<contenttweaker:native_silver50>, "SILVER", 50, true);
 ItemRegistry.registerItemMetal(<contenttweaker:cassiterite50>, "TIN", 50, true);

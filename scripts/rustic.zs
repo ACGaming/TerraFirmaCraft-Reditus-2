@@ -62,13 +62,14 @@ Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic
 Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:ironskin", Duration: 1800, Amplifier: 1}]}));
 Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:ironskin", Duration: 3600, Amplifier: 0}]}));
 Condenser.removeRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:ironskin", Duration: 9600, Amplifier: 0}]}));
+
 // Condenser.addRecipe(output, itemstack[] inputs, modifier, bottle, fluid, time);
-Condenser.addRecipe(<dynamictrees:dendropotion:1>, [<ore:slimeball>], null, <dynamictrees:dendropotion>);
-Condenser.addRecipe(<dynamictrees:dendropotion:2>, [<dynamictreestfc:seed/sequoia>], null, <dynamictrees:dendropotion>);
-Condenser.addRecipe(<dynamictrees:dendropotion:3>, [<ore:bonemeal>], null, <dynamictrees:dendropotion>);
-Condenser.addRecipe(<dynamictrees:dendropotion:4>, [<ore:fertilizer>], null, <dynamictrees:dendropotion>);
-Condenser.addRecipe(<dynamictrees:dendropotion:5>, [<ore:dustIron>], null, <dynamictrees:dendropotion>);
-Condenser.addRecipe(<dynamictrees:dendropotion:6>, [<ore:dustUranium>], null, <dynamictrees:dendropotion>);
+Condenser.addRecipe(<dynamictrees:dendropotion:1>, [<ore:slimeball>], null, <dynamictrees:dendropotion>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<dynamictrees:dendropotion:2>, [<dynamictreestfc:seed/sequoia>], null, <dynamictrees:dendropotion>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<dynamictrees:dendropotion:3>, [<ore:bonemeal>], null, <dynamictrees:dendropotion>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<dynamictrees:dendropotion:4>, [<ore:fertilizer>], null, <dynamictrees:dendropotion>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<dynamictrees:dendropotion:5>, [<ore:dustIron>], null, <dynamictrees:dendropotion>, <liquid:fresh_water> * 125);
+Condenser.addRecipe(<dynamictrees:dendropotion:6>, [<ore:dustUranium>], null, <dynamictrees:dendropotion>, <liquid:fresh_water> * 125);
 Condenser.addRecipe(<dynamictrees:dendropotion>, [<ore:charcoal>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
 Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:fire_resistance", Duration: 3600, Amplifier: 0}]}), [<ore:gemCoal>, <ore:ingotBrick>, <rustic:aloe_vera>], null, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
 Condenser.addRecipe(<rustic:elixir>.withTag({ElixirEffects: [{Effect: "minecraft:fire_resistance", Duration: 9600, Amplifier: 0}]}), [<ore:gemCoal>, <ore:ingotBrick>, <rustic:aloe_vera>], <rustic:horsetail>, <minecraft:glass_bottle>, <liquid:fresh_water> * 125);
