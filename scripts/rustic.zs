@@ -8,10 +8,6 @@ import mods.rustic.Condenser;
 import mods.rustic.CrushingTub;
 import mods.terrafirmacraft.ItemRegistry;
 
-// VARIABLES
-val categoryFruit = <ore:categoryFruit>;
-val categoryVegetable = <ore:categoryVegetable>;
-
 // REMOVE
 recipes.remove(<rustic:chain>);
 recipes.remove(<rustic:chain_gold>);
@@ -196,17 +192,7 @@ ItemRegistry.registerFood(<rustic:tomato>, 2, 5, 0.5, 1.4, 0, 1.5, 0.3, 0, 0);
 //ItemRegistry.registerFood(<rustic:wildberries>, 2, 5, 0.5, 1.75, 0, 0, 1, 0, 0);
 ItemRegistry.registerFood(<rustic:wildberry_juice>, 2, 20, 1.25, 5.25, 0, 0.3, 1.5, 0, 0);
 
-// ORE DICTIONARY
-categoryFruit.add(<rustic:grapes>);
-categoryFruit.add(<rustic:ironberries>);
-categoryFruit.add(<rustic:olives>);
-categoryFruit.add(<rustic:wildberries>);
-categoryVegetable.add(<rustic:chili_pepper>);
-categoryVegetable.add(<rustic:core_root>);
-categoryVegetable.add(<rustic:ginseng>);
-categoryVegetable.add(<rustic:marsh_mallow>);
-categoryVegetable.add(<rustic:tomato>);
-
+// REPLACE
 recipes.replaceAllOccurences(<minecraft:bucket>, <tfc:crucible>, <rustic:retort_advanced>);
 recipes.replaceAllOccurences(<minecraft:bucket>, <tfc:crucible>, <rustic:retort>);
 recipes.replaceAllOccurences(<minecraft:bucket>, <tfc:crucible>, <rustic:condenser_advanced>);

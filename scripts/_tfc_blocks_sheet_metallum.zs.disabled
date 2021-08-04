@@ -79,29 +79,29 @@ val oreDicts = [
     <ore:blockSheetmetalLithium>,
     <ore:blockSheetmetalConstantan>,
     <ore:blockSheetmetalElectrum>,
-    <ore:blockSheetmetalNickel_silver>,
-    <ore:blockSheetmetalRed_alloy>,
+    <ore:blockSheetmetalNickelSilver>,
+    <ore:blockSheetmetalRedAlloy>,
     <ore:blockSheetmetalMithril>,
     <ore:blockSheetmetalInvar>,
     <ore:blockSheetmetalAluminium>,
-    <ore:blockSheetmetalAluminium_brass>,
+    <ore:blockSheetmetalAluminiumBrass>,
     <ore:blockSheetmetalMagnesium>,
     <ore:blockSheetmetalManganese>,
     <ore:blockSheetmetalBoron>,
-    <ore:blockSheetmetalMagnesium_diboride>,
+    <ore:blockSheetmetalMagnesiumDiboride>,
     <ore:blockSheetmetalThorium>,
     <ore:blockSheetmetalUranium>,
     <ore:blockSheetmetalArdite>,
     <ore:blockSheetmetalCobalt>,
     <ore:blockSheetmetalManyullyn>,
-    <ore:blockSheetmetalHsla_steel>,
+    <ore:blockSheetmetalHSLASteel>,
     <ore:blockSheetmetalFerroboron>,
     <ore:blockSheetmetalBeryllium>,
-    <ore:blockSheetmetalBeryllium_copper>,
+    <ore:blockSheetmetalBerylliumCopper>,
     <ore:blockSheetmetalOsmium>,
     <ore:blockSheetmetalTitanium>,
     <ore:blockSheetmetalTungsten>,
-    <ore:blockSheetmetalTungsten_steel>,
+    <ore:blockSheetmetalTungstenSteel>,
     <ore:blockSheetmetalZirconium>,
     <ore:blockSheetmetalZircaloy>
 ] as IOreDictEntry[];
@@ -142,7 +142,7 @@ for i, block in blocks {
     oreDicts[i].add(block);
     ItemRegistry.registerItemMetal(block, metals[i], 800, true);
     ItemRegistry.registerItemSize(block, "LARGE", "MEDIUM");
-    recipes.addShaped("tfc_blockSheetmetal" + metals[i], block, [
+    recipes.addShaped("tfc_blockSheetmetal" + metals[i], block * 4, [
         [sheets[i], sheets[i]],
         [sheets[i], sheets[i]]
     ]);

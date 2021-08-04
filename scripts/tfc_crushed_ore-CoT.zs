@@ -1,7 +1,7 @@
 // Author : Alice in Game
 // Add crushed ore with 5 25 50 units variant to use for "ore doubling" and increasing processing efficiency
 // Mod required : -
-// Scripts required : TFC Crushed ore
+// Scripts required : TFC Crushed Ore
 
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;

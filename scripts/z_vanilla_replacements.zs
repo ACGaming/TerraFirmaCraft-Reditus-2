@@ -78,6 +78,14 @@ recipes.replaceAllOccurences(<minecraft:sapling:3>, <dynamictreestfc:seed/sequoi
 recipes.replaceAllOccurences(<minecraft:sapling:4>, <dynamictreestfc:seed/acacia>);
 recipes.replaceAllOccurences(<minecraft:sapling:5>, <dynamictreestfc:seed/hickory>);
 
+// TOOLS
+recipes.replaceAllOccurences(<minecraft:iron_axe>, <tfc:metal/axe/wrought_iron>);
+recipes.replaceAllOccurences(<minecraft:iron_pickaxe>, <tfc:metal/pick/wrought_iron>);
+recipes.replaceAllOccurences(<minecraft:iron_shovel>, <tfc:metal/shovel/wrought_iron>);
+recipes.replaceAllOccurences(<minecraft:iron_sword>, <tfc:metal/sword/wrought_iron>);
+recipes.replaceAllOccurences(<minecraft:stone_axe>, <ore:axeStone>);
+recipes.replaceAllOccurences(<minecraft:stone_shovel>, <ore:shovelStone>);
+
 // OTHER
 recipes.replaceAllOccurences(<minecraft:apple>, <ore:apple>);
 recipes.replaceAllOccurences(<minecraft:blaze_powder>, <ore:dustSulfur>);
@@ -119,4 +127,3 @@ recipes.replaceAllOccurences(<minecraft:wheat>, <tfc:food/wheat>);
 recipes.replaceAllOccurences(<minecraft:wooden_button>, <ore:button>);
 recipes.replaceAllOccurences(<minecraft:wooden_pressure_plate>, <ore:pressurePlateWood>);
 recipes.replaceAllOccurences(<minecraft:wool>, <ore:clothHighQuality>);
-recipes.replaceAllOccurences(<ore:sugarcane>, <tfc:food/sugarcane>);

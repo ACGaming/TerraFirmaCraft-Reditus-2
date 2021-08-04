@@ -4,10 +4,6 @@
 // Mod required : TFC Decoration
 // Scripts required : -
 
-// VARIABLES
-val oreMossy = <ore:blockMossy>;
-val oreSandstone = <ore:sandstone>;
-
 // REMOVE
 recipes.remove(<tfc_decoration:mud_ball/andesite>);
 recipes.remove(<tfc_decoration:mud_ball/arkose>);
@@ -77,72 +73,3 @@ recipes.addShapeless("shale_mud_ball", <tfc_decoration:mud_ball/shale>, [<ore:st
 recipes.addShapeless("slate_mud_ball", <tfc_decoration:mud_ball/slate>, [<ore:straw>, <tfc:dirt/slate>, <ore:clay>]);
 recipes.addShapeless("travertine_mud_ball", <tfc_decoration:mud_ball/travertine>, [<ore:straw>, <tfc:dirt/travertine>, <ore:clay>]);
 recipes.addShapeless("wackestone_mud_ball", <tfc_decoration:mud_ball/wackestone>, [<ore:straw>, <tfc:dirt/wackestone>, <ore:clay>]);
-
-// ORE DICTIONARY
-oreMossy.add(<tfc_decoration:mossy_bricks/andesite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/arkose>);
-oreMossy.add(<tfc_decoration:mossy_bricks/basalt>);
-oreMossy.add(<tfc_decoration:mossy_bricks/blaimorite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/blueschist>);
-oreMossy.add(<tfc_decoration:mossy_bricks/boninite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/carbonatite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/cataclasite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/chalk>);
-oreMossy.add(<tfc_decoration:mossy_bricks/chert>);
-oreMossy.add(<tfc_decoration:mossy_bricks/claystone>);
-oreMossy.add(<tfc_decoration:mossy_bricks/conglomerate>);
-oreMossy.add(<tfc_decoration:mossy_bricks/dacite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/diorite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/dolomite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/foidolite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/gabbro>);
-oreMossy.add(<tfc_decoration:mossy_bricks/gneiss>);
-oreMossy.add(<tfc_decoration:mossy_bricks/granite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/greenschist>);
-oreMossy.add(<tfc_decoration:mossy_bricks/jaspillite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/limestone>);
-oreMossy.add(<tfc_decoration:mossy_bricks/marble>);
-oreMossy.add(<tfc_decoration:mossy_bricks/mylonite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/phyllite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/quartzite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/rhyolite>);
-oreMossy.add(<tfc_decoration:mossy_bricks/rocksalt>);
-oreMossy.add(<tfc_decoration:mossy_bricks/schist>);
-oreMossy.add(<tfc_decoration:mossy_bricks/shale>);
-oreMossy.add(<tfc_decoration:mossy_bricks/slate>);
-oreMossy.add(<tfc_decoration:mossy_bricks/travertine>);
-oreMossy.add(<tfc_decoration:mossy_bricks/wackestone>);
-
-oreSandstone.add(<tfc_decoration:sandstone/andesite>);
-oreSandstone.add(<tfc_decoration:sandstone/arkose>);
-oreSandstone.add(<tfc_decoration:sandstone/basalt>);
-oreSandstone.add(<tfc_decoration:sandstone/blaimorite>);
-oreSandstone.add(<tfc_decoration:sandstone/blueschist>);
-oreSandstone.add(<tfc_decoration:sandstone/boninite>);
-oreSandstone.add(<tfc_decoration:sandstone/carbonatite>);
-oreSandstone.add(<tfc_decoration:sandstone/cataclasite>);
-oreSandstone.add(<tfc_decoration:sandstone/chalk>);
-oreSandstone.add(<tfc_decoration:sandstone/chert>);
-oreSandstone.add(<tfc_decoration:sandstone/claystone>);
-oreSandstone.add(<tfc_decoration:sandstone/conglomerate>);
-oreSandstone.add(<tfc_decoration:sandstone/dacite>);
-oreSandstone.add(<tfc_decoration:sandstone/diorite>);
-oreSandstone.add(<tfc_decoration:sandstone/dolomite>);
-oreSandstone.add(<tfc_decoration:sandstone/foidolite>);
-oreSandstone.add(<tfc_decoration:sandstone/gabbro>);
-oreSandstone.add(<tfc_decoration:sandstone/gneiss>);
-oreSandstone.add(<tfc_decoration:sandstone/granite>);
-oreSandstone.add(<tfc_decoration:sandstone/greenschist>);
-oreSandstone.add(<tfc_decoration:sandstone/jaspillite>);
-oreSandstone.add(<tfc_decoration:sandstone/limestone>);
-oreSandstone.add(<tfc_decoration:sandstone/marble>);
-oreSandstone.add(<tfc_decoration:sandstone/mylonite>);
-oreSandstone.add(<tfc_decoration:sandstone/phyllite>);
-oreSandstone.add(<tfc_decoration:sandstone/quartzite>);
-oreSandstone.add(<tfc_decoration:sandstone/rhyolite>);
-oreSandstone.add(<tfc_decoration:sandstone/rocksalt>);
-oreSandstone.add(<tfc_decoration:sandstone/schist>);
-oreSandstone.add(<tfc_decoration:sandstone/shale>);
-oreSandstone.add(<tfc_decoration:sandstone/slate>);
-oreSandstone.add(<tfc_decoration:sandstone/travertine>);
-oreSandstone.add(<tfc_decoration:sandstone/wackestone>);

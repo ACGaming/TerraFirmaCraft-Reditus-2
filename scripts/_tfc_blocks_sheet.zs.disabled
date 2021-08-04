@@ -10,8 +10,6 @@ import mods.terrafirmacraft.Welding;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
-
-
 val blocks = [
     <contenttweaker:blocksheetmetalbismuth>,
     <contenttweaker:blocksheetmetalbismuth_bronze>,
@@ -59,9 +57,9 @@ val sheets = [
 ] as IItemStack[];
 
 val oreDicts = [
-    <ore:blockSheetmetalbismuth>,
-    <ore:blockSheetmetalBismuthbronze>,
-    <ore:blockSheetmetalBlack_bronze>,
+    <ore:blockSheetmetalBismuth>,
+    <ore:blockSheetmetalBismuthBronze>,
+    <ore:blockSheetmetalBlackBronze>,
     <ore:blockSheetmetalBrass>,
     <ore:blockSheetmetalBronze>,
     <ore:blockSheetmetalCopper>,
@@ -108,7 +106,7 @@ for i, block in blocks {
     oreDicts[i].add(block);
     ItemRegistry.registerItemMetal(block, metals[i], 800, true);
     ItemRegistry.registerItemSize(block, "LARGE", "MEDIUM");
-    recipes.addShaped("tfc_blockSheetmetal" + metals[i], block, [
+    recipes.addShaped("tfc_blockSheetmetal" + metals[i], block * 4, [
         [sheets[i], sheets[i]],
         [sheets[i], sheets[i]]
     ]);

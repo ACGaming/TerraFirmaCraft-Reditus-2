@@ -9,24 +9,6 @@ import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Quern;
 import mods.tfcdryingrack.Rack;
 
-// VARIABLES
-val dustFertilizer = <ore:dustFertilizer>;
-val dyeBrown = <ore:dyeBrown>;
-val oreBlockGold = <ore:blockGold>;
-val oreBlockIron = <ore:blockIron>;
-val oreCatCookedMeat = <ore:categoryCookedMeat>;
-val oreCatMeat = <ore:categoryMeat>;
-val oreGemDiamond = <ore:gemDiamond>;
-val oreGemEmerald = <ore:gemEmerald>;
-val oreIngotGold = <ore:ingotGold>;
-val oreIngotIron = <ore:ingotIron>;
-val oreNuggetGold = <ore:nuggetGold>;
-val oreNuggetIron = <ore:nuggetIron>;
-val oreSeed = <ore:seed>;
-val oreWireAluminium = <ore:wireAluminium>;
-val oreWireAluminum = <ore:wireAluminum>;
-val oreFertilizer = <ore:fertilizer>;
-
 // REMOVE ALL FURNACE RECIPES
 furnace.removeAll();
 
@@ -222,47 +204,14 @@ recipes.addShapeless("tfc_gem_cutting50", <tfc:gem/topaz:1> * 2, [<ore:chisel>.t
 recipes.addShapeless("tfc_gem_cutting51", <tfc:gem/topaz:2> * 2, [<ore:chisel>.transformDamage(), <ore:gemFlawlessTopaz>, <ore:hammer>.reuse()]);
 recipes.addShapeless("tfc_gem_cutting52", <tfc:gem/topaz:3> * 2, [<ore:chisel>.transformDamage(), <ore:gemExquisiteTopaz>, <ore:hammer>.reuse()]);
 // Flint and Steel
-recipes.addShaped(<minecraft:flint_and_steel>, [[<ore:ingotSteel>, null], [null, <minecraft:flint>]]);
-
-// ORE DICTIONARY
-dustFertilizer.add(<composter:compost>);
-dyeBrown.add(<composter:compost>);
-oreBlockGold.remove(<minecraft:gold_block>);
-oreBlockIron.add(<contenttweaker:blockwrought_iron>);
-oreBlockIron.remove(<minecraft:iron_block>);
-oreCatCookedMeat.add(<tfc:food/cooked_egg>);
-oreCatMeat.add(<minecraft:egg>);
-oreFertilizer.add(<tfc:powder/fertilizer>);
-oreGemDiamond.remove(<minecraft:diamond>);
-oreGemEmerald.remove(<minecraft:emerald>);
-oreIngotGold.remove(<minecraft:gold_ingot>);
-oreIngotIron.remove(<minecraft:iron_ingot>);
-oreNuggetGold.remove(<minecraft:gold_nugget>);
-oreNuggetIron.remove(<minecraft:iron_nugget>);
-oreSeed.add(<tfc:crop/seeds/barley>);
-oreSeed.add(<tfc:crop/seeds/beet>);
-oreSeed.add(<tfc:crop/seeds/cabbage>);
-oreSeed.add(<tfc:crop/seeds/carrot>);
-oreSeed.add(<tfc:crop/seeds/garlic>);
-oreSeed.add(<tfc:crop/seeds/green_bean>);
-oreSeed.add(<tfc:crop/seeds/jute>);
-oreSeed.add(<tfc:crop/seeds/maize>);
-oreSeed.add(<tfc:crop/seeds/oat>);
-oreSeed.add(<tfc:crop/seeds/onion>);
-oreSeed.add(<tfc:crop/seeds/potato>);
-oreSeed.add(<tfc:crop/seeds/red_bell_pepper>);
-oreSeed.add(<tfc:crop/seeds/rice>);
-oreSeed.add(<tfc:crop/seeds/rye>);
-oreSeed.add(<tfc:crop/seeds/soybean>);
-oreSeed.add(<tfc:crop/seeds/squash>);
-oreSeed.add(<tfc:crop/seeds/sugarcane>);
-oreSeed.add(<tfc:crop/seeds/tomato>);
-oreSeed.add(<tfc:crop/seeds/wheat>);
-oreSeed.add(<tfc:crop/seeds/yellow_bell_pepper>);
-oreWireAluminium.add(<immersiveengineering:material:22>);
-oreWireAluminium.add(<tfctech:metal/aluminium_wire>);
-oreWireAluminum.add(<immersiveengineering:material:22>);
-oreWireAluminum.add(<tfctech:metal/aluminium_wire>);
+recipes.addShapeless(<minecraft:flint_and_steel>, [<ore:ingotSteel>, <minecraft:flint>]);
+// Packed Ice
+recipes.addShapeless(<minecraft:packed_ice>, [<tfc:sea_ice>, <tfc:sea_ice>, <tfc:sea_ice>, <tfc:sea_ice>]);
+// Sea Ice
+recipes.addShaped(<tfc:sea_ice>,[
+	[<cellars:sea_ice_shard>, <cellars:sea_ice_shard>, <cellars:sea_ice_shard>],
+	[<cellars:sea_ice_shard>, <cellars:sea_ice_shard>, <cellars:sea_ice_shard>],
+	[<cellars:sea_ice_shard>, <cellars:sea_ice_shard>, <cellars:sea_ice_shard>]]);
 
 // FUEL
 ItemRegistry.registerFuel(<tfc:ore/petrified_wood>, 1000, 800, false, false);

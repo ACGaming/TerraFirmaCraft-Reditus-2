@@ -9,8 +9,6 @@
 import mods.terrafirmacraft.Barrel;
 import crafttweaker.liquid.ILiquidStack;
 
-
-
 // remove vanilla comforts
 recipes.remove(<comforts:hammock:*>, false);
 recipes.remove(<comforts:sleeping_bag:*>, false);
@@ -87,20 +85,20 @@ val dyesList = [
     <liquid:black_dye>
 ] as ILiquidStack[];
 
-    val hammockDef = <comforts:hammock>.definition;
-    val bagDef = <comforts:sleeping_bag>.definition;
+val hammockDef = <comforts:hammock>.definition;
+val bagDef = <comforts:sleeping_bag>.definition;
 
-    for i, name in colourList {
-        Barrel.addRecipe(
-            "tfc_hammock_" + name,
-            <comforts:hammock:0>, dyesList[i] * 125,
-            hammockDef.makeStack(i), null,
-            1
-        );
-        Barrel.addRecipe(
-            "tfc_bag_" + name,
-            <comforts:sleeping_bag:0>, dyesList[i] * 125,
-            bagDef.makeStack(i), null,
-            1
-        );
-    }
+for i, name in colourList {
+	Barrel.addRecipe(
+		"tfc_hammock_" + name,
+		<comforts:hammock:0>, dyesList[i] * 125,
+		hammockDef.makeStack(i), null,
+		1
+	);
+	Barrel.addRecipe(
+		"tfc_bag_" + name,
+		<comforts:sleeping_bag:0>, dyesList[i] * 125,
+		bagDef.makeStack(i), null,
+		1
+	);
+}

@@ -57,9 +57,9 @@ val doubleIngots = [
 ] as IItemStack[];
 
 val oreDicts = [
-    <ore:blockbismuth>,
-    <ore:blockBismuthbronze>,
-    <ore:blockBlack_bronze>,
+    <ore:blockBismuth>,
+    <ore:blockBismuthBronze>,
+    <ore:blockBlackBronze>,
     <ore:blockBrass>,
     <ore:blockBronze>,
     <ore:blockCopper>,

@@ -11,17 +11,6 @@ import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.ItemRegistry;
 
-// VARIABLES
-val creosotebucket = <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "creosote", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>);
-val waterbucket = <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>);
-val waterbucketsteel = <tfc:metal/bucket/red_steel>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:metal/bucket/red_steel>);
-val waterbucketvanilla = <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}).transformReplace(<minecraft:bucket>);
-val IBucketArray = [waterbucket, waterbucketsteel, waterbucketvanilla] as IIngredient[];
-for i, item in IBucketArray {
-	recipes.addShaped(<immersiveengineering:stone_decoration:5> * 8, [[<ore:sand>, <ore:clay>, <ore:sand>], [<ore:gravel>, item, <ore:gravel>], [<ore:sand>, <ore:clay>, <ore:sand>]]);
-	recipes.addShaped(<immersiveengineering:stone_decoration:5> * 12, [[<ore:itemSlag>, <ore:clay>, <ore:itemSlag>], [<ore:gravel>, item, <ore:gravel>], [<ore:itemSlag>, <ore:clay>, <ore:itemSlag>]]);
-}
-
 // JEI REMOVE AND HIDE
 JEI.removeAndHide(<immersiveengineering:axe_steel>);
 JEI.removeAndHide(<immersiveengineering:pickaxe_steel>);
@@ -65,6 +54,7 @@ recipes.remove(<immersiveengineering:stone_decoration:0>);
 recipes.remove(<immersiveengineering:stone_decoration:10>);
 recipes.remove(<immersiveengineering:stone_decoration:1>);
 recipes.remove(<immersiveengineering:stone_decoration:2>);
+recipes.remove(<immersiveengineering:stone_decoration:5>);
 recipes.remove(<immersiveengineering:stone_decoration>);
 recipes.remove(<immersiveengineering:tool:1>);
 recipes.remove(<immersiveengineering:tool>);
@@ -92,7 +82,10 @@ recipes.addShaped(<immersiveengineering:drillhead>, [[<ore:ingotSteel>, <ore:ing
 recipes.addShaped(<immersiveengineering:jerrycan>, [[null, <ore:sheetSteel>, <ore:sheetSteel>], [<ore:sheetSteel>, <tfc:wooden_bucket>, <tfc:wooden_bucket>], [<ore:sheetSteel>, <tfc:wooden_bucket>, <tfc:wooden_bucket>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 2, [[<ore:ingotSteel>, <immersiveengineering:tool>, <ore:ingotSteel>], [<ore:dustRedstone>, <ore:ingotCopper>, <ore:dustRedstone>], [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>]]); 
 recipes.addShaped(<immersiveengineering:metal_decoration0:5>, [[<ore:ingotSteel>, <tfc:metal/hammer/black_steel>, <ore:ingotSteel>], [<minecraft:piston>, <ore:ingotElectrum>, <minecraft:piston>], [<ore:ingotSteel>, <immersiveengineering:material:9>, <ore:ingotSteel>]]);
+recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>], [<ore:ingotCopper>, <ceramics:clay_bucket>.withTag({fluids: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<ceramics:clay_bucket>), <ore:ingotCopper>], [<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>]]);
+recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>], [<ore:ingotCopper>, <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}).transformReplace(<minecraft:bucket>), <ore:ingotCopper>], [<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>], [<ore:ingotCopper>, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>), <ore:ingotCopper>], [<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>]]);
+recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>], [<ore:ingotCopper>, <tfc:metal/bucket/red_steel>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:metal/bucket/red_steel>), <ore:ingotCopper>], [<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration2:2>, [[<ore:fenceAluminum>], [<ore:fenceAluminum>], [<ore:stoneBrick>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration2:4> * 3, [[<ore:chisel>.transformDamage(), <ore:sheetWroughtIron>, <immersiveengineering:tool>], [<ore:paneGlass>, <ore:dustGlowstone>, <ore:paneGlass>], [null, <ore:sheetWroughtIron>, null]]);
 recipes.addShaped(<immersiveengineering:metal_decoration2>, [[<ore:fenceSteel>], [<ore:fenceSteel>], [<ore:stoneBrick>]]);
@@ -101,6 +94,14 @@ recipes.addShaped(<immersiveengineering:shield>, [[<ore:plateSteel>, <ore:plankT
 recipes.addShaped(<immersiveengineering:stone_decoration:0> * 4, [[<tfctech:metal/pig_iron_screw>, <tfc:fire_bricks>, <tfctech:metal/pig_iron_screw>], [<tfc:fire_bricks>, <tfctech:metal/pig_iron_strip> , <tfc:fire_bricks>], [<tfctech:metal/pig_iron_screw>, <tfc:fire_bricks>, <tfctech:metal/pig_iron_screw>]]);
 recipes.addShaped(<immersiveengineering:stone_decoration:10> * 4, [[<tfc:fire_bricks>, <tfctech:metal/steel_screw>, <tfc:fire_bricks>], [<tfc:fire_bricks>, <tfctech:metal/steel_bolt>, <tfc:fire_bricks>], [<tfc:fire_bricks>, <tfctech:metal/steel_screw>, <tfc:fire_bricks>]]);
 recipes.addShaped(<immersiveengineering:stone_decoration:1> * 4, [[<tfctech:metal/steel_screw>, <tfc:fire_bricks>, <tfctech:metal/steel_screw>], [<tfc:fire_bricks>, <tfctech:metal/steel_strip>, <tfc:fire_bricks>], [<tfctech:metal/steel_screw>, <tfc:fire_bricks>, <tfctech:metal/steel_screw>]]);  
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 12, [[<ore:itemSlag>, <ore:clay>, <ore:itemSlag>], [<ore:gravel>, <ceramics:clay_bucket>.withTag({fluids: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<ceramics:clay_bucket>), <ore:gravel>], [<ore:itemSlag>, <ore:clay>, <ore:itemSlag>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 12, [[<ore:itemSlag>, <ore:clay>, <ore:itemSlag>], [<ore:gravel>, <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}).transformReplace(<minecraft:bucket>), <ore:gravel>], [<ore:itemSlag>, <ore:clay>, <ore:itemSlag>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 12, [[<ore:itemSlag>, <ore:clay>, <ore:itemSlag>], [<ore:gravel>, <tfc:metal/bucket/red_steel>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:metal/bucket/red_steel>), <ore:gravel>], [<ore:itemSlag>, <ore:clay>, <ore:itemSlag>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 12, [[<ore:itemSlag>, <ore:clay>, <ore:itemSlag>], [<ore:gravel>, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>), <ore:gravel>], [<ore:itemSlag>, <ore:clay>, <ore:itemSlag>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 8, [[<ore:sand>, <ore:clay>, <ore:sand>], [<ore:gravel>, <ceramics:clay_bucket>.withTag({fluids: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<ceramics:clay_bucket>), <ore:gravel>], [<ore:sand>, <ore:clay>, <ore:sand>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 8, [[<ore:sand>, <ore:clay>, <ore:sand>], [<ore:gravel>, <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}).transformReplace(<minecraft:bucket>), <ore:gravel>], [<ore:sand>, <ore:clay>, <ore:sand>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 8, [[<ore:sand>, <ore:clay>, <ore:sand>], [<ore:gravel>, <tfc:metal/bucket/red_steel>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:metal/bucket/red_steel>), <ore:gravel>], [<ore:sand>, <ore:clay>, <ore:sand>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 8, [[<ore:sand>, <ore:clay>, <ore:sand>], [<ore:gravel>, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>), <ore:gravel>], [<ore:sand>, <ore:clay>, <ore:sand>]]);
 recipes.addShaped(<immersiveengineering:tool:0>, [[null, <tfc:metal/hammer_head/wrought_iron>, <ore:string>], [null, <ore:stickWood>, <tfc:metal/hammer_head/wrought_iron>], [<ore:stickWood>, null, null]]);
 recipes.addShaped(<immersiveengineering:tool:1>, [[null, <tfc:metal/knife_blade/wrought_iron>, null], [<tfc:metal/knife_blade/wrought_iron>, <ore:string>, <ore:stickWood>], [null, <ore:stickWood>, null]]);
 recipes.addShaped(<immersiveengineering:toolupgrade:4>, [[<tfc:metal/sword/black_steel>, <ore:ingotSteel>], [<ore:ingotSteel>, <ore:plankTreatedWood>]]);
@@ -124,8 +125,12 @@ recipes.addShapeless(<tfc:metal/sheet/nickel>, [<immersiveengineering:sheetmetal
 recipes.addShapeless(<tfc:metal/sheet/silver>, [<immersiveengineering:sheetmetal:3>]);
 recipes.addShapeless(<tfc:metal/sheet/steel>, [<immersiveengineering:sheetmetal:8>]);
 recipes.addShapeless(<tfc:metal/sheet/wrought_iron>, [<immersiveengineering:sheetmetal:9>]);
+
+// REPLACE ALL
 recipes.replaceAllOccurences(<immersiveengineering:material:4>, <tfc:crop/product/jute_fiber>);
 recipes.replaceAllOccurences(<ore:blockIron>, <ore:ingotDoubleWroughtIron>, <immersiveengineering:drillhead:1>);
+recipes.replaceAllOccurences(<ore:blockSheetmetalAluminum>, <ore:blockSheetmetalAluminium>);
+recipes.replaceAllOccurences(<ore:blockSheetmetalIron>, <ore:blockSheetmetalWroughtIron>);
 recipes.replaceAllOccurences(<ore:blockSteel>, <ore:ingotDoubleSteel>, <immersiveengineering:drillhead>);
 
 // ITEM REGISTRY

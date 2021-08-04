@@ -1,7 +1,7 @@
 // Author : Alice in Game
 // Add crushed ore with 5 25 50 units variant to use for "ore doubling" and increasing processing efficiency
 // Mod required : -
-// Scripts required : TFC Crushed ore CT
+// Scripts required : TFC Crushed Ore CoT
 
 import mods.terrafirmacraft.ItemRegistry;
 
@@ -54,65 +54,65 @@ ItemRegistry.registerItemMetal(<contenttweaker:sphalerite50>, "ZINC", 50, true);
 ItemRegistry.registerItemMetal(<contenttweaker:tetrahedrite50>, "COPPER", 50, true);
 
 //Add recipe 5x5=25
+recipes.addShapeless(<contenttweaker:bismuthinite25>, [<contenttweaker:bismuthinite5>, <contenttweaker:bismuthinite5>, <contenttweaker:bismuthinite5>, <contenttweaker:bismuthinite5>, <contenttweaker:bismuthinite5>]);
+recipes.addShapeless(<contenttweaker:cassiterite25>, [<contenttweaker:cassiterite5>, <contenttweaker:cassiterite5>, <contenttweaker:cassiterite5>, <contenttweaker:cassiterite5>, <contenttweaker:cassiterite5>]);
+recipes.addShapeless(<contenttweaker:galena25>, [<contenttweaker:galena5>, <contenttweaker:galena5>, <contenttweaker:galena5>, <contenttweaker:galena5>, <contenttweaker:galena5>]);
+recipes.addShapeless(<contenttweaker:garnierite25>, [<contenttweaker:garnierite5>, <contenttweaker:garnierite5>, <contenttweaker:garnierite5>, <contenttweaker:garnierite5>, <contenttweaker:garnierite5>]);
+recipes.addShapeless(<contenttweaker:hematite25>, [<contenttweaker:hematite5>, <contenttweaker:hematite5>, <contenttweaker:hematite5>, <contenttweaker:hematite5>, <contenttweaker:hematite5>]);
+recipes.addShapeless(<contenttweaker:limonite25>, [<contenttweaker:limonite5>, <contenttweaker:limonite5>, <contenttweaker:limonite5>, <contenttweaker:limonite5>, <contenttweaker:limonite5>]);
+recipes.addShapeless(<contenttweaker:magnetite25>, [<contenttweaker:magnetite5>, <contenttweaker:magnetite5>, <contenttweaker:magnetite5>, <contenttweaker:magnetite5>, <contenttweaker:magnetite5>]);
+recipes.addShapeless(<contenttweaker:malachite25>, [<contenttweaker:malachite5>, <contenttweaker:malachite5>, <contenttweaker:malachite5>, <contenttweaker:malachite5>, <contenttweaker:malachite5>]);
 recipes.addShapeless(<contenttweaker:native_copper25>, [<contenttweaker:native_copper5>, <contenttweaker:native_copper5>, <contenttweaker:native_copper5>, <contenttweaker:native_copper5>, <contenttweaker:native_copper5>]);
 recipes.addShapeless(<contenttweaker:native_gold25>, [<contenttweaker:native_gold5>, <contenttweaker:native_gold5>, <contenttweaker:native_gold5>, <contenttweaker:native_gold5>, <contenttweaker:native_gold5>]);
 recipes.addShapeless(<contenttweaker:native_platinum25>, [<contenttweaker:native_platinum5>, <contenttweaker:native_platinum5>, <contenttweaker:native_platinum5>, <contenttweaker:native_platinum5>, <contenttweaker:native_platinum5>]);
-recipes.addShapeless(<contenttweaker:hematite25>, [<contenttweaker:hematite5>, <contenttweaker:hematite5>, <contenttweaker:hematite5>, <contenttweaker:hematite5>, <contenttweaker:hematite5>]);
 recipes.addShapeless(<contenttweaker:native_silver25>, [<contenttweaker:native_silver5>, <contenttweaker:native_silver5>, <contenttweaker:native_silver5>, <contenttweaker:native_silver5>, <contenttweaker:native_silver5>]);
-recipes.addShapeless(<contenttweaker:cassiterite25>, [<contenttweaker:cassiterite5>, <contenttweaker:cassiterite5>, <contenttweaker:cassiterite5>, <contenttweaker:cassiterite5>, <contenttweaker:cassiterite5>]);
-recipes.addShapeless(<contenttweaker:galena25>, [<contenttweaker:galena5>, <contenttweaker:galena5>, <contenttweaker:galena5>, <contenttweaker:galena5>, <contenttweaker:galena5>]);
-recipes.addShapeless(<contenttweaker:bismuthinite25>, [<contenttweaker:bismuthinite5>, <contenttweaker:bismuthinite5>, <contenttweaker:bismuthinite5>, <contenttweaker:bismuthinite5>, <contenttweaker:bismuthinite5>]);
-recipes.addShapeless(<contenttweaker:garnierite25>, [<contenttweaker:garnierite5>, <contenttweaker:garnierite5>, <contenttweaker:garnierite5>, <contenttweaker:garnierite5>, <contenttweaker:garnierite5>]);
-recipes.addShapeless(<contenttweaker:malachite25>, [<contenttweaker:malachite5>, <contenttweaker:malachite5>, <contenttweaker:malachite5>, <contenttweaker:malachite5>, <contenttweaker:malachite5>]);
-recipes.addShapeless(<contenttweaker:magnetite25>, [<contenttweaker:magnetite5>, <contenttweaker:magnetite5>, <contenttweaker:magnetite5>, <contenttweaker:magnetite5>, <contenttweaker:magnetite5>]);
-recipes.addShapeless(<contenttweaker:limonite25>, [<contenttweaker:limonite5>, <contenttweaker:limonite5>, <contenttweaker:limonite5>, <contenttweaker:limonite5>, <contenttweaker:limonite5>]);
 recipes.addShapeless(<contenttweaker:sphalerite25>, [<contenttweaker:sphalerite5>, <contenttweaker:sphalerite5>, <contenttweaker:sphalerite5>, <contenttweaker:sphalerite5>, <contenttweaker:sphalerite5>]);
 recipes.addShapeless(<contenttweaker:tetrahedrite25>, [<contenttweaker:tetrahedrite5>, <contenttweaker:tetrahedrite5>, <contenttweaker:tetrahedrite5>, <contenttweaker:tetrahedrite5>, <contenttweaker:tetrahedrite5>]);
 
 //Add recipe 25=5x5
+recipes.addShapeless(<contenttweaker:bismuthinite5> * 5, [<contenttweaker:bismuthinite25>]);
+recipes.addShapeless(<contenttweaker:cassiterite5> * 5, [<contenttweaker:cassiterite25>]);
+recipes.addShapeless(<contenttweaker:galena5> * 5, [<contenttweaker:galena25>]);
+recipes.addShapeless(<contenttweaker:garnierite5> * 5, [<contenttweaker:garnierite25>]);
+recipes.addShapeless(<contenttweaker:hematite5> * 5, [<contenttweaker:hematite25>]);
+recipes.addShapeless(<contenttweaker:limonite5> * 5, [<contenttweaker:limonite25>]);
+recipes.addShapeless(<contenttweaker:magnetite5> * 5, [<contenttweaker:magnetite25>]);
+recipes.addShapeless(<contenttweaker:malachite5> * 5, [<contenttweaker:malachite25>]);
 recipes.addShapeless(<contenttweaker:native_copper5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:native_gold5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:native_platinum5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:hematite5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:native_silver5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:cassiterite5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:galena5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:bismuthinite5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:garnierite5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:malachite5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:magnetite5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:limonite5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:sphalerite5> * 5, [<contenttweaker:native_copper25>]);
-recipes.addShapeless(<contenttweaker:tetrahedrite5> * 5, [<contenttweaker:native_copper25>]);
+recipes.addShapeless(<contenttweaker:native_gold5> * 5, [<contenttweaker:native_gold25>]);
+recipes.addShapeless(<contenttweaker:native_platinum5> * 5, [<contenttweaker:native_platinum25>]);
+recipes.addShapeless(<contenttweaker:native_silver5> * 5, [<contenttweaker:native_silver25>]);
+recipes.addShapeless(<contenttweaker:sphalerite5> * 5, [<contenttweaker:sphalerite25>]);
+recipes.addShapeless(<contenttweaker:tetrahedrite5> * 5, [<contenttweaker:tetrahedrite25>]);
 
 //Add recipe 2x25=50
+recipes.addShapeless(<contenttweaker:bismuthinite50>, [<contenttweaker:bismuthinite25>, <contenttweaker:bismuthinite25>]);
+recipes.addShapeless(<contenttweaker:cassiterite50>, [<contenttweaker:cassiterite25>, <contenttweaker:cassiterite25>]);
+recipes.addShapeless(<contenttweaker:galena50>, [<contenttweaker:galena25>, <contenttweaker:galena25>]);
+recipes.addShapeless(<contenttweaker:garnierite50>, [<contenttweaker:garnierite25>, <contenttweaker:garnierite25>]);
+recipes.addShapeless(<contenttweaker:hematite50>, [<contenttweaker:hematite25>, <contenttweaker:hematite25>]);
+recipes.addShapeless(<contenttweaker:limonite50>, [<contenttweaker:limonite25>, <contenttweaker:limonite25>]);
+recipes.addShapeless(<contenttweaker:magnetite50>, [<contenttweaker:magnetite25>, <contenttweaker:magnetite25>]);
+recipes.addShapeless(<contenttweaker:malachite50>, [<contenttweaker:malachite25>, <contenttweaker:malachite25>]);
 recipes.addShapeless(<contenttweaker:native_copper50>, [<contenttweaker:native_copper25>, <contenttweaker:native_copper25>]);
 recipes.addShapeless(<contenttweaker:native_gold50>, [<contenttweaker:native_gold25>, <contenttweaker:native_gold25>]);
 recipes.addShapeless(<contenttweaker:native_platinum50>, [<contenttweaker:native_platinum25>, <contenttweaker:native_platinum25>]);
-recipes.addShapeless(<contenttweaker:hematite50>, [<contenttweaker:hematite25>, <contenttweaker:hematite25>]);
 recipes.addShapeless(<contenttweaker:native_silver50>, [<contenttweaker:native_silver25>, <contenttweaker:native_silver25>]);
-recipes.addShapeless(<contenttweaker:cassiterite50>, [<contenttweaker:cassiterite25>, <contenttweaker:cassiterite25>]);
-recipes.addShapeless(<contenttweaker:galena50>, [<contenttweaker:galena25>, <contenttweaker:galena25>]);
-recipes.addShapeless(<contenttweaker:bismuthinite50>, [<contenttweaker:bismuthinite25>, <contenttweaker:bismuthinite25>]);
-recipes.addShapeless(<contenttweaker:garnierite50>, [<contenttweaker:garnierite25>, <contenttweaker:garnierite25>]);
-recipes.addShapeless(<contenttweaker:malachite50>, [<contenttweaker:malachite25>, <contenttweaker:malachite25>]);
-recipes.addShapeless(<contenttweaker:magnetite50>, [<contenttweaker:magnetite25>, <contenttweaker:magnetite25>]);
-recipes.addShapeless(<contenttweaker:limonite50>, [<contenttweaker:limonite25>, <contenttweaker:limonite25>]);
 recipes.addShapeless(<contenttweaker:sphalerite50>, [<contenttweaker:sphalerite25>, <contenttweaker:sphalerite25>]);
 recipes.addShapeless(<contenttweaker:tetrahedrite50>, [<contenttweaker:tetrahedrite25>, <contenttweaker:tetrahedrite25>]);
 
 //Add recipe 50=2x25
+recipes.addShapeless(<contenttweaker:bismuthinite25> * 2, [<contenttweaker:bismuthinite50>]);
+recipes.addShapeless(<contenttweaker:cassiterite25> * 2, [<contenttweaker:cassiterite50>]);
+recipes.addShapeless(<contenttweaker:galena25> * 2, [<contenttweaker:galena50>]);
+recipes.addShapeless(<contenttweaker:garnierite25> * 2, [<contenttweaker:garnierite50>]);
+recipes.addShapeless(<contenttweaker:hematite25> * 2, [<contenttweaker:hematite50>]);
+recipes.addShapeless(<contenttweaker:limonite25> * 2, [<contenttweaker:limonite50>]);
+recipes.addShapeless(<contenttweaker:magnetite25> * 2, [<contenttweaker:magnetite50>]);
+recipes.addShapeless(<contenttweaker:malachite25> * 2, [<contenttweaker:malachite50>]);
 recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:native_copper50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:native_gold50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:native_platinum50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:hematite50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:native_silver50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:cassiterite50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:galena50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:bismuthinite50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:garnierite50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:malachite50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:magnetite50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:limonite50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:sphalerite50>]);
-recipes.addShapeless(<contenttweaker:native_copper25> * 2, [<contenttweaker:tetrahedrite50>]);
+recipes.addShapeless(<contenttweaker:native_gold25> * 2, [<contenttweaker:native_gold50>]);
+recipes.addShapeless(<contenttweaker:native_platinum25> * 2, [<contenttweaker:native_platinum50>]);
+recipes.addShapeless(<contenttweaker:native_silver25> * 2, [<contenttweaker:native_silver50>]);
+recipes.addShapeless(<contenttweaker:sphalerite25> * 2, [<contenttweaker:sphalerite50>]);
+recipes.addShapeless(<contenttweaker:tetrahedrite25> * 2, [<contenttweaker:tetrahedrite50>]);
