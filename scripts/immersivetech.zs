@@ -11,7 +11,7 @@ recipes.remove(<immersivetech:stone_decoration>);
 
 // ADD
 recipes.addShaped(<immersivetech:connectors>, [[<ore:paneGlass>, <immersiveengineering:connector:12>, <ore:paneGlass>], [<immersiveengineering:material:27>, <immersiveengineering:material:27>, <immersiveengineering:material:27>], [<ore:paneGlass>, <ore:gemFlawless>, <ore:paneGlass>]]);
-recipes.addShaped(<immersivetech:metal_device>, [[<ore:blockSheetmetalWroughtIron>, <ore:blockSheetmetalWroughtIron>, <ore:blockSheetmetalWroughtIron>], [<immersiveengineering:metal_device1:1>, null, <immersiveengineering:metal_device1:1>], [<ore:blockSheetmetalWroughtIron>, <ore:blockSheetmetalWroughtIron>, <ore:blockSheetmetalWroughtIron>]]);
+recipes.addShaped(<immersivetech:metal_device>, [[<ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>], [<immersiveengineering:metal_device1:1>, null, <immersiveengineering:metal_device1:1>], [<ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>]]);
 recipes.addShapeless(<immersivetech:stone_decoration>, [<ore:plateSteel>, <immersiveengineering:stone_decoration>, <immersiveengineering:tool>]);
 
 // MACHINES

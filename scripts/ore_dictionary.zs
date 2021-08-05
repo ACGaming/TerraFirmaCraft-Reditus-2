@@ -76,8 +76,33 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:categoryCookedMeat>.add(<tfc:food/cooked_egg>);
 <ore:categoryMeat>.add(<minecraft:egg>);
 
+// TREE SEEDS
+<ore:seedTree>.add(
+	<dynamictreestfc:seed/acacia>,
+	<dynamictreestfc:seed/ash>,
+	<dynamictreestfc:seed/aspen>,
+	<dynamictreestfc:seed/birch>,
+	<dynamictreestfc:seed/blackwood>,
+	<dynamictreestfc:seed/chestnut>,
+	<dynamictreestfc:seed/douglas_fir>,
+	<dynamictreestfc:seed/hevea>,
+	<dynamictreestfc:seed/hickory>,
+	<dynamictreestfc:seed/kapok>,
+	<dynamictreestfc:seed/maple>,
+	<dynamictreestfc:seed/oak>,
+	<dynamictreestfc:seed/palm>,
+	<dynamictreestfc:seed/pine>,
+	<dynamictreestfc:seed/rosewood>,
+	<dynamictreestfc:seed/sequoia>,
+	<dynamictreestfc:seed/spruce>,
+	<dynamictreestfc:seed/sycamore>,
+	<dynamictreestfc:seed/white_cedar>,
+	<dynamictreestfc:seed/willow>);
+
 // SEEDS
 <ore:seed>.add(
+	<firmalife:crop/seeds/melon>,
+	<firmalife:crop/seeds/pumpkin>,
 	<tfc:crop/seeds/barley>,
 	<tfc:crop/seeds/beet>,
 	<tfc:crop/seeds/cabbage>,
@@ -185,11 +210,51 @@ import crafttweaker.oredict.IOreDictEntry;
 	<rustic:marsh_mallow>,
 	<rustic:tomato>);
 
-// IMMERSIVE ENGINEERING
+// ALUMIN(I)UM BRASS
+<ore:blockAlubrass>.addAll(<ore:blockAluminiumBrass>);
+<ore:blockAluminiumBrass>.addAll(<ore:blockAlubrass>);
+<ore:ingotAlubrass>.addAll(<ore:ingotAluminiumBrass>);
+<ore:ingotAluminiumBrass>.addAll(<ore:ingotAlubrass>);
+<ore:nuggetAlubrass>.addAll(<ore:nuggetAluminiumBrass>);
+<ore:nuggetAluminiumBrass>.addAll(<ore:nuggetAlubrass>);
+
+// ALUMIN(I)UM
+<ore:blockAluminium>.addAll(<ore:blockAluminum>);
+<ore:blockAluminum>.addAll(<ore:blockAluminium>);
 <ore:blockSheetmetalAluminium>.addAll(<ore:blockSheetmetalAluminum>);
-<ore:blockSheetmetalWroughtIron>.addAll(<ore:blockSheetmetalIron>);
+<ore:blockSheetmetalAluminum>.addAll(<ore:blockSheetmetalAluminium>);
+<ore:dustAluminium>.addAll(<ore:dustAluminum>);
+<ore:dustAluminum>.addAll(<ore:dustAluminium>);
+<ore:fenceAluminium>.addAll(<ore:fenceAluminum>);
+<ore:fenceAluminum>.addAll(<ore:fenceAluminium>);
+<ore:ingotAluminium>.addAll(<ore:ingotAluminum>);
+<ore:ingotAluminum>.addAll(<ore:ingotAluminium>);
+<ore:ingotDoubleAluminium>.addAll(<ore:ingotDoubleAluminum>);
+<ore:ingotDoubleAluminum>.addAll(<ore:ingotDoubleAluminium>);
+<ore:nuggetAluminium>.addAll(<ore:nuggetAluminum>);
+<ore:nuggetAluminum>.addAll(<ore:nuggetAluminium>);
+<ore:oreAluminium>.addAll(<ore:oreAluminum>);
+<ore:oreAluminum>.addAll(<ore:oreAluminium>);
+<ore:plateAluminium>.addAll(<ore:plateAluminum>);
+<ore:plateAluminum>.addAll(<ore:plateAluminium>);
+<ore:scaffoldingAluminium>.addAll(<ore:scaffoldingAluminum>);
+<ore:scaffoldingAluminum>.addAll(<ore:scaffoldingAluminium>);
+<ore:scrapAluminium>.addAll(<ore:scrapAluminum>);
+<ore:scrapAluminum>.addAll(<ore:scrapAluminium>);
+<ore:sheetAluminium>.addAll(<ore:sheetAluminum>);
+<ore:sheetAluminum>.addAll(<ore:sheetAluminium>);
+<ore:sheetDoubleAluminium>.addAll(<ore:sheetDoubleAluminum>);
+<ore:sheetDoubleAluminum>.addAll(<ore:sheetDoubleAluminium>);
+<ore:slabAluminium>.addAll(<ore:slabAluminum>);
+<ore:slabAluminum>.addAll(<ore:slabAluminium>);
+<ore:slabSheetmetalAluminium>.addAll(<ore:slabSheetmetalAluminum>);
+<ore:slabSheetmetalAluminum>.addAll(<ore:slabSheetmetalAluminium>);
 <ore:stickAluminium>.addAll(<ore:stickAluminum>);
+<ore:stickAluminum>.addAll(<ore:stickAluminium>);
+<ore:trapdoorAluminium>.addAll(<ore:trapdoorAluminum>);
+<ore:trapdoorAluminum>.addAll(<ore:trapdoorAluminium>);
 <ore:wireAluminium>.addAll(<ore:wireAluminum>);
+<ore:wireAluminum>.addAll(<ore:wireAluminium>);
 
 // CLOTH ANY
 <ore:clothAny>.add(

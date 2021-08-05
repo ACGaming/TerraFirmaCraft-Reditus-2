@@ -817,16 +817,19 @@ Melting.addRecipe(<liquid:zircaloy> * 800, <contenttweaker:blockzircaloy>);
 Melting.addRecipe(<liquid:zirconium> * 800, <contenttweaker:blockzirconium>);
 
 // ADD HEATING
+ItemRegistry.registerItemHeat(<tconstruct:materials:9>, 0.31, 480, true);
 ItemRegistry.registerItemHeat(<tconstruct:materials:10>, 0.31, 480, true);
 ItemRegistry.registerItemHeat(<tconstruct:materials:11>, 0.31, 480, true);
-ItemRegistry.registerItemHeat(<tconstruct:materials:9>, 0.31, 480, true);
 ItemRegistry.registerItemHeat(<tconstruct:soil:1>, 0.85, 480, false);
 ItemRegistry.registerItemHeat(<tconstruct:soil:2>, 0.85, 480, false);
+ItemRegistry.registerItemHeat(<tconstruct:soil:3>, 0.85, 480, false);
+ItemRegistry.registerItemHeat(<tconstruct:soil:4>, 0.85, 480, false);
 ItemRegistry.registerItemHeat(<tconstruct:soil:5>, 0.85, 480, false);
 
 Heating.addRecipe("slime_crystal_1", <tconstruct:soil:1>, <tconstruct:materials:9>, 190, 480);
 Heating.addRecipe("slime_crystal_2", <tconstruct:soil:2>, <tconstruct:materials:10>, 190, 480);
 Heating.addRecipe("slime_crystal_3", <tconstruct:soil:5>, <tconstruct:materials:11>, 190, 480);
+Heating.addRecipe("consecrated_soil", <tconstruct:soil:3>, <tconstruct:soil:4>, 190, 480);
 
 // TOOLTIPS
 <tconstruct:piggybackpack>.addTooltip("Don't you dare use it while wearing a Wearable Backpack!");

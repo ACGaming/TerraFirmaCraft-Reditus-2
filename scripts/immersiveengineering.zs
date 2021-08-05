@@ -66,7 +66,7 @@ recipes.remove(<immersiveengineering:wooden_device0:2>);
 recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "electrode"}), [[<ore:dustHOPGraphite>, <ore:ingotBlackSteel>, <ore:dustHOPGraphite>], [<tfc:powder/lapis_lazuli>, <tfc:powder/lapis_lazuli>, <tfc:powder/lapis_lazuli>], [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
 recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_aluminum"})* 12, [[<ore:blockSheetmetalAluminium>, <ore:blockSheetmetalAluminium>], [<ore:blockSheetmetalAluminium>, <ore:blockSheetmetalAluminium>], [<ore:blockSheetmetalAluminium>, <ore:blockSheetmetalAluminium>]]);
 recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_copper"})* 12, [[<ore:blockSheetmetalCopper>, <ore:blockSheetmetalCopper>], [<ore:blockSheetmetalCopper>, <ore:blockSheetmetalCopper>], [<ore:blockSheetmetalCopper>, <ore:blockSheetmetalCopper>]]);
-recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_iron"})* 12, [[<ore:blockSheetmetalWroughtIron>, <ore:blockSheetmetalWroughtIron>], [<ore:blockSheetmetalWroughtIron>, <ore:blockSheetmetalWroughtIron>], [<ore:blockSheetmetalWroughtIron>, <ore:blockSheetmetalWroughtIron>]]);
+recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_iron"})* 12, [[<ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>], [<ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>], [<ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>]]);
 recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_steel"})* 12, [[<ore:blockSheetmetalSteel>, <ore:blockSheetmetalSteel>], [<ore:blockSheetmetalSteel>, <ore:blockSheetmetalSteel>], [<ore:blockSheetmetalSteel>, <ore:blockSheetmetalSteel>]]);
 recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, [[null,<immersiveengineering:tool>,null], [<ore:rubber>, <ore:rubber>, <ore:rubber>], [<tfc:metal/ingot/wrought_iron>, <ore:dustRedstone>, <tfc:metal/ingot/wrought_iron>]]);
 recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:covered"}), [[<ore:scaffoldingSteel>], [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})]]);
@@ -89,7 +89,7 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<ore:ingotSt
 recipes.addShaped(<immersiveengineering:metal_decoration2:2>, [[<ore:fenceAluminum>], [<ore:fenceAluminum>], [<ore:stoneBrick>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration2:4> * 3, [[<ore:chisel>.transformDamage(), <ore:sheetWroughtIron>, <immersiveengineering:tool>], [<ore:paneGlass>, <ore:dustGlowstone>, <ore:paneGlass>], [null, <ore:sheetWroughtIron>, null]]);
 recipes.addShaped(<immersiveengineering:metal_decoration2>, [[<ore:fenceSteel>], [<ore:fenceSteel>], [<ore:stoneBrick>]]);
-recipes.addShaped(<immersiveengineering:metal_device1>, [[<ore:blockSheetmetalWroughtIron>, <ore:blockSheetmetalWroughtIron>, <ore:blockSheetmetalWroughtIron>], [<ore:blockSheetmetalWroughtIron>, null, <ore:blockSheetmetalWroughtIron>], [<ore:blockSheetmetalWroughtIron>, <immersiveengineering:metal_device1:1>, <ore:blockSheetmetalWroughtIron>]]);
+recipes.addShaped(<immersiveengineering:metal_device1>, [[<ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>], [<ore:blockSheetmetalIron>, null, <ore:blockSheetmetalIron>], [<ore:blockSheetmetalIron>, <immersiveengineering:metal_device1:1>, <ore:blockSheetmetalIron>]]);
 recipes.addShaped(<immersiveengineering:shield>, [[<ore:plateSteel>, <ore:plankTreatedWood>, <ore:plateSteel>], [<ore:plateSteel>, <tfc:metal/shield/steel>, <ore:plateSteel>], [<ore:plateSteel>, <ore:plankTreatedWood>, <ore:plateSteel>]]);
 recipes.addShaped(<immersiveengineering:stone_decoration:0> * 4, [[<tfctech:metal/pig_iron_screw>, <tfc:fire_bricks>, <tfctech:metal/pig_iron_screw>], [<tfc:fire_bricks>, <tfctech:metal/pig_iron_strip> , <tfc:fire_bricks>], [<tfctech:metal/pig_iron_screw>, <tfc:fire_bricks>, <tfctech:metal/pig_iron_screw>]]);
 recipes.addShaped(<immersiveengineering:stone_decoration:10> * 4, [[<tfc:fire_bricks>, <tfctech:metal/steel_screw>, <tfc:fire_bricks>], [<tfc:fire_bricks>, <tfctech:metal/steel_bolt>, <tfc:fire_bricks>], [<tfc:fire_bricks>, <tfctech:metal/steel_screw>, <tfc:fire_bricks>]]);
@@ -129,8 +129,6 @@ recipes.addShapeless(<tfc:metal/sheet/wrought_iron>, [<immersiveengineering:shee
 // REPLACE ALL
 recipes.replaceAllOccurences(<immersiveengineering:material:4>, <tfc:crop/product/jute_fiber>);
 recipes.replaceAllOccurences(<ore:blockIron>, <ore:ingotDoubleWroughtIron>, <immersiveengineering:drillhead:1>);
-recipes.replaceAllOccurences(<ore:blockSheetmetalAluminum>, <ore:blockSheetmetalAluminium>);
-recipes.replaceAllOccurences(<ore:blockSheetmetalIron>, <ore:blockSheetmetalWroughtIron>);
 recipes.replaceAllOccurences(<ore:blockSteel>, <ore:ingotDoubleSteel>, <immersiveengineering:drillhead>);
 
 // ITEM REGISTRY

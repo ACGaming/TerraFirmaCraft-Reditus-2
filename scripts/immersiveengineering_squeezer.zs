@@ -19,9 +19,8 @@ Squeezer.addRecipe(<rustic:beeswax> * 2, <liquid:honey> * 500, <rustic:honeycomb
 Squeezer.addRecipe(<tfc:hide/scraped/large>, <liquid:limewater> * 50, <tfc:hide/soaked/large>, 512);
 Squeezer.addRecipe(<tfc:hide/scraped/medium>, <liquid:limewater> * 40, <tfc:hide/soaked/medium>, 512);
 Squeezer.addRecipe(<tfc:hide/scraped/small>, <liquid:limewater> * 30, <tfc:hide/soaked/small>, 512);
-Squeezer.addRecipe(null, <liquid:applejuice> * 250, <tfc:food/red_apple>, 512);
-Squeezer.addRecipe(null, <liquid:grapejuice> * 250, <rustic:grapes>, 512);
-Squeezer.addRecipe(null, <liquid:plantoil> * 40, <firmalife:crop/seeds/melon>, 512);
-Squeezer.addRecipe(null, <liquid:plantoil> * 40, <firmalife:crop/seeds/pumpkin>, 512);
-Squeezer.addRecipe(null, <liquid:plantoil> * 80, <ore:seed>, 1024);
-Squeezer.addRecipe(null, <liquid:wildberryjuice> * 250, <rustic:wildberries>, 512);
+Squeezer.addRecipe(null, <liquid:applejuice> * 250, <tfc:food/red_apple>, 1024);
+Squeezer.addRecipe(null, <liquid:grapejuice> * 250, <rustic:grapes>, 1024);
+Squeezer.addRecipe(null, <liquid:plantoil> * 80, <ore:seed>, 512);
+Squeezer.addRecipe(null, <liquid:plantoil> * 80, <ore:seedTree>, 512);
+Squeezer.addRecipe(null, <liquid:wildberryjuice> * 250, <rustic:wildberries>, 1024);

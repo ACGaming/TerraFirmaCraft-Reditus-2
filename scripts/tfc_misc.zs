@@ -145,9 +145,9 @@ recipes.removeByRecipeName("tconstruct:common/metals/pigiron/pigiron_nugget");
 recipes.removeByRecipeName("tfc:vanilla/flint_and_steel");
 
 // ADD
-// Bloomery
+// Aluminium Brass Bloomery
 recipes.addShaped(<tfc:bloomery>, [[<ore:sheetDoubleAluminiumBrass>, <ore:sheetDoubleAluminiumBrass>, <ore:sheetDoubleAluminiumBrass>],[<ore:sheetDoubleAluminiumBrass>, null, <ore:sheetDoubleAluminiumBrass>], [<ore:sheetDoubleAluminiumBrass>, <ore:sheetDoubleAluminiumBrass>, <ore:sheetDoubleAluminiumBrass>]]);
-// Sticks from lumber
+// Sticks from Lumber
 recipes.addShapeless(<minecraft:stick> * 2, [<ore:lumber>, <ore:saw>.transformDamage()]);
 recipes.addShapeless(<minecraft:stick> * 8, [<ore:plankWood>, <ore:saw>.transformDamage()]);
 // Cut gems with tools
@@ -212,6 +212,13 @@ recipes.addShaped(<tfc:sea_ice>,[
 	[<cellars:sea_ice_shard>, <cellars:sea_ice_shard>, <cellars:sea_ice_shard>],
 	[<cellars:sea_ice_shard>, <cellars:sea_ice_shard>, <cellars:sea_ice_shard>],
 	[<cellars:sea_ice_shard>, <cellars:sea_ice_shard>, <cellars:sea_ice_shard>]]);
+// Music Discs
+recipes.addShapeless(<minecraft:record_13>, [<tconstruct:pan_head>.withTag({Material: "obsidian"}), <ore:dyeYellow>]);
+recipes.addShapeless(<minecraft:record_cat>, [<tconstruct:pan_head>.withTag({Material: "obsidian"}), <ore:dyeGreen>]);
+recipes.addShapeless(<minecraft:record_blocks>, [<tconstruct:pan_head>.withTag({Material: "obsidian"}), <ore:dyeOrange>]);
+recipes.addShapeless(<minecraft:record_chirp>, [<tconstruct:pan_head>.withTag({Material: "obsidian"}), <ore:dyeRed>]);
+recipes.addShapeless(<minecraft:record_far>, [<tconstruct:pan_head>.withTag({Material: "obsidian"}), <ore:dyeLime>]);
+recipes.addShapeless(<minecraft:record_mall>, [<tconstruct:pan_head>.withTag({Material: "obsidian"}), <ore:dyePurple>]);
 
 // FUEL
 ItemRegistry.registerFuel(<tfc:ore/petrified_wood>, 1000, 800, false, false);
