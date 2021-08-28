@@ -1,6 +1,6 @@
 // Author : TerraFirmaCraft Reloaded Team & ACGaming
-// Mod required : ContentTweaker
-// Scripts required : misc-CoT
+// Mod required : -
+// Scripts required : TFC Misc CoT
 
 import mods.jei.JEI;
 import mods.terrafirmacraft.Barrel;
@@ -13,9 +13,6 @@ import mods.tfcdryingrack.Rack;
 furnace.removeAll();
 
 // REMOVE AND HIDE
-JEI.removeAndHide(<gardenstuff:material:3>);
-JEI.removeAndHide(<gardenstuff:material:4>);
-JEI.removeAndHide(<gardenstuff:metal_block>);
 JEI.removeAndHide(<minecraft:brewing_stand>);
 JEI.removeAndHide(<minecraft:diamond>);
 JEI.removeAndHide(<minecraft:diamond_axe>);
@@ -63,6 +60,17 @@ JEI.removeAndHide(<minecraft:wooden_hoe>);
 JEI.removeAndHide(<minecraft:wooden_pickaxe>);
 JEI.removeAndHide(<minecraft:wooden_shovel>);
 JEI.removeAndHide(<minecraft:wooden_sword>);
+JEI.removeAndHide(<tfc:metal/double_ingot/refined_iron>);
+JEI.removeAndHide(<tfc:metal/double_sheet/refined_iron>);
+JEI.removeAndHide(<tfc:metal/dust/refined_iron>);
+JEI.removeAndHide(<tfc:metal/lamp/refined_iron>);
+JEI.removeAndHide(<tfc:metal/nugget/refined_iron>);
+JEI.removeAndHide(<tfc:metal/scrap/refined_iron>);
+JEI.removeAndHide(<tfc:metal/sheet/refined_glowstone>);
+JEI.removeAndHide(<tfc:metal/sheet/refined_iron>);
+JEI.removeAndHide(<tfc:metal/sheet/refined_obsidian>);
+JEI.removeAndHide(<tfc:metal/sheet/soulforged_steel>);
+JEI.removeAndHide(<tfc:metal/trapdoor/refined_iron>);
 
 // REMOVE
 recipes.remove(<tfc:crop/product/jute_disc>);
@@ -220,15 +228,22 @@ recipes.addShapeless(<minecraft:record_chirp>, [<tconstruct:pan_head>.withTag({M
 recipes.addShapeless(<minecraft:record_far>, [<tconstruct:pan_head>.withTag({Material: "obsidian"}), <ore:dyeLime>]);
 recipes.addShapeless(<minecraft:record_mall>, [<tconstruct:pan_head>.withTag({Material: "obsidian"}), <ore:dyePurple>]);
 
+// REPLACE
+recipes.replaceAllOccurences(<tfc:metal/ingot/steel>, <ore:ingotSteel>);
+
 // FUEL
 ItemRegistry.registerFuel(<tfc:ore/petrified_wood>, 1000, 800, false, false);
 ItemRegistry.registerFuel(<tfc:ore/jet>, 2000, 900, false, false);
 
 // QUERN
 // Quern.addRecipe(String registryName, IIngredient input, IItemStack output)
-Quern.addRecipe("olivine_flux", <ore:gemOlivine>, <tfc:powder/flux>);
+Quern.addRecipe("gypsum_salt_quern", <ore:gemGypsum>, <tfc:powder/salt> * 4);
+Quern.addRecipe("microcline_cyan_dye_quern", <ore:gemMicrocline>, <minecraft:dye:6> * 2);
+Quern.addRecipe("olivine_lime_dye_quern", <ore:gemOlivine>, <minecraft:dye:10> * 2);
+Quern.addRecipe("satinspar_glowstone_quern", <ore:gemSatinspar>, <minecraft:glowstone_dust> * 4);
 Quern.addRecipe("seashell_quern", <contenttweaker:seashell>, <tfctech:powder/lime>);
-Quern.addRecipe("selenite_gypsum", <ore:gemSelenite>, <tfc:ore/gypsum>);
+Quern.addRecipe("selenite_glowstone_quern", <ore:gemSelenite>, <minecraft:glowstone_dust> * 4);
+Quern.addRecipe("serpentine_green_dye_quern", <ore:gemSerpentine>, <minecraft:dye:2> * 2);
 Quern.addRecipe("tfcr:allium", <tfc:plants/allium>, <minecraft:dye:5> * 2);
 Quern.addRecipe("tfcr:athyrium_fern", <tfc:plants/athyrium_fern>, <minecraft:dye:13> * 2);
 Quern.addRecipe("tfcr:barrel_cactus", <tfc:plants/barrel_cactus>, <minecraft:dye:2> * 3);
@@ -299,6 +314,7 @@ Barrel.addRecipe("aged_rye_whiskey_vinegar", <ore:categoryFruit>, <liquid:aged_r
 Barrel.addRecipe("aged_sake_vinegar", <ore:categoryFruit>, <liquid:aged_sake> * 250, null, <liquid:vinegar> * 250, 8);
 Barrel.addRecipe("aged_vodka_vinegar", <ore:categoryFruit>, <liquid:aged_vodka> * 250, null, <liquid:vinegar> * 250, 8);
 Barrel.addRecipe("aged_whiskey_vinegar", <ore:categoryFruit>, <liquid:aged_whiskey> * 250, null, <liquid:vinegar> * 250, 8);
+Barrel.addRecipe("glowstone_barrel", <minecraft:glowstone_dust> * 4, <liquid:hot_water> * 250, <minecraft:glowstone>, null, 0);
 Barrel.addRecipe("wood_pulp_barrel", <contenttweaker:wood_chips>, <liquid:fresh_water> * 250, <contenttweaker:wood_pulp>, null, 2);
 
 // DRYING RACK

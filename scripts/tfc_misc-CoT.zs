@@ -1,6 +1,6 @@
 // Author : ACGaming
 // Mod required : ContentTweaker
-// Scripts required : -
+// Scripts required : TFC Misc
 
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;

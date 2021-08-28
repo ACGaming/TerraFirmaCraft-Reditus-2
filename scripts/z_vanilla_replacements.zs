@@ -70,13 +70,17 @@ recipes.replaceAllOccurences(<minecraft:sand>, <ore:sand>);
 recipes.replaceAllOccurences(<minecraft:sandstone>, <ore:sandstone>);
 recipes.replaceAllOccurences(<minecraft:stone>, <ore:stone>);
 
-// SAPLINGS
-recipes.replaceAllOccurences(<minecraft:sapling>, <dynamictreestfc:seed/oak>);
+// SAPLINGS & SEEDS
+recipes.replaceAllOccurences(<minecraft:beetroot_seeds>, <tfc:crop/seeds/beet>);
+recipes.replaceAllOccurences(<minecraft:melon_seeds>, <firmalife:crop/seeds/melon>);
+recipes.replaceAllOccurences(<minecraft:pumpkin_seeds>, <firmalife:crop/seeds/pumpkin>);
 recipes.replaceAllOccurences(<minecraft:sapling:1>, <dynamictreestfc:seed/spruce>);
 recipes.replaceAllOccurences(<minecraft:sapling:2>, <dynamictreestfc:seed/birch>);
 recipes.replaceAllOccurences(<minecraft:sapling:3>, <dynamictreestfc:seed/sequoia>);
 recipes.replaceAllOccurences(<minecraft:sapling:4>, <dynamictreestfc:seed/acacia>);
 recipes.replaceAllOccurences(<minecraft:sapling:5>, <dynamictreestfc:seed/hickory>);
+recipes.replaceAllOccurences(<minecraft:sapling>, <dynamictreestfc:seed/oak>);
+recipes.replaceAllOccurences(<minecraft:wheat_seeds>, <tfc:crop/seeds/wheat>);
 
 // TOOLS
 recipes.replaceAllOccurences(<minecraft:iron_axe>, <tfc:metal/axe/wrought_iron>);
@@ -86,20 +90,38 @@ recipes.replaceAllOccurences(<minecraft:iron_sword>, <tfc:metal/sword/wrought_ir
 recipes.replaceAllOccurences(<minecraft:stone_axe>, <ore:axeStone>);
 recipes.replaceAllOccurences(<minecraft:stone_shovel>, <ore:shovelStone>);
 
-// OTHER
+// FOOD
 recipes.replaceAllOccurences(<minecraft:apple>, <ore:apple>);
+recipes.replaceAllOccurences(<minecraft:beef>, <tfc:food/beef>);
+recipes.replaceAllOccurences(<minecraft:chicken>, <tfc:food/chicken>);
+recipes.replaceAllOccurences(<minecraft:cooked_beef>, <tfc:food/cooked_beef>);
+recipes.replaceAllOccurences(<minecraft:cooked_chicken>, <tfc:food/cooked_chicken>);
+recipes.replaceAllOccurences(<minecraft:cooked_fish>, <tfc:food/cooked_fish>);
+recipes.replaceAllOccurences(<minecraft:cooked_mutton>, <tfc:food/cooked_mutton>);
+recipes.replaceAllOccurences(<minecraft:cooked_porkchop>, <tfc:food/cooked_pork>);
+recipes.replaceAllOccurences(<minecraft:cooked_rabbit>, <tfc:food/cooked_rabbit>);
+recipes.replaceAllOccurences(<minecraft:egg>, <ore:egg>);
+recipes.replaceAllOccurences(<minecraft:fish>, <tfc:food/fish>);
+recipes.replaceAllOccurences(<minecraft:melon>, <ore:melon>);
+recipes.replaceAllOccurences(<minecraft:melon_block>, <firmalife:melon_fruit>);
+recipes.replaceAllOccurences(<minecraft:mutton>, <tfc:food/mutton>);
+recipes.replaceAllOccurences(<minecraft:porkchop>, <tfc:food/pork>);
+recipes.replaceAllOccurences(<minecraft:pumpkin>, <firmalife:pumpkin_fruit>);
+recipes.replaceAllOccurences(<minecraft:rabbit>, <tfc:food/rabbit>);
+recipes.replaceAllOccurences(<minecraft:reeds>, <tfc:food/sugarcane>);
+recipes.replaceAllOccurences(<minecraft:wheat>, <tfc:food/wheat>);
+
+// OTHER
 recipes.replaceAllOccurences(<minecraft:blaze_powder>, <ore:dustSulfur>);
 recipes.replaceAllOccurences(<minecraft:bone>, <ore:bone>);
 recipes.replaceAllOccurences(<minecraft:bookshelf>, <ore:bookshelf>);
 recipes.replaceAllOccurences(<minecraft:bowl>, <tfc:ceramics/fired/bowl>);
 recipes.replaceAllOccurences(<minecraft:brick>, <ore:brick>);
-recipes.replaceAllOccurences(<minecraft:bucket>, <ore:brick>);
 recipes.replaceAllOccurences(<minecraft:chest>, <ore:chestWood>);
 recipes.replaceAllOccurences(<minecraft:coal:1>, <ore:charcoal>);
 recipes.replaceAllOccurences(<minecraft:coal>, <ore:gemCoal>);
 recipes.replaceAllOccurences(<minecraft:crafting_table>, <ore:workbench>);
 recipes.replaceAllOccurences(<minecraft:diamond>, <ore:gemDiamond>);
-recipes.replaceAllOccurences(<minecraft:egg>, <ore:egg>);
 recipes.replaceAllOccurences(<minecraft:emerald>, <ore:gemEmerald>);
 recipes.replaceAllOccurences(<minecraft:furnace>, <tfctech:smeltery_firebox>);
 recipes.replaceAllOccurences(<minecraft:glass>, <ore:blockGlass>);
@@ -116,7 +138,6 @@ recipes.replaceAllOccurences(<minecraft:paper>, <ore:paper>);
 recipes.replaceAllOccurences(<minecraft:quartz>, <ore:rockQuartzite>);
 recipes.replaceAllOccurences(<minecraft:quartz_block>, <ore:stoneQuartzite>);
 recipes.replaceAllOccurences(<minecraft:redstone>, <ore:dustRedstone>);
-recipes.replaceAllOccurences(<minecraft:reeds>, <tfc:food/sugarcane>);
 recipes.replaceAllOccurences(<minecraft:shears>, <ore:shears>);
 recipes.replaceAllOccurences(<minecraft:stick>, <ore:stickWood>);
 recipes.replaceAllOccurences(<minecraft:stone_button>, <ore:button>);
@@ -124,8 +145,6 @@ recipes.replaceAllOccurences(<minecraft:stone_pressure_plate>, <ore:pressurePlat
 recipes.replaceAllOccurences(<minecraft:stonebrick>, <ore:stoneBrick>);
 recipes.replaceAllOccurences(<minecraft:string>, <ore:string>);
 recipes.replaceAllOccurences(<minecraft:trapdoor>, <ore:woodTrapdoor>);
-recipes.replaceAllOccurences(<minecraft:water_bucket>, <ore:listAllwater>);
-recipes.replaceAllOccurences(<minecraft:wheat>, <tfc:food/wheat>);
 recipes.replaceAllOccurences(<minecraft:wooden_button>, <ore:button>);
 recipes.replaceAllOccurences(<minecraft:wooden_pressure_plate>, <ore:pressurePlateWood>);
 recipes.replaceAllOccurences(<minecraft:wool>, <ore:clothHighQuality>);

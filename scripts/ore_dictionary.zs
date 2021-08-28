@@ -7,6 +7,11 @@
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
+// COALS
+<ore:charcoal>.addAll(<ore:gemPetrifiedWood>);
+<ore:gemCoal>.addAll(<ore:gemJet>);
+<ore:gemCoal>.addAll(<ore:gemLignite>);
+
 // IRON BLOCK
 <ore:blockIron>.addAll(<ore:blockWroughtIron>);
 

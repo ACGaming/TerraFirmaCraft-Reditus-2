@@ -128,6 +128,7 @@ recipes.addShapeless(<tfc:metal/sheet/wrought_iron>, [<immersiveengineering:shee
 
 // REPLACE ALL
 recipes.replaceAllOccurences(<immersiveengineering:material:4>, <tfc:crop/product/jute_fiber>);
+recipes.replaceAllOccurences(<immersiveengineering:metal:8>, <ore:ingotSteel>);
 recipes.replaceAllOccurences(<ore:blockIron>, <ore:ingotDoubleWroughtIron>, <immersiveengineering:drillhead:1>);
 recipes.replaceAllOccurences(<ore:blockSteel>, <ore:ingotDoubleSteel>, <immersiveengineering:drillhead>);
 

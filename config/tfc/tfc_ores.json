@@ -1,0 +1,579 @@
+{
+	"native_copper": {
+		"ore": "tfc:native_copper",
+		"loose": "tfc:native_copper",
+		"width": 32,
+		"height": 40,
+		"shape": "cluster",
+		"rarity": 160,
+		"minimum_height": 5,
+		"maximum_height": 100,
+		"density": 70,
+		"base_rocks": [
+			"tfc:igneous_extrusive"
+		]
+	},
+	"native_gold": {
+		"ore": "tfc:native_gold",
+		"loose": "tfc:native_gold",
+		"width": 32,
+		"height": 40,
+		"shape": "cluster",
+		"rarity": 170,
+		"minimum_height": 5,
+		"maximum_height": 120,
+		"density": 70,
+		"base_rocks": [
+			"tfc:igneous_extrusive",
+			"tfc:igneous_intrusive"
+		]
+	},
+	"native_platinum": {
+		"ore": "tfc:native_platinum",
+		"loose": "tfc:native_platinum",
+		"width": 12,
+		"height": 20,
+		"shape": "cluster",
+		"rarity": 180,
+		"minimum_height": 80,
+		"maximum_height": 140,
+		"density": 60,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"native_silver": {
+		"ore": "tfc:native_silver",
+		"loose": "tfc:native_silver",
+		"width": 28,
+		"height": 36,
+		"shape": "cluster",
+		"rarity": 120,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 70,
+		"base_rocks": [
+			"tfc:granite",
+			"tfc:gneiss"
+		]
+	},
+	"hematite": {
+		"ore": "tfc:hematite",
+		"loose": "tfc:hematite",
+		"width": 28,
+		"height": 36,
+		"shape": "cluster",
+		"rarity": 130,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 70,
+		"base_rocks": [
+			"tfc:igneous_extrusive"
+		]
+	},
+	"cassiterite": {
+		"ore": "tfc:cassiterite",
+		"loose": "tfc:cassiterite",
+		"width": 28,
+		"height": 36,
+		"shape": "cluster",
+		"rarity": 160,
+		"minimum_height": 5,
+		"maximum_height": 110,
+		"density": 70,
+		"base_rocks": [
+			"tfc:igneous_intrusive"
+		]
+	},
+	"bismuthinite": {
+		"ore": "tfc:bismuthinite",
+		"loose": "tfc:bismuthinite",
+		"width": 28,
+		"height": 36,
+		"shape": "cluster",
+		"rarity": 180,
+		"minimum_height": 5,
+		"maximum_height": 100,
+		"density": 70,
+		"base_rocks": [
+			"tfc:igneous_extrusive",
+			"tfc:sedimentary"
+		]
+	},
+	"garnierite": {
+		"ore": "tfc:garnierite",
+		"loose": "tfc:garnierite",
+		"width": 22,
+		"height": 22,
+		"shape": "sphere",
+		"rarity": 120,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 70,
+		"base_rocks": [
+			"tfc:gabbro"
+		]
+	},
+	"malachite": {
+		"ore": "tfc:malachite",
+		"loose": "tfc:malachite",
+		"width": 28,
+		"height": 36,
+		"shape": "cluster",
+		"rarity": 160,
+		"minimum_height": 90,
+		"maximum_height": 144,
+		"density": 70,
+		"base_rocks": [
+			"tfc:limestone",
+			"tfc:marble"
+		]
+	},
+	"magnetite": {
+		"ore": "tfc:magnetite",
+		"loose": "tfc:magnetite",
+		"width": 28,
+		"height": 36,
+		"shape": "cluster",
+		"rarity": 180,
+		"minimum_height": 110,
+		"maximum_height": 144,
+		"density": 70,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"limonite": {
+		"ore": "tfc:limonite",
+		"loose": "tfc:limonite",
+		"width": 28,
+		"height": 36,
+		"shape": "cluster",
+		"rarity": 180,
+		"minimum_height": 90,
+		"maximum_height": 144,
+		"density": 70,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"sphalerite": {
+		"ore": "tfc:sphalerite",
+		"loose": "tfc:sphalerite",
+		"width": 32,
+		"height": 44,
+		"shape": "cluster",
+		"rarity": 160,
+		"minimum_height": 50,
+		"maximum_height": 100,
+		"density": 70,
+		"base_rocks": [
+			"tfc:metamorphic"
+		]
+	},
+	"tetrahedrite": {
+		"ore": "tfc:tetrahedrite",
+		"loose": "tfc:tetrahedrite",
+		"width": 28,
+		"height": 36,
+		"shape": "cluster",
+		"rarity": 160,
+		"minimum_height": 40,
+		"maximum_height": 110,
+		"density": 70,
+		"base_rocks": [
+			"tfc:metamorphic"
+		]
+	},
+	"bituminous_coal": {
+		"ore": "tfc:bituminous_coal",
+		"loose": "contenttweaker:bituminous_coal_small",
+		"width": 38,
+		"height": 44,
+		"shape": "cluster",
+		"rarity": 160,
+		"minimum_height": 90,
+		"maximum_height": 144,
+		"density": 60,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"lignite": {
+		"ore": "tfc:lignite",
+		"loose": "contenttweaker:lignite_small",
+		"width": 28,
+		"height": 36,
+		"shape": "cluster",
+		"rarity": 140,
+		"minimum_height": 90,
+		"maximum_height": 144,
+		"density": 60,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"kaolinite": {
+		"ore": "tfc:kaolinite",
+		"loose": "contenttweaker:kaolinite_small",
+		"width": 24,
+		"height": 32,
+		"shape": "cluster",
+		"rarity": 140,
+		"minimum_height": 90,
+		"maximum_height": 144,
+		"density": 70,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"graphite": {
+		"ore": "tfc:graphite",
+		"loose": "contenttweaker:graphite_small",
+		"width": 24,
+		"height": 32,
+		"shape": "cluster",
+		"rarity": 120,
+		"minimum_height": 55,
+		"maximum_height": 144,
+		"density": 70,
+		"base_rocks": [
+			"tfc:marble",
+			"tfc:gneiss",
+			"tfc:quartzite",
+			"tfc:schist"
+		]
+	},
+	"kimberlite": {
+		"ore": "tfc:kimberlite",
+		"loose": "contenttweaker:kimberlite_small",
+		"width": 20,
+		"height": 24,
+		"shape": "cluster",
+		"rarity": 200,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 50,
+		"base_rocks": [
+			"tfc:gabbro"
+		]
+	},
+	"cinnabar": {
+		"ore": "tfc:cinnabar",
+		"loose": "contenttweaker:cinnabar_small",
+		"width": 16,
+		"height": 16,
+		"shape": "sphere",
+		"rarity": 150,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 60,
+		"base_rocks": [
+			"tfc:igneous_extrusive",
+			"tfc:shale",
+			"tfc:quartzite"
+		]
+	},
+	"cryolite": {
+		"ore": "tfc:cryolite",
+		"loose": "contenttweaker:cryolite_small",
+		"width": 16,
+		"height": 16,
+		"shape": "sphere",
+		"rarity": 100,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 70,
+		"base_rocks": [
+			"tfc:granite"
+		]
+	},
+	"saltpeter": {
+		"ore": "tfc:saltpeter",
+		"loose": "contenttweaker:saltpeter_small",
+		"width": 16,
+		"height": 16,
+		"shape": "sphere",
+		"rarity": 150,
+		"minimum_height": 90,
+		"maximum_height": 144,
+		"density": 70,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"sylvite": {
+		"ore": "tfc:sylvite",
+		"loose": "contenttweaker:sylvite_small",
+		"width": 16,
+		"height": 16,
+		"shape": "sphere",
+		"rarity": 110,
+		"minimum_height": 110,
+		"maximum_height": 144,
+		"density": 60,
+		"base_rocks": [
+			"tfc:rocksalt"
+		]
+	},
+	"borax": {
+		"ore": "tfc:borax",
+		"loose": "contenttweaker:borax_small",
+		"width": 16,
+		"height": 16,
+		"shape": "sphere",
+		"rarity": 120,
+		"minimum_height": 110,
+		"maximum_height": 144,
+		"density": 70,
+		"base_rocks": [
+			"tfc:rocksalt"
+		]
+	},
+	"gypsum": {
+		"ore": "tfc:gypsum",
+		"loose": "contenttweaker:gypsum_small",
+		"width": 16,
+		"height": 16,
+		"shape": "sphere",
+		"rarity": 120,
+		"minimum_height": 110,
+		"maximum_height": 144,
+		"density": 70,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"sulfur": {
+		"ore": "tfc:sulfur",
+		"loose": "contenttweaker:sulfur_small",
+		"width": 22,
+		"height": 42,
+		"shape": "cluster",
+		"rarity": 140,
+		"minimum_height": 5,
+		"maximum_height": 144,
+		"density": 70,
+		"base_rocks": [
+			"tfc:igneous_extrusive"
+		]
+	},
+	"lapis_lazuli": {
+		"ore": "tfc:lapis_lazuli",
+		"loose": "contenttweaker:lapis_lazuli_small",
+		"width": 26,
+		"height": 38,
+		"shape": "cluster",
+		"rarity": 120,
+		"minimum_height": 110,
+		"maximum_height": 144,
+		"density": 70,
+		"base_rocks": [
+			"tfc:marble"
+		]
+	},
+	"surface_native_copper": {
+		"ore": "tfc:native_copper",
+		"loose": "tfc:native_copper",
+		"width": 16,
+		"height": 28,
+		"shape": "cluster",
+		"rarity": 60,
+		"minimum_height": 100,
+		"maximum_height": 160,
+		"density": 40,
+		"base_rocks": [
+			"tfc:igneous_extrusive"
+		]
+	},
+	"surface_cassiterite": {
+		"ore": "tfc:cassiterite",
+		"loose": "tfc:cassiterite",
+		"width": 16,
+		"height": 28,
+		"shape": "cluster",
+		"rarity": 60,
+		"minimum_height": 100,
+		"maximum_height": 160,
+		"density": 40,
+		"base_rocks": [
+			"tfc:granite"
+		]
+	},
+	"surface_bismuthinite": {
+		"ore": "tfc:bismuthinite",
+		"loose": "tfc:bismuthinite",
+		"width": 16,
+		"height": 28,
+		"shape": "cluster",
+		"rarity": 75,
+		"minimum_height": 100,
+		"maximum_height": 160,
+		"density": 40,
+		"base_rocks": [
+			"tfc:igneous_extrusive",
+			"tfc:sedimentary"
+		]
+	},
+	"surface_sphalerite": {
+		"ore": "tfc:sphalerite",
+		"loose": "tfc:sphalerite",
+		"width": 16,
+		"height": 60,
+		"shape": "cluster",
+		"rarity": 60,
+		"minimum_height": 100,
+		"maximum_height": 160,
+		"density": 40,
+		"base_rocks": [
+			"tfc:metamorphic"
+		]
+	},
+	"surface_tetrahedrite": {
+		"ore": "tfc:tetrahedrite",
+		"loose": "tfc:tetrahedrite",
+		"width": 16,
+		"height": 28,
+		"shape": "cluster",
+		"rarity": 60,
+		"minimum_height": 100,
+		"maximum_height": 160,
+		"density": 40,
+		"base_rocks": [
+			"tfc:metamorphic"
+		]
+	},
+	"galena": {
+		"ore": "tfc:galena",
+		"loose": "tfc:galena",
+		"width": 16,
+		"height": 16,
+		"shape": "sphere",
+		"rarity": 220,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 30,
+		"base_rocks": [
+			"tfc:igneous_extrusive",
+			"tfc:metamorphic",
+			"tfc:granite",
+			"tfc:limestone"
+		]
+	},
+	"jet": {
+		"ore": "tfc:jet",
+		"loose": "contenttweaker:jet_small",
+		"width": 16,
+		"height": 8,
+		"shape": "cluster",
+		"rarity": 220,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 20,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"pitchblende": {
+		"ore": "tfc:pitchblende",
+		"loose": "contenttweaker:pitchblende_small",
+		"width": 12,
+		"height": 28,
+		"shape": "cluster",
+		"rarity": 250,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 40,
+		"base_rocks": [
+			"tfc:granite"
+		]
+	},
+	"microcline": {
+		"ore": "tfc:microcline",
+		"loose": "contenttweaker:microcline_small",
+		"width": 28,
+		"height": 36,
+		"shape": "cluster",
+		"rarity": 320,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 20,
+		"base_rocks": [
+			"tfc:basalt",
+			"tfc:gabbro"
+		]
+	},
+	"olivine": {
+		"ore": "tfc:olivine",
+		"loose": "contenttweaker:olivine_small",
+		"width": 28,
+		"height": 36,
+		"shape": "cluster",
+		"rarity": 255,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 30,
+		"base_rocks": [
+			"tfc:igneous_extrusive",
+			"tfc:igneous_intrusive"
+		]
+	},
+	"petrified_wood": {
+		"ore": "tfc:petrified_wood",
+		"loose": "contenttweaker:petrified_wood_small",
+		"width": 36,
+		"height": 8,
+		"shape": "cluster",
+		"rarity": 220,
+		"minimum_height": 128,
+		"maximum_height": 144,
+		"density": 20,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"satinspar": {
+		"ore": "tfc:satinspar",
+		"loose": "contenttweaker:satinspar_small",
+		"width": 16,
+		"height": 16,
+		"shape": "sphere",
+		"rarity": 200,
+		"minimum_height": 110,
+		"maximum_height": 144,
+		"density": 30,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"selenite": {
+		"ore": "tfc:selenite",
+		"loose": "contenttweaker:selenite_small",
+		"width": 16,
+		"height": 16,
+		"shape": "sphere",
+		"rarity": 200,
+		"minimum_height": 110,
+		"maximum_height": 144,
+		"density": 30,
+		"base_rocks": [
+			"tfc:sedimentary"
+		]
+	},
+	"serpentine": {
+		"ore": "tfc:serpentine",
+		"loose": "contenttweaker:serpentine_small",
+		"width": 16,
+		"height": 16,
+		"shape": "sphere",
+		"rarity": 180,
+		"minimum_height": 5,
+		"maximum_height": 128,
+		"density": 30,
+		"base_rocks": [
+			"tfc:metamorphic",
+			"tfc:basalt",
+			"tfc:gabbro"
+		]
+	}
+}

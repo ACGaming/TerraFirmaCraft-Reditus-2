@@ -33,9 +33,10 @@ Crusher.removeRecipesForInput(<tfc:ore/sulfur>);
 // ADD
 // Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
 Crusher.addRecipe(<contenttweaker:wood_chips> * 6, <ore:lumber>, 2048);
-Crusher.addRecipe(<minecraft:glowstone> * 1, <tfc:ore/selenite>, 4096);
-Crusher.addRecipe(<minecraft:glowstone_dust> * 10, <minecraft:glowstone>, 4096);
-Crusher.addRecipe(<minecraft:redstone> * 8, <tfc:ore/cinnabar>, 4096);
+Crusher.addRecipe(<minecraft:glowstone_dust> * 12, <tfc:ore/selenite>, 4096);
+Crusher.addRecipe(<minecraft:glowstone_dust> * 4, <minecraft:glowstone>, 4096);
+Crusher.addRecipe(<minecraft:redstone> * 16, <tfc:ore/cinnabar>, 4096);
+Crusher.addRecipe(<minecraft:redstone> * 16, <tfc:ore/cryolite>, 4096);
 Crusher.addRecipe(<tfc:food/barley_flour> * 2, <tfc:food/barley_grain>, 2048, <tfc:food/barley_flour> * 1, 0.1);
 Crusher.addRecipe(<tfc:food/barley_grain> * 1, <tfc:food/barley>, 2048, <tfc:food/barley_grain> * 1, 0.15);
 Crusher.addRecipe(<tfc:food/cornmeal_flour> * 2, <tfc:food/maize_grain>, 2048, <tfc:food/cornmeal_flour> * 1, 0.1);
