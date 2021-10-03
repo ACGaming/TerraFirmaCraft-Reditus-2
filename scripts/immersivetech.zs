@@ -15,9 +15,14 @@ recipes.addShaped(<immersivetech:metal_device>, [[<ore:blockSheetmetalIron>, <or
 recipes.addShapeless(<immersivetech:stone_decoration>, [<ore:plateSteel>, <immersiveengineering:stone_decoration>, <immersiveengineering:tool>]);
 
 // MACHINES
-// Boiler 
+// Boiler
 mods.immersivetechnology.Boiler.removeRecipe(<liquid:water>);
 mods.immersivetechnology.Boiler.addRecipe(<liquid:steam> * 500, <liquid:fresh_water> * 250, 10);
+
+mods.immersivetechnology.Boiler.addFuel(<liquid:creosote> * 200, 1, 10);
+mods.immersivetechnology.Boiler.addFuel(<liquid:dicyanoacetylene> * 3, 1, 10);
+mods.immersivetechnology.Boiler.addFuel(<liquid:ethanol> * 100, 1, 10);
+mods.immersivetechnology.Boiler.addFuel(<liquid:napalm> * 1, 1, 10);
 
 // Cooling Tower
 mods.immersivetechnology.CoolingTower.removeRecipe(<liquid:exhauststeam>, <liquid:water>);

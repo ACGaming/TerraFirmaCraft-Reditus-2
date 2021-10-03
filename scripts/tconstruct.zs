@@ -125,10 +125,22 @@ Melting.removeRecipe(<liquid:zirconium>, <contenttweaker:blockzirconium>);
 Drying.removeRecipe(<minecraft:leather>);
 Drying.removeRecipe(<tconstruct:edible:*>);
 
+// SMELTERY FUEL (GASOLINE)
+val definitionGasoline = <liquid:gasoline>.definition;
+val gasolineT = definitionGasoline.temperature;
+definitionGasoline.temperature = 945;
+Fuel.registerFuel(<liquid:gasoline>, 90);
+
 // SMELTERY FUEL (LAVA)
 val definitionLava = <liquid:lava>.definition;
 val lavaT = definitionLava.temperature;
 definitionLava.temperature = 1200;
+
+// SMELTERY FUEL (DIESEL)
+val definitionDiesel = <liquid:diesel>.definition;
+val dieselT = definitionDiesel.temperature;
+definitionDiesel.temperature = 2000;
+Fuel.registerFuel(<liquid:diesel>, 100);
 
 // SMELTERY FUEL (NAPALM)
 val definitionNapalm = <liquid:napalm>.definition;
@@ -136,17 +148,11 @@ val napalmT = definitionNapalm.temperature;
 definitionNapalm.temperature = 2760;
 Fuel.registerFuel(<liquid:napalm>, 70);
 
-// SMELTERY FUEL (GASOLINE)
-val definitionGasoline = <liquid:gasoline>.definition;
-val gasolineT = definitionGasoline.temperature;
-definitionGasoline.temperature = 945;
-Fuel.registerFuel(<liquid:gasoline>, 90);
-
-// SMELTERY FUEL (DIESEL)
-val definitionDiesel = <liquid:diesel>.definition;
-val dieselT = definitionDiesel.temperature;
-definitionDiesel.temperature = 2000;
-Fuel.registerFuel(<liquid:diesel>, 100);
+// SMELTERY FUEL (DICYANOACETYLENE)
+val definitionDicyanoacetylene = <liquid:dicyanoacetylene>.definition;
+val dicyanoacetyleneT = definitionDicyanoacetylene.temperature;
+definitionDicyanoacetylene.temperature = 5727;
+Fuel.registerFuel(<liquid:dicyanoacetylene>, 20);
 
 // ADD
 recipes.addShaped(<conarm:travel_sack>, [[<ore:string>, <ore:leather>, <ore:string>], [<ore:rawHide>, <ore:chest>, <ore:rawHide>], [<ore:leather>, <ore:leather>, <ore:leather>]]);

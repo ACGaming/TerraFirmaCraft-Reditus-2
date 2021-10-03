@@ -144,3 +144,7 @@ item.contenttweaker.roasted_chestnut.name=Roasted Chestnut
 item.contenttweaker.seashell.name=Seashell
 item.contenttweaker.wood_chips.name=Wood Chips
 item.contenttweaker.wood_pulp.name=Wood Pulp
+
+# FLUIDS
+fluid.dicyanoacetylene.fluidname=Dicyanoacetylene
+fluid.dicyanoacetylene=Dicyanoacetylene

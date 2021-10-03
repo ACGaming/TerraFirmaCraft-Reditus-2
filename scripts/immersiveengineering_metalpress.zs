@@ -10,8 +10,19 @@ import mods.immersiveengineering.MetalPress;
 
 // ADD
 // MetalPress.addRecipe(IItemStack output, IIngredient input, IItemStack mold, int energy, @Optional int inputSize);
+MetalPress.addRecipe(<firmalife:oven>, <minecraft:clay_ball>, <firmalife:oven>, 2048, 5);
+MetalPress.addRecipe(<firmalife:oven_chimney>, <minecraft:clay_ball>, <firmalife:oven_chimney>, 2048, 5);
+MetalPress.addRecipe(<firmalife:oven_wall>, <minecraft:clay_ball>, <firmalife:oven_wall>, 2048, 5);
+MetalPress.addRecipe(<firmalife:unfired_mallet_mold>, <minecraft:clay_ball>, <firmalife:steel_mallet_head>, 2048, 5);
 MetalPress.addRecipe(<immersiveengineering:bullet> * 2, <tfc:metal/ingot/brass>, <immersiveengineering:mold:3>, 2048);
 MetalPress.addRecipe(<minecraft:anvil>, <tfc:metal/double_ingot/tungsten_steel>, <tfc:metal/hammer_head/steel>, 2048, 7);
+MetalPress.addRecipe(<tfc:ceramics/unfired/bowl>*3, <minecraft:clay_ball>, <tfc:ceramics/fired/bowl>, 2048, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/clay_brick> * 3, <minecraft:clay_ball>, <minecraft:brick>, 2048, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/clay_flower_pot> * 2, <minecraft:clay_ball>, <minecraft:flower_pot>, 2048, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/crucible>, <tfc:ceramics/fire_clay>, <tfc:crucible>, 2048, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/fire_brick>*3, <tfc:ceramics/fire_clay>, <tfc:ceramics/fired/fire_brick>, 2048, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/jug>, <minecraft:clay_ball>, <tfc:ceramics/fired/jug>, 2048, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/large_vessel>, <minecraft:clay_ball>, <tfc:ceramics/fired/large_vessel>, 2048, 5);
 MetalPress.addRecipe(<tfc:ceramics/unfired/mold/axe_head>, <minecraft:clay_ball>, <tfc:metal/axe_head/steel>, 2048, 2);
 MetalPress.addRecipe(<tfc:ceramics/unfired/mold/chisel_head>, <minecraft:clay_ball>, <tfc:metal/chisel_head/steel>, 2048, 2);
 MetalPress.addRecipe(<tfc:ceramics/unfired/mold/hammer_head>, <minecraft:clay_ball>, <tfc:metal/hammer_head/steel>, 2048, 2);
@@ -26,6 +37,8 @@ MetalPress.addRecipe(<tfc:ceramics/unfired/mold/saw_blade>, <minecraft:clay_ball
 MetalPress.addRecipe(<tfc:ceramics/unfired/mold/scythe_blade>, <minecraft:clay_ball>, <tfc:metal/scythe_blade/steel>, 2048, 2);
 MetalPress.addRecipe(<tfc:ceramics/unfired/mold/shovel_head>, <minecraft:clay_ball>, <tfc:metal/shovel_head/steel>, 2048, 2);
 MetalPress.addRecipe(<tfc:ceramics/unfired/mold/sword_blade>, <minecraft:clay_ball>, <tfc:metal/sword_blade/steel>, 2048, 2);
+MetalPress.addRecipe(<tfc:ceramics/unfired/pot>, <minecraft:clay_ball>, <tfc:ceramics/fired/pot>, 2048, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/vessel>, <minecraft:clay_ball>, <tfc:ceramics/fired/vessel>, 2048, 5);
 MetalPress.addRecipe(<tfc:metal/double_ingot/aluminium>, <tfc:metal/ingot/aluminium>, <tfc:metal/hammer_head/steel>, 2048, 2);
 MetalPress.addRecipe(<tfc:metal/double_ingot/aluminium_brass>, <tfc:metal/ingot/aluminium_brass>, <tfc:metal/hammer_head/steel>, 2048, 2);	
 MetalPress.addRecipe(<tfc:metal/double_ingot/antimony>, <tfc:metal/ingot/antimony>, <tfc:metal/hammer_head/steel>, 2048, 2);	
@@ -205,3 +218,8 @@ MetalPress.addRecipe(<tfc:metal/sheet/tungsten>, <tfc:metal/double_ingot/tungste
 MetalPress.addRecipe(<tfc:metal/sheet/tungsten_steel>, <tfc:metal/double_ingot/tungsten_steel>, <tfc:metal/hammer_head/steel>, 2048);	
 MetalPress.addRecipe(<tfc:metal/sheet/wrought_iron>, <tfc:metal/double_ingot/wrought_iron>, <tfc:metal/hammer_head/steel>, 2048);
 MetalPress.addRecipe(<tfc:metal/sheet/zinc>, <tfc:metal/double_ingot/zinc>, <tfc:metal/hammer_head/steel>, 2048);
+MetalPress.addRecipe(<tfctech:ceramics/unfired/glass_block>, <minecraft:clay_ball>, <minecraft:glass>, 2048, 5);
+MetalPress.addRecipe(<tfctech:ceramics/unfired/glass_pane>, <minecraft:clay_ball>, <minecraft:glass_pane>, 2048, 5);
+MetalPress.addRecipe(<tfctech:ceramics/unfired/rackwheel_piece>, <minecraft:clay_ball>, <tfctech:metal/steel_rackwheel_piece>, 2048, 5);
+MetalPress.addRecipe(<tfctech:ceramics/unfired/sleeve>, <minecraft:clay_ball>, <tfctech:metal/steel_sleeve>, 2048, 5);
+MetalPress.addRecipe(<tfcthings:mold/unfired/prospectors_hammer_head>, <minecraft:clay_ball>, <tfcthings:prospectors_hammer_head/steel>, 2048, 5);

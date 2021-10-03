@@ -33,10 +33,14 @@ Crusher.removeRecipesForInput(<tfc:ore/sulfur>);
 // ADD
 // Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
 Crusher.addRecipe(<contenttweaker:wood_chips> * 6, <ore:lumber>, 2048);
-Crusher.addRecipe(<minecraft:glowstone_dust> * 12, <tfc:ore/selenite>, 4096);
-Crusher.addRecipe(<minecraft:glowstone_dust> * 4, <minecraft:glowstone>, 4096);
-Crusher.addRecipe(<minecraft:redstone> * 16, <tfc:ore/cinnabar>, 4096);
-Crusher.addRecipe(<minecraft:redstone> * 16, <tfc:ore/cryolite>, 4096);
+Crusher.addRecipe(<minecraft:dye:10> * 4, <ore:gemOlivine>, 4096);
+Crusher.addRecipe(<minecraft:dye:2> * 4, <ore:gemSerpentine>, 4096);
+Crusher.addRecipe(<minecraft:dye:6> * 4, <ore:gemMicrocline>, 4096);
+Crusher.addRecipe(<minecraft:glowstone_dust> * 12, <ore:gemSatinspar>, 4096);
+Crusher.addRecipe(<minecraft:glowstone_dust> * 12, <ore:gemSelenite>, 4096);
+Crusher.addRecipe(<minecraft:glowstone_dust> * 4, <ore:glowstone>, 4096);
+Crusher.addRecipe(<minecraft:redstone> * 16, <ore:gemCinnabar>, 4096);
+Crusher.addRecipe(<minecraft:redstone> * 16, <ore:gemCryolite>, 4096);
 Crusher.addRecipe(<tfc:food/barley_flour> * 2, <tfc:food/barley_grain>, 2048, <tfc:food/barley_flour> * 1, 0.1);
 Crusher.addRecipe(<tfc:food/barley_grain> * 1, <tfc:food/barley>, 2048, <tfc:food/barley_grain> * 1, 0.15);
 Crusher.addRecipe(<tfc:food/cornmeal_flour> * 2, <tfc:food/maize_grain>, 2048, <tfc:food/cornmeal_flour> * 1, 0.1);
@@ -83,6 +87,7 @@ Crusher.addRecipe(<tfc:metal/dust/bismuth_bronze> * 1, <tfc:metal/ingot/bismuth_
 Crusher.addRecipe(<tfc:metal/dust/black_bronze> * 1, <tfc:metal/ingot/black_bronze>, 4096);
 Crusher.addRecipe(<tfc:metal/dust/black_steel> * 1, <tfc:metal/ingot/black_steel>, 4096);
 Crusher.addRecipe(<tfc:metal/dust/blue_steel> * 1, <tfc:metal/ingot/blue_steel>, 4096);
+Crusher.addRecipe(<tfc:metal/dust/boron> * 8, <tfc:ore/borax>, 4096);
 Crusher.addRecipe(<tfc:metal/dust/brass> * 1, <tfc:metal/ingot/brass>, 4096);
 Crusher.addRecipe(<tfc:metal/dust/bronze> * 1, <tfc:metal/ingot/bronze>, 4096);
 Crusher.addRecipe(<tfc:metal/dust/bronze> , <tfc:metal/ingot/bronze>, 4096);
@@ -108,6 +113,7 @@ Crusher.addRecipe(<tfc:metal/dust/tin> * 1, <tfc:metal/ingot/tin>, 4096);
 Crusher.addRecipe(<tfc:metal/dust/titanium> * 1, <tfc:metal/ingot/titanium>, 4096);
 Crusher.addRecipe(<tfc:metal/dust/tungsten> * 1, <tfc:metal/ingot/tungsten>, 4096);
 Crusher.addRecipe(<tfc:metal/dust/tungsten_steel> * 1, <tfc:metal/ingot/tungsten_steel>, 4096);
+Crusher.addRecipe(<tfc:metal/dust/uranium> * 8, <tfc:ore/pitchblende>, 4096);
 Crusher.addRecipe(<tfc:metal/dust/zinc> * 1, <tfc:metal/ingot/zinc>, 4096);
 Crusher.addRecipe(<tfc:ore/pyrolusite:1> * 2, <tfc:ore/pyrolusite:0>, 4096);
 Crusher.addRecipe(<tfc:ore/pyrolusite:1> * 3, <tfc:ore/pyrolusite:2>, 4096);
@@ -127,6 +133,7 @@ Crusher.addRecipe(<tfc:powder/kaolinite> * 12, <ore:gemKaolinite>, 4096);
 Crusher.addRecipe(<tfc:powder/lapis_lazuli> * 12, <ore:gemLapis>, 4096);
 Crusher.addRecipe(<tfc:powder/salt> * 8, <ore:gemGypsum>, 4096, <minecraft:dye:15> * 3, 0.5);
 Crusher.addRecipe(<tfc:powder/salt> * 8, <ore:rockRocksalt>, 4096);
+Crusher.addRecipe(<tfc:powder/salt> * 8, <tfc:ore/halite>, 4096);
 Crusher.addRecipe(<tfc:powder/saltpeter> * 12, <ore:gemSaltpeter>, 4096);
 Crusher.addRecipe(<tfc:powder/sulfur> * 10, <ore:gemSulfur>, 4096, <minecraft:blaze_powder> * 2, 0.5);
 Crusher.addRecipe(<tfc:sand/andesite>, <tfc:gravel/andesite>, 4096);
@@ -150,6 +157,7 @@ Crusher.addRecipe(<tfc:sand/rocksalt>, <tfc:gravel/rocksalt>, 4096);
 Crusher.addRecipe(<tfc:sand/schist>, <tfc:gravel/schist>, 4096);
 Crusher.addRecipe(<tfc:sand/shale>, <tfc:gravel/shale>, 4096);
 Crusher.addRecipe(<tfc:sand/slate>, <tfc:gravel/slate>, 4096);
+Crusher.addRecipe(<tfctech:powder/lime> * 2, <contenttweaker:seashell>, 2048);
 
 // SMALL ORE
 // 10 + 5 = 3 * 5

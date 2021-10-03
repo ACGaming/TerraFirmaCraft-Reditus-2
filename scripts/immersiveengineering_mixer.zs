@@ -18,6 +18,7 @@ Mixer.addRecipe(<liquid:beer> * 1000, <liquid:fresh_water> * 1000, [<ore:grainBa
 Mixer.addRecipe(<liquid:cider> * 1000, <liquid:fresh_water> * 1000, [<ore:apple> * 4], 1024);
 Mixer.addRecipe(<liquid:concrete> * 500, <liquid:fresh_water> * 500, [<ore:sand>, <ore:sand>, <ore:clay>, <ore:gravel>], 2048);
 Mixer.addRecipe(<liquid:corn_whiskey> * 1000, <liquid:fresh_water> * 1000, [<ore:maize> * 4], 1024);
+Mixer.addRecipe(<liquid:dicyanoacetylene>, <liquid:ethanol>, [<ore:dustSaltpeter>, <tfc:powder/graphite>], 10240);
 Mixer.addRecipe(<liquid:limewater> * 1000, <liquid:fresh_water> * 1000, [<ore:dustFlux> * 2], 512);
 Mixer.addRecipe(<liquid:rum> * 1000, <liquid:fresh_water> * 1000, [<tfc:food/sugarcane> * 4], 1024);
 Mixer.addRecipe(<liquid:rye_whiskey> * 1000, <liquid:fresh_water> * 1000, [<ore:grainRye> * 4], 1024);
