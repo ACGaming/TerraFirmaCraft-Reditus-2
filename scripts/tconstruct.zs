@@ -351,7 +351,9 @@ Alloy.addRecipe(<liquid:bismuth_bronze> * 5, [<liquid:brass> * 4, <liquid:bismut
 Alloy.addRecipe(<liquid:black_bronze> * 5, [<liquid:electrum> * 2, <liquid:copper> * 3]);
 Alloy.addRecipe(<liquid:black_steel> * 2, [<liquid:pig_iron> * 1, <liquid:steel> * 1]);
 Alloy.addRecipe(<liquid:black_steel> * 2, [<liquid:pigiron> * 1, <liquid:steel> * 1]);
+Alloy.addRecipe(<liquid:blue_steel> * 2, [<liquid:weak_blue_steel> * 1, <liquid:steel> * 1]);
 Alloy.addRecipe(<liquid:mithril> * 10, [<liquid:copper> * 9, <liquid:antimony> * 1]);
+Alloy.addRecipe(<liquid:red_steel> * 2, [<liquid:weak_red_steel> * 1, <liquid:steel> * 1]);
 Alloy.addRecipe(<liquid:tungsten_steel> * 9, [<liquid:tungsten> * 1, <liquid:steel> * 8]);
 
 // ADD CASTING

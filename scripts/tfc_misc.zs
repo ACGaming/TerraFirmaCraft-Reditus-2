@@ -73,6 +73,7 @@ JEI.removeAndHide(<tfc:metal/sheet/soulforged_steel>);
 JEI.removeAndHide(<tfc:metal/trapdoor/refined_iron>);
 
 // REMOVE
+recipes.remove(<minecraft:piston>);
 recipes.remove(<tfc:crop/product/jute_disc>);
 recipes.remove(<tfc:crop/product/olive_jute_disc>);
 recipes.removeByRecipeName("chisel:charcoal_uncraft");
@@ -227,6 +228,11 @@ recipes.addShapeless(<minecraft:record_blocks>, [<tconstruct:pan_head>.withTag({
 recipes.addShapeless(<minecraft:record_chirp>, [<tconstruct:pan_head>.withTag({Material: "obsidian"}), <ore:dyeRed>]);
 recipes.addShapeless(<minecraft:record_far>, [<tconstruct:pan_head>.withTag({Material: "obsidian"}), <ore:dyeLime>]);
 recipes.addShapeless(<minecraft:record_mall>, [<tconstruct:pan_head>.withTag({Material: "obsidian"}), <ore:dyePurple>]);
+// Piston
+recipes.addShaped(<minecraft:piston>,[
+	[<ore:lumber>, <ore:lumber>, <ore:lumber>],
+	[<ore:cobblestone>, <ore:rodWroughtIron> | <ore:stickWroughtIron>, <ore:cobblestone>],
+	[<ore:cobblestone>, <tfc:brass_mechanisms>, <ore:cobblestone>]]);
 
 // REPLACE
 recipes.replaceAllOccurences(<tfc:metal/ingot/steel>, <ore:ingotSteel>);

@@ -63,7 +63,7 @@ recipes.remove(<immersiveengineering:treated_wood:*>);
 recipes.remove(<immersiveengineering:wooden_device0:2>);
 
 // ADD
-recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "electrode"}), [[<ore:dustHOPGraphite>, <ore:ingotBlackSteel>, <ore:dustHOPGraphite>], [<tfc:powder/lapis_lazuli>, <tfc:powder/lapis_lazuli>, <tfc:powder/lapis_lazuli>], [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
+recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "electrode"}), [[<ore:dustHOPGraphite>, <ore:ingotBlackSteel>, <ore:dustHOPGraphite>], [<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<ore:paper>, <ore:paper>, <ore:paper>]]);
 recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_aluminum"})* 12, [[<ore:blockSheetmetalAluminium>, <ore:blockSheetmetalAluminium>], [<ore:blockSheetmetalAluminium>, <ore:blockSheetmetalAluminium>], [<ore:blockSheetmetalAluminium>, <ore:blockSheetmetalAluminium>]]);
 recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_copper"})* 12, [[<ore:blockSheetmetalCopper>, <ore:blockSheetmetalCopper>], [<ore:blockSheetmetalCopper>, <ore:blockSheetmetalCopper>], [<ore:blockSheetmetalCopper>, <ore:blockSheetmetalCopper>]]);
 recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:chute_iron"})* 12, [[<ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>], [<ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>], [<ore:blockSheetmetalIron>, <ore:blockSheetmetalIron>]]);
@@ -84,8 +84,8 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 2, [[<ore:ingotSt
 recipes.addShaped(<immersiveengineering:metal_decoration0:5>, [[<ore:ingotSteel>, <tfc:metal/hammer/black_steel>, <ore:ingotSteel>], [<minecraft:piston>, <ore:ingotElectrum>, <minecraft:piston>], [<ore:ingotSteel>, <immersiveengineering:material:9>, <ore:ingotSteel>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>], [<ore:ingotCopper>, <ceramics:clay_bucket>.withTag({fluids: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<ceramics:clay_bucket>), <ore:ingotCopper>], [<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>], [<ore:ingotCopper>, <forge:bucketfilled>.withTag({FluidName: "fresh_water", Amount: 1000}).transformReplace(<minecraft:bucket>), <ore:ingotCopper>], [<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>]]);
-recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>], [<ore:ingotCopper>, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>), <ore:ingotCopper>], [<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>], [<ore:ingotCopper>, <tfc:metal/bucket/red_steel>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:metal/bucket/red_steel>), <ore:ingotCopper>], [<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>]]);
+recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>], [<ore:ingotCopper>, <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "fresh_water", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>), <ore:ingotCopper>], [<ore:ingotSteel>, <ore:ingotCopper>, <ore:ingotSteel>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration2:2>, [[<ore:fenceAluminum>], [<ore:fenceAluminum>], [<ore:stoneBrick>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration2:4> * 3, [[<ore:chisel>.transformDamage(), <ore:sheetWroughtIron>, <immersiveengineering:tool>], [<ore:paneGlass>, <ore:dustGlowstone>, <ore:paneGlass>], [null, <ore:sheetWroughtIron>, null]]);
 recipes.addShaped(<immersiveengineering:metal_decoration2>, [[<ore:fenceSteel>], [<ore:fenceSteel>], [<ore:stoneBrick>]]);
@@ -114,17 +114,18 @@ recipes.addShapeless(<immersiveengineering:material:21>, [<ore:plateElectrum>, <
 recipes.addShapeless(<immersiveengineering:material:22>, [<ore:plateAluminum>, <ore:shears>.transformDamage()]);
 recipes.addShapeless(<immersiveengineering:material:23>, [<ore:plateSteel>, <ore:shears>.transformDamage()]);
 recipes.addShapeless(<immersiveengineering:material> * 8, [<ore:saw>.transformDamage(), <ore:plankTreatedWood>]);
+recipes.addShapeless(<immersiveengineering:metal:30>, [<immersiveengineering:sheetmetal>]);
+recipes.addShapeless(<immersiveengineering:metal:31>, [<immersiveengineering:sheetmetal:1>]);
+recipes.addShapeless(<immersiveengineering:metal:32>, [<immersiveengineering:sheetmetal:2>]);
+recipes.addShapeless(<immersiveengineering:metal:33>, [<immersiveengineering:sheetmetal:3>]);
+recipes.addShapeless(<immersiveengineering:metal:34>, [<immersiveengineering:sheetmetal:4>]);
+recipes.addShapeless(<immersiveengineering:metal:35>, [<immersiveengineering:sheetmetal:5>]);
+recipes.addShapeless(<immersiveengineering:metal:36>, [<immersiveengineering:sheetmetal:6>]);
+recipes.addShapeless(<immersiveengineering:metal:37>, [<immersiveengineering:sheetmetal:7>]);
+recipes.addShapeless(<immersiveengineering:metal:38>, [<immersiveengineering:sheetmetal:8>]);
+recipes.addShapeless(<immersiveengineering:metal:39>, [<immersiveengineering:sheetmetal:9>]);
+recipes.addShapeless(<immersiveengineering:metal:40>, [<immersiveengineering:sheetmetal:10>]);
 recipes.addShapeless(<immersiveengineering:stone_decoration:2>, [<immersiveengineering:stone_decoration:1>,<tfc:metal/double_sheet/steel>,<immersiveengineering:tool>]);
-recipes.addShapeless(<tfc:metal/sheet/aluminium>, [<immersiveengineering:sheetmetal:1>]);
-recipes.addShapeless(<tfc:metal/sheet/constantan>, [<immersiveengineering:sheetmetal:6>]);
-recipes.addShapeless(<tfc:metal/sheet/copper>, [<immersiveengineering:sheetmetal>]);
-recipes.addShapeless(<tfc:metal/sheet/electrum>, [<immersiveengineering:sheetmetal:7>]);
-recipes.addShapeless(<tfc:metal/sheet/gold>, [<immersiveengineering:sheetmetal:10>]);
-recipes.addShapeless(<tfc:metal/sheet/lead>, [<immersiveengineering:sheetmetal:2>]);
-recipes.addShapeless(<tfc:metal/sheet/nickel>, [<immersiveengineering:sheetmetal:4>]);
-recipes.addShapeless(<tfc:metal/sheet/silver>, [<immersiveengineering:sheetmetal:3>]);
-recipes.addShapeless(<tfc:metal/sheet/steel>, [<immersiveengineering:sheetmetal:8>]);
-recipes.addShapeless(<tfc:metal/sheet/wrought_iron>, [<immersiveengineering:sheetmetal:9>]);
 
 // REPLACE ALL
 recipes.replaceAllOccurences(<immersiveengineering:material:4>, <tfc:crop/product/jute_fiber>);

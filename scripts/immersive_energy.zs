@@ -19,6 +19,10 @@ JEI.removeAndHide(<immersive_energy:toolupgrade:6>);
 recipes.remove(<immersive_energy:metal:*>);
 recipes.remove(<immersive_energy:storage:*>);
 
+// ADD
+recipes.addShapeless(<immersive_energy:metal:6>, [<immersive_energy:sheetmetal>]);
+recipes.addShapeless(<immersive_energy:metal:7>, [<immersive_energy:sheetmetal:1>]);
+
 // REPLACE
 recipes.replaceAllOccurences(<immersive_energy:material>, <ore:stickTungsten>);
 recipes.replaceAllOccurences(<immersive_energy:stick_thorium>, <ore:stickThorium>);
