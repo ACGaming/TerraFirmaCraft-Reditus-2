@@ -106,7 +106,7 @@
 			"texture": "tfc:textures/bug.png",
 			"action": {
 				"type": "openLink",
-				"link": "https://www.curseforge.com/minecraft/modpacks/terrafirmacraft-reditus-2/issues"
+				"link": "https://github.com/ACGaming/TerraFirmaCraft-Reditus-2/issues"
 			},
 			"hoverSound": "tfc:item.jug.blow",
 			"pressSound": "tfc:animal.frog"
@@ -123,7 +123,7 @@
 			"texture": "tfc:textures/discord.png",
 			"action": {
 				"type": "openLink",
-				"link": "http://discord.gg/9yGJaFnqTx"
+				"link": "https://discord.com/invite/9yGJaFnqTx"
 			},
 			"hoverSound": "tfc:item.jug.blow",
 			"pressSound": "tfc:animal.frog"
@@ -157,7 +157,7 @@
 			"hoverTextColor": 16777215,
 			"action": {
 				"type": "openLink",
-				"link": "https://www.youtube.com/watch?v=SuXLBmegxBA"
+				"link": "https://www.youtube.com/c/albertvvl"
 			},
 			"hoverSound": "tfc:item.jug.blow",
 			"pressSound": "tfc:animal.frog"

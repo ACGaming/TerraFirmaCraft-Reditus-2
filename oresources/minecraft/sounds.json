@@ -16,9 +16,49 @@
 		"category": "music",
 		"replace": true,
 		"sounds": [{
-			"name": "music/menu",
+			"name": "music/way_home",
 			"stream": true
 		}]
+	},
+	"music.game": {
+		"category": "music",
+		"sounds": [{
+				"name": "music/antarctica",
+				"stream": true
+			},
+			{
+				"name": "music/alpha",
+				"stream": true
+			},
+			{
+				"name": "music/hymne",
+				"stream": true
+			},
+			{
+				"name": "music/unknown_man",
+				"stream": true
+			}
+		]
+	},
+	"music.game.creative": {
+		"category": "music",
+		"sounds": [{
+				"name": "music/antarctica",
+				"stream": true
+			},
+			{
+				"name": "music/alpha",
+				"stream": true
+			},
+			{
+				"name": "music/hymne",
+				"stream": true
+			},
+			{
+				"name": "music/unknown_man",
+				"stream": true
+			}
+		]
 	},
 	"record.11": {
 		"sounds": [{
@@ -27,36 +67,42 @@
 		}]
 	},
 	"record.13": {
+		"replace": true,
 		"sounds": [{
 			"name": "records/angrynoises",
 			"stream": true
 		}]
 	},
 	"record.blocks": {
+		"replace": true,
 		"sounds": [{
 			"name": "records/808banger",
 			"stream": true
 		}]
 	},
 	"record.cat": {
+		"replace": true,
 		"sounds": [{
 			"name": "records/sadshit",
 			"stream": true
 		}]
 	},
 	"record.chirp": {
+		"replace": true,
 		"sounds": [{
 			"name": "records/goforit",
 			"stream": true
 		}]
 	},
 	"record.far": {
+		"replace": true,
 		"sounds": [{
 			"name": "records/voyage",
 			"stream": true
 		}]
 	},
 	"record.mall": {
+		"replace": true,
 		"sounds": [{
 			"name": "records/rainyday",
 			"stream": true
